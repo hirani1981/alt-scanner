@@ -83,7 +83,7 @@ alerts:
   top_n: 10
   climbers_n: 5
   volume_z_alert: 3.0
-  channel: console        # console | file | telegram
+  channel: file           # console | file | telegram
 
 schedule:
   cron_utc: "30 0,6,12,18 * * *"   # 00:30 UTC run is the canonical EOD snapshot
