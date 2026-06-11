@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import httpx, pandas, yaml; print\\('httpx', httpx.__version__\\); print\\('pandas', pandas.__version__\\); print\\('yaml ok'\\)\")",
+      "Bash(pip install *)",
+      "Bash(python jobs/run_snapshot.py --dry-run)",
+      "Bash(python jobs/run_snapshot.py)",
+      "Bash(python -c ' *)",
+      "Bash(del /f \"compute\\\\metrics.py.tmp.25748.1720b06069e6\" \"dashboard\\\\index.html.tmp.25748.95c53d1c15dc\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(timeout 3 bash -c \"sleep 2\")",
+      "PowerShell($d = Get-Content \"C:\\\\Users\\\\hiten\\\\Dropbox\\\\1 - Claude_code\\\\Crypto_Scanner\\\\dashboard\\\\latest.json\" | ConvertFrom-Json; Write-Host \"$\\($d.Count\\) coins, first: $\\($d[0].symbol\\)\")",
+      "Bash(python -m unittest tests.test_signals -v)",
+      "Bash(python -m unittest tests.test_signals)",
+      "Bash(python jobs/run_snapshot.py --eod)",
+      "Bash(python -m unittest tests.test_eod_invariant tests.test_signals -v)",
+      "Bash(python -m unittest tests.test_signals tests.test_short_signals tests.test_replay tests.test_eod_invariant -v)",
+      "Bash(python -m unittest tests.test_signals tests.test_short_signals tests.test_replay tests.test_eod_invariant)",
+      "Bash(python jobs/run_backtest.py)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(python -m unittest discover -s tests -v)",
+      "Bash(python -m unittest discover -s tests)",
+      "Bash(cat .gitignore)",
+      "Bash(du -h store/backtest.db store/snapshots.db dashboard/backtest.json)",
+      "Bash(du -sh store/klines_cache)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(xargs du -ch)",
+      "Bash(rm -f compute/*.tmp.* tests/*.tmp.*)",
+      "Bash(git rm *)",
+      "Bash(git -c core.autocrlf=false commit -q -m 'Alt Strength Scanner — hypothesis v2 \\(frozen 2026-06-11\\) *)"
+    ]
+  }
+}

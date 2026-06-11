@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Derived data — rebuilt from klines, never committed (keeps the repo small)
+store/backtest.db
+store/klines_cache/
+*.pkl
+
+# Local run logs and editor temp files
+*.log
+*.tmp.*
+
+# Committed artifacts are tracked explicitly; everything else under store/ that
+# is derived stays local. The append-only live store (store/snapshots.db) IS
+# committed by the scheduled workflow and is intentionally not ignored.

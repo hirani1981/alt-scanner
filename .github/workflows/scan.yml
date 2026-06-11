@@ -1,0 +1,67 @@
+name: Daily Alt Scan
+
+on:
+  schedule:
+    - cron: '30 0,6,12,18 * * *'   # 00:30 UTC run = canonical EOD snapshot; others intraday
+  workflow_dispatch:                # allow manual runs from the Actions tab
+
+# Pages deployment + committing outputs back both need elevated permissions
+permissions:
+  contents: write     # commit latest.json / digest / snapshot DB back to the repo
+  pages: write        # publish to GitHub Pages
+  id-token: write     # required by actions/deploy-pages
+
+# Let a run finish publishing before the next scheduled one starts
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scanner
+        run: python jobs/run_snapshot.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Commit outputs (append-only history)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/latest.json digest.md store/snapshots.db
+          git add dashboard/backtest.json 2>/dev/null || true
+          git diff --cached --quiet \
+            || git commit -m "chore: snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
+
+      - name: Upload Pages artifact (the dashboard/ directory)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard
+
+  deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

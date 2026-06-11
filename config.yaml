@@ -1,0 +1,94 @@
+hypothesis:
+  version: v2
+  frozen: 2026-06-11   # see HYPOTHESIS.md; config frozen for >= 8 weeks of live EOD data
+
+universe:
+  quote_asset: USDT
+  min_24h_quote_volume_usd: 1000000    # sanity floor only — primary selector is top max_universe by volume
+  max_universe: 150                    # take the top N eligible pairs ranked by 24h quote volume
+  min_listing_days: 30
+  exclude_symbol_contains: [UP, DOWN, BULL, BEAR, "3L", "3S"]
+  exclude_stablecoins: [USDC, FDUSD, TUSD, DAI, USDP, USD1, PYUSD, RLUSD]  # extend as needed
+  exclude_fiat: [EUR, GBP, AUD, BRL, BIDR, BVND, IDRT, NGN, PLN, RON, RUB, TRY, UAH, ZAR]
+  exclude_commodity: [PAXG, XAUT]                                     # gold tokens
+  exclude_wrapped: [WBTC, WBETH, WETH, CBBTC]                        # extend as needed
+
+benchmark: BTCUSDT
+
+data:
+  interval: 1d
+  history_days: 1000   # paginated fetch — Binance returns max 1000 candles per request
+
+opens:
+  week_start: monday   # UTC
+
+signals:
+  returns_windows_days: [1, 7, 30]
+  volume_baseline_days: 30
+  volume_z_clamp: 10
+  rs_high_lookback_days: 60
+  rs_persistence_ma_days: 10
+  rs_persistence_cap: 30
+  rs_spark_days: 30
+  vol_trend_fast_days: 5
+  vol_trend_slow_days: 30
+  vol_trend_min: 1.5
+  quiet_range_days: 10
+  quiet_range_pctile: 35
+  extended_pctile: 80
+  dist_down_vol_min: 0.60   # DIST v2: supply dominance — share of basing-window volume on down days
+  coil_up_vol_max: 0.40     # coil: buyers dominating the basing window (measured, not scored)
+
+scoring:
+  strength_weights: { relative_strength: 0.50, volume_surge: 0.35, structure: 0.15 }
+  rs_window_weights: { 1: 0.2, 7: 0.5, 30: 0.3 }   # set 1-day weight to 0 if rankings get too jumpy
+  early_weights: { divergence: 0.35, accumulation: 0.30, persistence: 0.20, extension_penalty: 0.15 }
+  rs_new_high_partial: 0.6    # divergence component when RS new high fires without divergence
+  accum_partial_scale: 0.6    # accumulation component = this * vol_trend percentile when accum_flag not set
+  early_ext_penalty: 0.5      # Early score multiplier when stage == EXT (already ran; can't look early)
+
+stages:
+  ext_rs30_pctile: 92
+  ignite_volz_min: 1.5
+  run_strength_pctile: 70
+  run_persistence_min: 5
+
+regime:
+  btc_sma_fast_days: 20
+  btc_sma_slow_days: 50
+  alt_share_high: 60    # >this %: alts leading (header sentence)
+  alt_share_low: 40     # <this %: BTC leading (header sentence)
+  alt_led_min: 55       # operational regime: ALT_LED when alt share >= this
+  btc_led_max: 45       # operational regime: BTC_LED when alt share <= this; NEUTRAL between
+
+validation:
+  horizons_days: [3, 7]
+  min_days_before_reporting: 14
+
+backtest:
+  warmup_days: 70
+  min_universe_for_replay: 60
+  horizons_days: [3, 7, 14]
+  min_cell_n: 30
+  cache_dir: store/klines_cache
+  universe_vol_window_days: 7   # trailing quote-volume average used to rank the per-date universe
+
+shorts:
+  enabled: false                # UI/digest gate only — computation always runs
+  oversold_pctile: 8
+  weak_oversold_penalty: 0.5
+  weak_weights: { breakdown: 0.35, distribution: 0.30, persistence: 0.20, lateness_penalty: 0.15 }
+
+alerts:
+  top_n: 10
+  climbers_n: 5
+  volume_z_alert: 3.0
+  channel: console        # console | file | telegram
+
+schedule:
+  cron_utc: "30 0,6,12,18 * * *"   # 00:30 UTC run is the canonical EOD snapshot
+
+output:
+  dashboard_json: dashboard/latest.json
+  snapshot_db: store/snapshots.db
+  digest_file: digest.md

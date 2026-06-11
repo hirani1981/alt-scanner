@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alt Strength Scanner</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    h1 { font-size: 1.4rem; font-weight: 600; margin-bottom: 4px; }
+    .subtitle { color: #8b949e; margin-bottom: 14px; font-size: 0.85rem; }
+
+    /* Regime header */
+    #regime {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 18px;
+      display: none;
+    }
+    #regime .regime-line { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+    #regime .regime-stats { color: #8b949e; font-size: 0.8rem; display: flex; gap: 18px; flex-wrap: wrap; }
+    #regime .regime-stats b { color: #e6edf3; font-weight: 600; }
+    .risk-on  { color: #3fb950; }
+    .risk-off { color: #f85149; }
+    .risk-mid { color: #d29922; }
+
+    .controls {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .controls label { color: #8b949e; font-size: 0.82rem; display: flex; align-items: center; gap: 5px; }
+    select, input[type=text] {
+      background: #161b22;
+      border: 1px solid #30363d;
+      color: #e6edf3;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+    input[type=checkbox] { accent-color: #1f6feb; cursor: pointer; }
+    select:focus, input:focus { outline: 2px solid #1f6feb; border-color: transparent; }
+
+    /* Stage filter chips */
+    #stage-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+    #stage-filter label {
+      display: flex; align-items: center; gap: 4px;
+      font-size: 0.78rem; padding: 3px 8px;
+      border: 1px solid #30363d; border-radius: 12px;
+      cursor: pointer; user-select: none;
+    }
+
+    /* Beeswarm */
+    #beeswarm-section { margin-bottom: 24px; }
+    #beeswarm-section h2 { font-size: 1rem; margin-bottom: 8px; color: #8b949e; }
+    #beeswarm { width: 100%; display: block; }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8rem; white-space: nowrap; }
+    th {
+      background: #161b22; color: #8b949e;
+      padding: 8px 8px; text-align: right;
+      position: sticky; top: 0;
+      cursor: pointer; user-select: none;
+    }
+    th:nth-child(-n+3) { text-align: left; }
+    th:hover { color: #e6edf3; }
+    th.sorted-asc::after  { content: " ↑"; }
+    th.sorted-desc::after { content: " ↓"; }
+    td { padding: 5px 8px; text-align: right; border-bottom: 1px solid #21262d; }
+    td:nth-child(-n+3) { text-align: left; }
+    tr:hover td { background: #161b22; }
+
+    td a { color: #e6edf3; text-decoration: none; }
+    td a:hover { color: #58a6ff; text-decoration: underline; }
+
+    .pos { color: #3fb950; }
+    .neg { color: #f85149; }
+    .neutral { color: #8b949e; }
+    .climb-pos { color: #3fb950; font-weight: 600; }
+    .climb-neg { color: #f85149; }
+
+    .badge {
+      display: inline-block; border-radius: 4px;
+      padding: 1px 7px; font-size: 0.72rem; font-weight: 700;
+      cursor: default;
+    }
+    .stage-ACCUM  { background: #103b36; color: #2dd4bf; }
+    .stage-IGNITE { background: #122e1a; color: #3fb950; }
+    .stage-RUN    { background: #112a45; color: #58a6ff; }
+    .stage-EXT    { background: #332512; color: #d29922; }
+    .stage-COOL   { background: #21262d; color: #8b949e; }
+    .stage-none   { background: #161b22; color: #484f58; }
+    .stage-dim    { opacity: 0.4; }   /* IGNITE: historically chased — dimmed in all regimes */
+
+    .struct-4 { background: #1a3e25; color: #3fb950; }
+    .struct-3 { background: #1a3320; color: #56d364; }
+    .struct-2 { background: #2d2a1a; color: #d29922; }
+    .struct-1 { background: #2d1a1a; color: #f85149; }
+    .struct-0 { background: #21262d; color: #8b949e; }
+
+    /* Validation panel */
+    #validation-panel { margin-top: 22px; }
+    #validation-panel summary { color: #8b949e; cursor: pointer; font-size: 0.85rem; }
+    #validation-panel table { width: auto; margin-top: 10px; font-size: 0.78rem; }
+    #validation-panel td, #validation-panel th { padding: 4px 12px; }
+
+    #status    { color: #8b949e; font-size: 0.8rem; margin-top: 18px; }
+    #error-msg { color: #f85149; margin-top: 12px; }
+  </style>
+</head>
+<body>
+
+<h1>Alt Strength Scanner</h1>
+<p class="subtitle" id="subtitle">Loading…</p>
+
+<div id="regime">
+  <div class="regime-line" id="regime-line"></div>
+  <div class="regime-stats" id="regime-stats"></div>
+</div>
+
+<div class="controls">
+  <label>Filter: <input type="text" id="filter-input" placeholder="symbol…" style="width:100px" /></label>
+  <label>Beeswarm open:
+    <select id="open-select">
+      <option value="pct_w">Weekly</option>
+      <option value="pct_m">Monthly</option>
+      <option value="pct_q" selected>Quarterly</option>
+      <option value="pct_y">Yearly</option>
+    </select>
+  </label>
+  <label>Top N:
+    <select id="topn-select">
+      <option value="0">All</option>
+      <option value="25">Top 25</option>
+      <option value="50" selected>Top 50</option>
+      <option value="100">Top 100</option>
+    </select>
+  </label>
+  <label><input type="checkbox" id="show-labels" checked /> Labels</label>
+  <label><input type="checkbox" id="score-labels-only" checked /> Top-20 only</label>
+</div>
+
+<div id="stage-filter"></div>
+
+<div id="beeswarm-section">
+  <h2 id="beeswarm-title">% from Quarterly Open</h2>
+  <svg id="beeswarm"></svg>
+</div>
+
+<div class="table-wrap">
+  <table id="main-table">
+    <thead>
+      <tr>
+        <th data-col="rank">Rank</th>
+        <th data-col="symbol">Symbol</th>
+        <th data-col="stage">Stage</th>
+        <th data-col="early">Early</th>
+        <th data-col="strength">Strength</th>
+        <th data-col="rank_change">&#916;Rank</th>
+        <th data-col="rs_1d">RS 24h</th>
+        <th data-col="rs_7d">RS 7d</th>
+        <th data-col="rs_30d">RS 30d</th>
+        <th>RS-spark</th>
+        <th data-col="vol_z">Vol Z</th>
+        <th data-col="vol_trend">Vol Trend</th>
+        <th data-col="structure">Struct</th>
+        <th data-col="price">Price</th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+</div>
+
+<details id="validation-panel">
+  <summary>Validation log — do high scores precede gains?</summary>
+  <div id="validation-content"></div>
+</details>
+
+<p id="status"></p>
+<p id="error-msg"></p>
+
+<script>
+// ── state ────────────────────────────────────────────────────────────────────
+let allData = [];
+// Default view sort (config v2): ACCUM flag desc, then vol_trend (accumulation
+// intensity) desc, then Strength desc. Early is deliberately NOT in the sort key
+// — the backtest shows it is a stable anti-signal, so it must not positively
+// order the default view. sortCol === null means this default composite sort is
+// active; clicking any column header overrides it with a single-column sort.
+let sortCol = null, sortAsc = false;
+
+const STAGES = ['ACCUM', 'IGNITE', 'RUN', 'EXT', 'COOL', '-'];
+const STAGE_COLORS = {
+  ACCUM: '#2dd4bf', IGNITE: '#3fb950', RUN: '#58a6ff',
+  EXT: '#d29922', COOL: '#8b949e', '-': '#484f58',
+};
+let activeStages = new Set(STAGES);
+
+// ── formatting ───────────────────────────────────────────────────────────────
+const fmtRS = v =>
+  v == null ? '<span class="neutral">—</span>'
+  : `<span class="${v >= 0 ? 'pos' : 'neg'}">${(v * 100 >= 0 ? '+' : '') + (v * 100).toFixed(1)}%</span>`;
+
+const fmtVolZ = v =>
+  v == null ? '<span class="neutral">—</span>'
+  : `<span class="${v >= 3 ? 'pos' : v <= -3 ? 'neg' : ''}">${v.toFixed(2)}</span>`;
+
+const fmtVolTrend = v =>
+  v == null ? '<span class="neutral">—</span>'
+  : `<span class="${v >= 1.5 ? 'pos' : ''}">${v.toFixed(2)}</span>`;
+
+const fmtRankChange = v => {
+  if (v == null) return '<span class="neutral">—</span>';
+  if (v > 0) return `<span class="climb-pos">&#9650;${v}</span>`;
+  if (v < 0) return `<span class="climb-neg">&#9660;${Math.abs(v)}</span>`;
+  return '<span class="neutral">—</span>';
+};
+
+const fmtScore = v => v == null ? '—' : v.toFixed(3);
+
+const structBadge = v =>
+  `<span class="badge struct-${v}">${v}/4</span>`;
+
+const stageBadge = r => {
+  const s = r.stage || '-';
+  const cls = s === '-' ? 'stage-none' : `stage-${s}`;
+  const flags = [];
+  // Divergence is measured-only in v2 (its v1 edge did not survive the long
+  // backtest) — badge/tooltip stays, but it drives no score or sort.
+  if (r.rs_divergence) flags.push('RS divergence (measured-only in v2): RS at 60d high, price is not');
+  else if (r.rs_new_high) flags.push('RS line at 60d high');
+  if (r.accum_flag) flags.push('Quiet accumulation: volume building, price flat (best-evidenced long stage)');
+  if (r.dist_flag) flags.push('Distribution v2: supply at the highs (down-volume + RS below MA)');
+  if (r.coil_flag) flags.push('Coil (measured-only): buyers dominating at the highs');
+  if (r.rs_persistence) flags.push(`RS above 10d MA for ${r.rs_persistence}d`);
+  let tip = flags.length ? flags.join(' • ') : 'no active flags';
+  let dim = '';
+  if (s === 'IGNITE') {
+    dim = ' stage-dim';
+    tip = 'Historically chased — worst long stage in backtest (v1 & v2). ' + tip;
+  }
+  return `<span class="badge ${cls}${dim}" title="${tip}">${s === '-' ? '—' : s}</span>`;
+};
+
+const fmtPrice = v => {
+  if (v == null) return '—';
+  if (v >= 1000) return v.toLocaleString(undefined, { maximumFractionDigits: 0 });
+  if (v >= 1)    return v.toFixed(2);
+  if (v >= 0.01) return v.toFixed(4);
+  return v.toFixed(6);
+};
+
+const tvLink = symbol =>
+  `https://www.tradingview.com/chart/?symbol=BINANCE:${symbol}`;
+
+// ── RS sparkline (inline SVG ~90x22) ─────────────────────────────────────────
+function sparkline(values) {
+  if (!values || values.length < 2) return '<span class="neutral">—</span>';
+  const W = 90, H = 22;
+  const min = Math.min(...values), max = Math.max(...values);
+  const span = (max - min) || 1;
+  const pts = values.map((v, i) =>
+    `${(i / (values.length - 1) * (W - 4) + 2).toFixed(1)},${(H - 3 - (v - min) / span * (H - 6)).toFixed(1)}`
+  ).join(' ');
+  const up = values[values.length - 1] >= values[0];
+  const color = up ? '#3fb950' : '#f85149';
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+    <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.3" opacity="0.9"/>
+  </svg>`;
+}
+
+// ── regime header ────────────────────────────────────────────────────────────
+function renderRegime(regime) {
+  if (!regime) return;
+  const el = document.getElementById('regime');
+  el.style.display = 'block';
+
+  const line = regime.line || '';
+  let cls = 'risk-mid';
+  if (line.includes('risk-on')) cls = 'risk-on';
+  else if (line.includes('defensive') || line.includes('suspicion')) cls = 'risk-off';
+  document.getElementById('regime-line').innerHTML = `<span class="${cls}">${line}</span>`;
+
+  const b = regime.breadth || {};
+  const n = regime.universe_size || 0;
+  document.getElementById('regime-stats').innerHTML = `
+    <span>Regime: <b>${regime.regime_class || '—'}</b> (context only)</span>
+    <span>BTC: <b>${regime.btc_trend}</b> vs 20/50d SMA</span>
+    <span>BTC vs monthly open: <b>${regime.btc_pct_month != null ? (regime.btc_pct_month >= 0 ? '+' : '') + regime.btc_pct_month.toFixed(1) + '%' : '—'}</b></span>
+    <span>Breadth: <b>${b.week}/${n}</b> W &nbsp;<b>${b.month}/${n}</b> M &nbsp;<b>${b.quarter}/${n}</b> Q &nbsp;<b>${b.year}/${n}</b> Y</span>
+    <span>Alts beating BTC (7d): <b>${regime.alt_share_rs7 != null ? regime.alt_share_rs7.toFixed(0) + '%' : '—'}</b></span>`;
+}
+
+// ── stage filter chips ───────────────────────────────────────────────────────
+function renderStageFilter() {
+  const wrap = document.getElementById('stage-filter');
+  wrap.innerHTML = STAGES.map(s => `
+    <label style="border-color:${STAGE_COLORS[s]}55">
+      <input type="checkbox" data-stage="${s}" checked />
+      <span style="color:${STAGE_COLORS[s]}">${s === '-' ? '—' : s}</span>
+    </label>`).join('');
+  wrap.querySelectorAll('input').forEach(cb => {
+    cb.addEventListener('change', () => {
+      activeStages = new Set(
+        [...wrap.querySelectorAll('input:checked')].map(c => c.dataset.stage)
+      );
+      refresh();
+    });
+  });
+}
+
+// ── table ────────────────────────────────────────────────────────────────────
+function renderTable(data) {
+  document.getElementById('table-body').innerHTML = data.map(r => `
+    <tr>
+      <td>${r.rank}</td>
+      <td><a href="${tvLink(r.symbol)}" target="_blank" rel="noopener"><strong>${r.symbol.replace('USDT','')}</strong></a></td>
+      <td>${stageBadge(r)}</td>
+      <td>${fmtScore(r.early)}</td>
+      <td>${fmtScore(r.strength)}</td>
+      <td>${fmtRankChange(r.rank_change)}</td>
+      <td>${fmtRS(r.rs_1d)}</td>
+      <td>${fmtRS(r.rs_7d)}</td>
+      <td>${fmtRS(r.rs_30d)}</td>
+      <td>${sparkline(r.rs_spark)}</td>
+      <td>${fmtVolZ(r.vol_z)}</td>
+      <td>${fmtVolTrend(r.vol_trend)}</td>
+      <td>${structBadge(r.structure ?? 0)}</td>
+      <td>${fmtPrice(r.price)}</td>
+    </tr>`).join('');
+}
+
+// ── beeswarm (stage-coloured, labelled, lane-packed) ─────────────────────────
+function renderBeeswarm(data, col) {
+  const svgEl = document.getElementById('beeswarm');
+  const W = svgEl.clientWidth || 900;
+
+  const vals = data.map(d => d[col]).filter(v => v != null);
+  if (!vals.length) { svgEl.innerHTML = ''; svgEl.style.height = '0px'; return; }
+
+  const vMin = Math.min(...vals), vMax = Math.max(...vals);
+  const pad = 48;
+  const toX = v => pad + (v - vMin) / ((vMax - vMin) || 1) * (W - pad * 2);
+
+  const showLabels = document.getElementById('show-labels').checked;
+  const scoreOnly = document.getElementById('score-labels-only').checked;
+
+  let labelSymbols;
+  if (!showLabels) labelSymbols = new Set();
+  else if (scoreOnly) {
+    // Label the top 20 by the default view ordering (ACCUM-first), not Early.
+    labelSymbols = new Set(
+      defaultSort(data).slice(0, Math.min(20, data.length)).map(d => d.symbol)
+    );
+  } else labelSymbols = new Set(data.map(d => d.symbol));
+
+  const LANE_H = 13, LABEL_W = 38, DOT_R = 4, JITTER = 5;
+
+  const dots = data.map((d, i) => {
+    const v = d[col];
+    if (v == null) return null;
+    return {
+      sym: d.symbol.replace('USDT', ''), symbol: d.symbol,
+      x: toX(v), jitter: ((i % 9) - 4) * (JITTER / 4.5),
+      val: v, color: STAGE_COLORS[d.stage || '-'] || '#484f58',
+      stage: d.stage || '-',
+    };
+  }).filter(Boolean);
+
+  const labelNodes = dots
+    .filter(d => labelSymbols.has(d.symbol))
+    .map(d => ({ ...d }))
+    .sort((a, b) => a.x - b.x);
+
+  const lanes = [];
+  for (const node of labelNodes) {
+    let placed = false;
+    for (let i = 0; i < lanes.length; i++) {
+      if (node.x > lanes[i] + 2) { node.lane = i; lanes[i] = node.x + LABEL_W; placed = true; break; }
+    }
+    if (!placed) { node.lane = lanes.length; lanes.push(node.x + LABEL_W); }
+  }
+
+  const numLanes = lanes.length;
+  const labelAreaH = numLanes * LANE_H + (numLanes > 0 ? 6 : 0);
+  const dotAreaH = JITTER * 2 + DOT_R * 2 + 8;
+  const axisH = 18;
+  const H = labelAreaH + dotAreaH + axisH;
+  const dotMidY = labelAreaH + dotAreaH / 2;
+
+  for (const n of labelNodes) {
+    n.labelY = dotMidY - dotAreaH / 2 - 4 - n.lane * LANE_H;
+    n.dotY = dotMidY + n.jitter;
+  }
+
+  svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svgEl.style.height = H + 'px';
+
+  let html = `<line x1="${pad}" y1="${dotMidY}" x2="${W - pad}" y2="${dotMidY}" stroke="#30363d" stroke-width="1"/>`;
+
+  if (vMin < 0 && vMax > 0) {
+    const x0 = toX(0);
+    html += `<line x1="${x0}" y1="4" x2="${x0}" y2="${dotMidY + 4}" stroke="#8b949e" stroke-width="1" stroke-dasharray="3,3"/>`;
+    html += `<text x="${x0}" y="${H - 3}" text-anchor="middle" fill="#8b949e" font-size="9">0%</text>`;
+  }
+  html += `<text x="${pad}" y="${H - 3}" fill="#8b949e" font-size="9">${vMin.toFixed(0)}%</text>`;
+  html += `<text x="${W - pad}" y="${H - 3}" fill="#8b949e" font-size="9" text-anchor="end">${vMax.toFixed(0)}%</text>`;
+
+  for (const n of labelNodes) {
+    if (n.labelY == null) continue;
+    html += `<line x1="${n.x}" y1="${n.labelY + 2}" x2="${n.x}" y2="${n.dotY - DOT_R - 1}" stroke="${n.color}" stroke-width="0.6" opacity="0.35"/>`;
+  }
+  for (const d of dots) {
+    const op = d.stage === 'IGNITE' ? 0.35 : 0.9;   // IGNITE dimmed everywhere
+    html += `<circle cx="${d.x}" cy="${dotMidY + d.jitter}" r="${DOT_R}" fill="${d.color}" opacity="${op}">
+      <title>${d.sym} [${d.stage}]  ${d.val >= 0 ? '+' : ''}${d.val.toFixed(1)}%</title></circle>`;
+  }
+  for (const n of labelNodes) {
+    if (n.labelY == null) continue;
+    html += `<text x="${n.x}" y="${n.labelY}" fill="${n.color}" font-size="10" text-anchor="middle" font-weight="500">${n.sym}</text>`;
+  }
+  svgEl.innerHTML = html;
+}
+
+// ── validation panel ─────────────────────────────────────────────────────────
+function renderValidation(rows) {
+  const el = document.getElementById('validation-content');
+  if (!rows || !rows.length) {
+    el.innerHTML = '<p class="neutral" style="margin-top:8px">No validation data yet — rows appear once EOD snapshots are 3+ days old.</p>';
+    return;
+  }
+  const fmt = v => v == null ? '—' : `<span class="${v >= 0 ? 'pos' : 'neg'}">${(v * 100).toFixed(1)}%</span>`;
+  el.innerHTML = `
+    <table>
+      <thead><tr><th>Snapshot</th><th>Horizon</th><th>Cohort</th><th>n</th><th>Med fwd USD</th><th>Med fwd RS</th></tr></thead>
+      <tbody>${rows.map(r => `
+        <tr>
+          <td>${r.snapshot_date}</td><td>${r.horizon_days}d</td><td>${r.cohort}</td>
+          <td>${r.n}</td><td>${fmt(r.median_fwd_ret_usd)}</td><td>${fmt(r.median_fwd_rs)}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>`;
+}
+
+// ── sort + filter + render ───────────────────────────────────────────────────
+// Default composite sort (one ordering everywhere — no regime-conditional lens):
+// ACCUM flag desc → vol_trend desc → Strength desc.
+function defaultSort(data) {
+  return [...data].sort((a, b) => {
+    const af = (b.accum_flag ? 1 : 0) - (a.accum_flag ? 1 : 0);
+    if (af) return af;
+    const vt = (b.vol_trend ?? -Infinity) - (a.vol_trend ?? -Infinity);
+    if (vt) return vt;
+    return (b.strength ?? -Infinity) - (a.strength ?? -Infinity);
+  });
+}
+
+function sortData(data, col, asc) {
+  return [...data].sort((a, b) => {
+    const av = a[col], bv = b[col];
+    if (typeof av === 'string' || typeof bv === 'string') {
+      const cmp = String(av ?? '').localeCompare(String(bv ?? ''));
+      return asc ? cmp : -cmp;
+    }
+    const an = av ?? (asc ? Infinity : -Infinity);
+    const bn = bv ?? (asc ? Infinity : -Infinity);
+    return asc ? an - bn : bn - an;
+  });
+}
+
+function refresh() {
+  const q = document.getElementById('filter-input').value.trim().toUpperCase();
+  const topN = parseInt(document.getElementById('topn-select').value, 10);
+  const col = document.getElementById('open-select').value;
+
+  let data = allData.filter(d => activeStages.has(d.stage || '-'));
+  if (q) data = data.filter(d => d.symbol.includes(q));
+  data = sortCol === null ? defaultSort(data) : sortData(data, sortCol, sortAsc);
+  if (topN > 0) data = data.slice(0, topN);
+
+  renderTable(data);
+  renderBeeswarm(data, col);
+
+  const labels = { pct_w: 'Weekly', pct_m: 'Monthly', pct_q: 'Quarterly', pct_y: 'Yearly' };
+  document.getElementById('beeswarm-title').textContent = `% from ${labels[col] || col} Open`;
+}
+
+document.querySelectorAll('th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (sortCol === col) sortAsc = !sortAsc;
+    else { sortCol = col; sortAsc = (col === 'rank' || col === 'symbol' || col === 'stage'); }
+    document.querySelectorAll('th').forEach(t => t.classList.remove('sorted-asc', 'sorted-desc'));
+    th.classList.add(sortAsc ? 'sorted-asc' : 'sorted-desc');
+    refresh();
+  });
+});
+
+document.getElementById('filter-input').addEventListener('input', refresh);
+document.getElementById('topn-select').addEventListener('change', refresh);
+document.getElementById('open-select').addEventListener('change', refresh);
+document.getElementById('show-labels').addEventListener('change', refresh);
+document.getElementById('score-labels-only').addEventListener('change', refresh);
+
+renderStageFilter();
+
+// ── load ─────────────────────────────────────────────────────────────────────
+fetch('latest.json')
+  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(json => {
+    // Phase 2 payload: { run_ts, regime, validation, coins }; tolerate old array form
+    allData = Array.isArray(json) ? json : (json.coins || []);
+    renderRegime(json.regime);
+    renderValidation(json.validation);
+
+    const date = allData[0]?.date ?? '';
+    const runTs = json.run_ts ? `  ·  run ${json.run_ts}${json.is_eod ? ' (EOD)' : ' (intraday)'}` : '';
+    document.getElementById('subtitle').textContent =
+      `${allData.length} coins  ·  snapshot ${date}${runTs}`;
+    document.title = `Alt Scanner — ${date}`;
+
+    refresh();
+    document.getElementById('status').textContent =
+      `Loaded ${allData.length} coins. Default view: ACCUM flag → accumulation intensity → Strength. ` +
+      `The Rank column is the stored Early-based rank (kept for validation continuity); ` +
+      `Early is shown but does not order this view. Click any column to re-sort.`;
+  })
+  .catch(err => {
+    document.getElementById('error-msg').textContent =
+      `Failed to load latest.json — ${err.message}. Run the scanner once to generate it.`;
+    document.getElementById('subtitle').textContent = 'No data';
+  });
+</script>
+</body>
+</html>
