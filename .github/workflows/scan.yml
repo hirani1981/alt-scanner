@@ -37,6 +37,10 @@ jobs:
       - name: Run scanner
         run: python jobs/run_snapshot.py
         env:
+          # api.binance.com returns HTTP 451 to cloud IPs; the .vision mirror
+          # serves the same data without geo-blocking. Code defaults to this,
+          # but set it explicitly so the runner's data source is unambiguous.
+          BINANCE_API_BASE: https://data-api.binance.vision
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 

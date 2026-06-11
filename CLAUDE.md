@@ -3,6 +3,7 @@
 ## Stack
 - Python 3.11+. Keep dependencies minimal: httpx (or requests), pandas, PyYAML, stdlib sqlite3.
 - No paid APIs in Phase 1. Binance public endpoints only; no API key required.
+- Market-data host: default https://data-api.binance.vision (api.binance.com returns HTTP 451 to cloud IPs e.g. GitHub Actions). Hosts are a fallback list; a 451 advances to the next. Override with the BINANCE_API_BASE env var (comma-separated). If every Binance host 451s from the runner, add a cross-exchange fallback (Bybit/OKX) — mind the differing symbol/quote-volume semantics.
 
 ## Data conventions
 - All timestamps and period boundaries are UTC.

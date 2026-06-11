@@ -1,4 +1,13 @@
-"""Binance public API client — universe discovery, klines, prices."""
+"""Binance public market-data client — universe discovery, klines, prices.
+
+Host selection: api.binance.com returns HTTP 451 to cloud IPs (e.g. GitHub
+Actions runners) for legal/geo reasons. data-api.binance.vision is Binance's
+public market-data mirror; it serves the identical /api/v3/* endpoints and
+does NOT geo-block cloud IPs, so it is the default. Hosts are tried in order
+and a 451 from one host advances to the next. Override with the
+BINANCE_API_BASE env var (comma-separated list) without a code change.
+"""
+import os
 import time
 import logging
 from typing import Optional
@@ -16,28 +25,61 @@ except ImportError:
 
 logger = logging.getLogger(__name__)
 
-BASE_URL = "https://api.binance.com"
+# Tried in order; same /api/v3 schema on every host. The .vision mirror is
+# first because it is not geo-blocked from cloud IPs.
+_DEFAULT_HOSTS = [
+    "https://data-api.binance.vision",
+    "https://api.binance.com",
+]
+
+
+def _hosts() -> list[str]:
+    env = os.environ.get("BINANCE_API_BASE")
+    if env:
+        return [h.strip().rstrip("/") for h in env.split(",") if h.strip()]
+    return _DEFAULT_HOSTS
 
 
 def _get(path: str, params: dict = None) -> dict | list:
-    url = f"{BASE_URL}{path}"
-    for attempt in range(4):
-        if attempt > 0:
-            delay = 2 ** attempt  # 2, 4, 8 seconds
-            logger.warning("Retrying %s in %ds (attempt %d)", path, delay, attempt + 1)
-            time.sleep(delay)
-        try:
-            resp = httpx.get(url, params=params, timeout=30)
-            if resp.status_code == 429:
-                logger.warning("Rate limited on %s", path)
-                continue
-            resp.raise_for_status()
-            return resp.json()
-        except httpx.HTTPStatusError as exc:
-            if attempt == 3:
-                raise
-            logger.warning("HTTP %s on %s: %s", exc.response.status_code, path, exc)
-    raise RuntimeError(f"Failed to fetch {path} after retries")
+    """GET a public endpoint, trying each host in turn. A 451 (geo-block)
+    advances immediately to the next host; 429 retries the same host with
+    backoff. Raises the last error if every host fails."""
+    hosts = _hosts()
+    last_exc: Exception | None = None
+
+    for host in hosts:
+        url = f"{host}{path}"
+        for attempt in range(3):
+            if attempt > 0:
+                delay = 2 ** attempt  # 2, 4 seconds
+                logger.warning("Retrying %s on %s in %ds (attempt %d)", path, host, delay, attempt + 1)
+                time.sleep(delay)
+            try:
+                resp = httpx.get(url, params=params, timeout=30)
+                if resp.status_code == 451:
+                    logger.warning("HTTP 451 (geo-block) from %s — trying next host", host)
+                    last_exc = httpx.HTTPStatusError(
+                        "451 geo-block", request=resp.request, response=resp
+                    )
+                    break  # do not retry this host; move to the next
+                if resp.status_code == 429:
+                    logger.warning("Rate limited on %s", host)
+                    last_exc = httpx.HTTPStatusError(
+                        "429 rate limit", request=resp.request, response=resp
+                    )
+                    continue
+                resp.raise_for_status()
+                return resp.json()
+            except httpx.HTTPStatusError as exc:
+                last_exc = exc
+                if exc.response is not None and exc.response.status_code == 451:
+                    break
+                logger.warning("HTTP error on %s%s: %s", host, path, exc)
+            except httpx.HTTPError as exc:  # connect/timeout/transport errors
+                last_exc = exc
+                logger.warning("Transport error on %s%s: %s", host, path, exc)
+
+    raise last_exc or RuntimeError(f"Failed to fetch {path} from all hosts")
 
 
 def get_usdt_pairs() -> list[dict]:
