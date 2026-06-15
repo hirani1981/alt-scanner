@@ -1,66 +1,59 @@
-# Alt Strength Digest - 2026-06-14
+# Alt Strength Digest - 2026-06-15
 
-**Regime [ALT_LED]:** BTC below both vs trend, 55% of alts beating it - neutral; be selective.
+**Regime [ALT_LED]:** BTC mixed vs trend, 58% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 104/146 above W, 29 above M, 59 above Q, 27 above Y.  BTC -11.2% vs monthly open.
+Breadth: 109/145 above W, 28 above M, 67 above Q, 34 above Y.  BTC -9.3% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  none
+  IOTXUSDT       vol_trend=2.64  10d range=11.4%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  TAOUSDT        IGNITE         RS_7d=+24.0%  vol_z=2.0
-  OPENUSDT       RS-divergence  RS_7d=+18.4%  vol_z=0.1
+  GPSUSDT        IGNITE         RS_7d=+18.3%  vol_z=2.0
+  EIGENUSDT      RS-divergence  RS_7d=+12.7%  vol_z=0.7
+  XRPUSDT        RS-divergence  RS_7d=+3.7%  vol_z=1.3
 
 ## New entrants to the Early top-20
-  #1   TAOUSDT        early=0.695  stage=IGNITE
-  #2   ENSOUSDT       early=0.441  stage=-
-  #3   ZKUSDT         early=0.440  stage=-
-  #4   AXLUSDT        early=0.419  stage=-
-  #5   ORCAUSDT       early=0.415  stage=-
-  #6   CRVUSDT        early=0.415  stage=RUN
-  #7   SYNUSDT        early=0.411  stage=-
-  #8   CHIPUSDT       early=0.407  stage=-
-  #9   PYTHUSDT       early=0.404  stage=-
-  #10  ORDIUSDT       early=0.399  stage=-
-  #13  NOTUSDT        early=0.389  stage=-
-  #14  TRUMPUSDT      early=0.387  stage=-
-  #15  ZROUSDT        early=0.384  stage=-
-  #16  ESPUSDT        early=0.383  stage=RUN
-  #17  ATUSDT         early=0.376  stage=-
-  #18  ADAUSDT        early=0.368  stage=-
-  #19  MANTRAUSDT     early=0.368  stage=-
-  #20  AVNTUSDT       early=0.363  stage=-
+  #1   EIGENUSDT      early=0.611  stage=-
+  #2   XRPUSDT        early=0.579  stage=-
+  #3   GPSUSDT        early=0.528  stage=IGNITE
+  #4   MOVRUSDT       early=0.467  stage=-
+  #5   IOTXUSDT       early=0.448  stage=ACCUM
+  #6   ZKUSDT         early=0.447  stage=-
+  #7   ORDIUSDT       early=0.437  stage=-
+  #8   MEGAUSDT       early=0.421  stage=-
+  #10  PYTHUSDT       early=0.414  stage=RUN
+  #11  CHIPUSDT       early=0.409  stage=-
+  #12  ZKCUSDT        early=0.409  stage=-
+  #13  CRVUSDT        early=0.405  stage=RUN
+  #14  TRUMPUSDT      early=0.402  stage=-
+  #15  AVNTUSDT       early=0.395  stage=-
+  #16  ADAUSDT        early=0.394  stage=-
+  #17  BREVUSDT       early=0.394  stage=-
+  #18  PNUTUSDT       early=0.391  stage=-
+  #19  SHIBUSDT       early=0.380  stage=-
+  #20  ATOMUSDT       early=0.380  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  ZKPUSDT        vol_z=10.0  rank=#32  stage=-
-  SPELLUSDT      vol_z=10.0  rank=#93  stage=-
-  ZKCUSDT        vol_z=10.0  rank=#65  stage=-
-  IOTXUSDT       vol_z=9.8  rank=#52  stage=-
-  BREVUSDT       vol_z=8.9  rank=#41  stage=-
-  MIRAUSDT       vol_z=8.9  rank=#50  stage=-
-  JASMYUSDT      vol_z=8.5  rank=#66  stage=-
-  SYNUSDT        vol_z=6.5  rank=#7  stage=-
-  MITOUSDT       vol_z=6.0  rank=#73  stage=-
-  NIGHTUSDT      vol_z=5.0  rank=#76  stage=-
-  REZUSDT        vol_z=4.6  rank=#103  stage=-
-  BANANAS31USDT  vol_z=4.3  rank=#48  stage=COOL
-  TLMUSDT        vol_z=3.9  rank=#40  stage=-
-  KAITOUSDT      vol_z=3.6  rank=#111  stage=-
-  ACMUSDT        vol_z=3.6  rank=#61  stage=-
+  ADXUSDT        vol_z=6.2  rank=#122  stage=-
+  METUSDT        vol_z=4.2  rank=#65  stage=-
+  CHIPUSDT       vol_z=3.8  rank=#11  stage=-
+  JTOUSDT        vol_z=3.8  rank=#112  stage=EXT
+  BONKUSDT       vol_z=3.7  rank=#37  stage=-
+  ZROUSDT        vol_z=3.3  rank=#32  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    TAOUSDT        IGNITE   0.695   0.848   +2.8%  +24.0%  +16.2%   2.0   1.06
-2    ENSOUSDT       -        0.441   0.588   -2.7%   +7.7%   -8.3%   1.1   2.42
-3    ZKUSDT         -        0.440   0.591   +0.2%   +8.1%  -14.5%   0.6   1.27
-4    AXLUSDT        -        0.419   0.549   -5.9%   +6.6%  -12.1%   1.0   1.96
-5    ORCAUSDT       -        0.415   0.562   -2.2%   +5.9%   -5.6%  -0.2   1.62
-6    CRVUSDT        RUN      0.415   0.634   -2.3%  +15.7%  +11.5%  -0.4   2.23
-7    SYNUSDT        -        0.411   0.430   -1.7%   -6.7%  -11.0%   6.5   1.78
-8    CHIPUSDT       -        0.407   0.659   +6.6%  +12.9%  -22.9%   1.3   1.11
-9    PYTHUSDT       -        0.404   0.779   +2.4%  +19.8%   +2.8%   2.4   1.73
-10   ORDIUSDT       -        0.399   0.475   -0.2%  +10.5%   -4.0%  -0.8   1.06
+1    EIGENUSDT      -        0.611   0.854   +6.5%  +12.7%  +36.2%   0.7   0.76
+2    XRPUSDT        -        0.579   0.689   +6.5%   +3.7%   +6.2%   1.3   0.70
+3    GPSUSDT        IGNITE   0.528   0.945  +11.6%  +18.3%  +33.0%   2.0   0.55
+4    MOVRUSDT       -        0.467   0.628   +4.2%   +7.3%  -24.9%   0.4   1.44
+5    IOTXUSDT       ACCUM    0.448   0.526   +1.0%   -3.1%   -7.6%   2.1   2.64
+6    ZKUSDT         -        0.447   0.395   +0.4%   +8.9%  -10.9%  -0.6   1.38
+7    ORDIUSDT       -        0.437   0.494   +0.6%   +7.1%   -5.0%  -0.5   1.07
+8    MEGAUSDT       -        0.421   0.538   -1.9%  +18.3%  -20.9%   0.1   1.04
+9    BIOUSDT        -        0.420   0.237   -3.1%   -4.8%   -6.4%  -0.7   0.85
+10   PYTHUSDT       RUN      0.414   0.667   +0.1%  +19.8%   +4.7%  -0.0   2.04
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
