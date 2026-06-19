@@ -1,62 +1,49 @@
-# Alt Strength Digest - 2026-06-18
+# Alt Strength Digest - 2026-06-19
 
-**Regime [ALT_LED]:** BTC below trend yet 70% of alts beating it - alt rotation under a weak BTC; watch closely.
+**Regime [ALT_LED]:** BTC below trend yet 68% of alts beating it - alt rotation under a weak BTC; watch closely.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 59/142 above W, 26 above M, 62 above Q, 29 above Y.  BTC -14.5% vs monthly open.
+Breadth: 54/142 above W, 27 above M, 59 above Q, 29 above Y.  BTC -14.8% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  REDUSDT        vol_trend=1.60  10d range=19.5%  days flagged=1
-  NIGHTUSDT      vol_trend=3.54  10d range=19.5%  days flagged=1
+  none
 
 ## New IGNITE / RS-divergence flags
-  BELUSDT        IGNITE         RS_7d=+23.3%  vol_z=2.4
-  UNIUSDT        RS-divergence  RS_7d=+29.8%  vol_z=1.4
-  TIAUSDT        RS-divergence  RS_7d=+23.0%  vol_z=-0.5
-  EIGENUSDT      RS-divergence  RS_7d=+24.2%  vol_z=0.1
-  HOLOUSDT       RS-divergence  RS_7d=+16.9%  vol_z=-0.6
-  ZAMAUSDT       RS-divergence  RS_7d=+6.3%  vol_z=0.2
-  XLMUSDT        RS-divergence  RS_7d=+23.4%  vol_z=0.1
+  ASRUSDT        RS-divergence  RS_7d=+13.1%  vol_z=0.9
+  KAITOUSDT      RS-divergence  RS_7d=+23.7%  vol_z=-0.5
+  CAKEUSDT       RS-divergence  RS_7d=+5.8%  vol_z=-1.1
+  ALTUSDT        RS-divergence  RS_7d=+14.5%  vol_z=-0.3
+  IOUSDT         RS-divergence  RS_7d=+6.5%  vol_z=-0.5
 
 ## New entrants to the Early top-20
-  #1   UNIUSDT        early=0.729  stage=-
-  #2   BELUSDT        early=0.677  stage=IGNITE
-  #3   TIAUSDT        early=0.667  stage=RUN
-  #4   EIGENUSDT      early=0.665  stage=RUN
-  #5   HOLOUSDT       early=0.545  stage=-
-  #6   REDUSDT        early=0.519  stage=ACCUM
-  #8   ZROUSDT        early=0.451  stage=-
-  #9   MITOUSDT       early=0.434  stage=-
-  #10  BONKUSDT       early=0.416  stage=-
-  #11  TAOUSDT        early=0.413  stage=-
-  #12  ORCAUSDT       early=0.412  stage=RUN
-  #14  ETHFIUSDT      early=0.386  stage=RUN
-  #15  LDOUSDT        early=0.381  stage=-
-  #16  AAVEUSDT       early=0.380  stage=-
-  #17  WALUSDT        early=0.378  stage=-
-  #18  ENJUSDT        early=0.377  stage=-
-  #19  XPLUSDT        early=0.374  stage=RUN
-  #20  PENDLEUSDT     early=0.372  stage=-
+  #1   ASRUSDT        early=0.694  stage=RUN
+  #2   KAITOUSDT      early=0.690  stage=RUN
+  #4   CAKEUSDT       early=0.632  stage=-
+  #5   ZAMAUSDT       early=0.606  stage=-
+  #6   ALTUSDT        early=0.587  stage=RUN
+  #7   IOUSDT         early=0.482  stage=-
+  #13  KERNELUSDT     early=0.408  stage=RUN
 
 ## Volume surge alerts (vol_z >= 3.0)
-  BLURUSDT       vol_z=10.0  rank=#44  stage=-
-  SYNUSDT        vol_z=10.0  rank=#61  stage=EXT
-  ACTUSDT        vol_z=9.2  rank=#48  stage=-
-  FLOKIUSDT      vol_z=3.5  rank=#29  stage=-
-  WLDUSDT        vol_z=3.4  rank=#125  stage=EXT
+  NIGHTUSDT      vol_z=10.0  rank=#84  stage=COOL
+  BELUSDT        vol_z=7.7  rank=#3  stage=IGNITE
+  ACTUSDT        vol_z=6.9  rank=#48  stage=-
+  KERNELUSDT     vol_z=6.5  rank=#13  stage=RUN
+  METUSDT        vol_z=5.9  rank=#26  stage=RUN
+  BICOUSDT       vol_z=4.6  rank=#110  stage=RUN
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    UNIUSDT        -        0.729   0.777   +1.9%  +29.8%  +13.5%   1.4   2.40
-2    BELUSDT        IGNITE   0.677   0.848  +12.4%  +23.3%  +22.9%   2.4   2.16
-3    TIAUSDT        RUN      0.667   0.605   +2.8%  +23.0%  +24.5%  -0.5   0.99
-4    EIGENUSDT      RUN      0.665   0.808  +12.6%  +24.2%  +48.4%   0.1   1.10
-5    HOLOUSDT       -        0.545   0.545   +3.6%  +16.9%  +10.5%  -0.6   0.56
-6    REDUSDT        ACCUM    0.519   0.586   -0.9%   +8.7%   +1.1%   0.6   1.60
-7    MEGAUSDT       RUN      0.461   0.725  +11.7%  +36.4%   -6.3%   1.4   2.32
-8    ZROUSDT        -        0.451   0.511   +1.0%  +13.5%   -7.7%  -0.2   1.66
-9    MITOUSDT       -        0.434   0.609   -9.9%  +31.8%  -17.1%   1.1   2.70
-10   BONKUSDT       -        0.416   0.257   +0.3%   +4.0%   -6.4%  -0.9   1.26
+1    ASRUSDT        RUN      0.694   0.793   +0.8%  +13.1%  +23.8%   0.9   0.99
+2    KAITOUSDT      RUN      0.690   0.850   +7.4%  +23.7%  +32.0%  -0.5   1.25
+3    BELUSDT        IGNITE   0.667   0.923  +10.1%  +37.8%  +33.2%   7.7   2.16
+4    CAKEUSDT       -        0.632   0.456   +3.4%   +5.8%  +16.1%  -1.1   0.65
+5    ZAMAUSDT       -        0.606   0.652   +4.8%  +15.3%  +49.2%  -1.0   1.00
+6    ALTUSDT        RUN      0.587   0.795   +4.4%  +14.5%  +18.0%  -0.3   0.22
+7    IOUSDT         -        0.482   0.780   +4.5%   +6.5%  +43.2%  -0.5   0.55
+8    MEGAUSDT       -        0.472   0.543  -11.7%  +18.9%  -17.0%  -0.2   2.32
+9    ZROUSDT        -        0.453   0.336   -4.8%   +5.8%  -13.6%  -1.0   1.66
+10   MITOUSDT       -        0.424   0.704   +8.3%  +51.2%  -14.4%  -0.1   2.70
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
