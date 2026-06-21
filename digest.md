@@ -1,51 +1,57 @@
 # Alt Strength Digest - 2026-06-21
 
-**Regime [ALT_LED]:** BTC mixed vs trend, 56% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC mixed vs trend, 54% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 63/147 above W, 26 above M, 57 above Q, 31 above Y.  BTC -12.8% vs monthly open.
+Breadth: 56/139 above W, 25 above M, 54 above Q, 29 above Y.  BTC -13.1% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
   none
 
 ## New IGNITE / RS-divergence flags
-  METUSDT        IGNITE         RS_7d=+68.1%  vol_z=1.9
-  MMTUSDT        IGNITE         RS_7d=+29.3%  vol_z=1.9
-  CAKEUSDT       RS-divergence  RS_7d=+2.3%  vol_z=-1.5
+  METUSDT        IGNITE         RS_7d=+60.6%  vol_z=3.1
+  TNSRUSDT       IGNITE         RS_7d=+50.5%  vol_z=10.0
+  MMTUSDT        IGNITE         RS_7d=+25.8%  vol_z=2.8
 
 ## New entrants to the Early top-20
-  #1   METUSDT        early=0.709  stage=IGNITE
-  #2   CAKEUSDT       early=0.639  stage=-
-  #4   MMTUSDT        early=0.456  stage=IGNITE
-  #5   NIGHTUSDT      early=0.428  stage=ACCUM
-  #6   RESOLVUSDT     early=0.404  stage=-
-  #11  VELODROMEUSDT  early=0.384  stage=RUN
-  #13  IOUSDT         early=0.380  stage=-
-  #14  YGGUSDT        early=0.380  stage=RUN
-  #16  ACEUSDT        early=0.374  stage=-
-  #19  MANAUSDT       early=0.373  stage=RUN
-  #20  LISTAUSDT      early=0.369  stage=-
+  #1   METUSDT        early=0.715  stage=IGNITE
+  #2   TNSRUSDT       early=0.619  stage=IGNITE
+  #3   MMTUSDT        early=0.458  stage=IGNITE
+  #7   YGGUSDT        early=0.401  stage=-
+  #9   MANAUSDT       early=0.394  stage=RUN
+  #11  SANDUSDT       early=0.389  stage=-
+  #13  MASKUSDT       early=0.384  stage=RUN
+  #16  KAVAUSDT       early=0.377  stage=RUN
+  #17  CHIPUSDT       early=0.376  stage=-
+  #18  RAREUSDT       early=0.375  stage=-
+  #19  TLMUSDT        early=0.369  stage=-
+  #20  SOLUSDT        early=0.358  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  TNSRUSDT       vol_z=10.0  rank=#89  stage=EXT
-  RESOLVUSDT     vol_z=9.0  rank=#6  stage=-
-  KAVAUSDT       vol_z=8.0  rank=#25  stage=RUN
-  ACEUSDT        vol_z=6.9  rank=#16  stage=-
-  XAIUSDT        vol_z=4.7  rank=#74  stage=-
-  ALICEUSDT      vol_z=3.3  rank=#48  stage=-
+  TNSRUSDT       vol_z=10.0  rank=#2  stage=IGNITE
+  RESOLVUSDT     vol_z=10.0  rank=#31  stage=-
+  KAVAUSDT       vol_z=8.5  rank=#16  stage=RUN
+  ACEUSDT        vol_z=7.9  rank=#27  stage=-
+  XAIUSDT        vol_z=7.3  rank=#43  stage=-
+  2ZUSDT         vol_z=7.2  rank=#21  stage=-
+  ALICEUSDT      vol_z=3.9  rank=#32  stage=-
+  DYMUSDT        vol_z=3.5  rank=#36  stage=RUN
+  METUSDT        vol_z=3.1  rank=#1  stage=IGNITE
+  PYRUSDT        vol_z=3.1  rank=#64  stage=-
+  WUSDT          vol_z=3.1  rank=#33  stage=RUN
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    METUSDT        IGNITE   0.709   0.920  +12.2%  +68.1%  +54.8%   1.9   3.18
-2    CAKEUSDT       -        0.639   0.381   +0.9%   +2.3%  +15.2%  -1.5   0.62
-3    EIGENUSDT      RUN      0.553   0.876   +5.9%  +34.3%  +59.4%   0.4   1.52
-4    MMTUSDT        IGNITE   0.456   0.900   +9.5%  +29.3%  +57.1%   1.9   0.55
-5    NIGHTUSDT      ACCUM    0.428   0.658   +2.7%   +5.1%  +16.5%  -0.4   3.97
-6    RESOLVUSDT     -        0.404   0.469  -15.0%   +0.0%  -25.7%   9.0   1.61
-7    ORCAUSDT       RUN      0.402   0.707   -0.0%  +10.1%   +4.2%  -0.5   1.44
-8    ENJUSDT        RUN      0.396   0.613   -4.9%  +13.1%   -4.8%  -0.5   1.59
-9    UNIUSDT        RUN      0.392   0.606   +0.4%  +19.1%   +4.2%  -0.7   2.47
-10   PENDLEUSDT     RUN      0.386   0.606   +3.4%   +7.8%   -6.4%  -0.8   0.87
+1    METUSDT        IGNITE   0.715   0.911   +7.2%  +60.6%  +47.9%   3.1   3.18
+2    TNSRUSDT       IGNITE   0.619   0.935  +42.9%  +50.5%  +37.3%  10.0   1.00
+3    MMTUSDT        IGNITE   0.458   0.887   +6.5%  +25.8%  +52.8%   2.8   0.55
+4    ORCAUSDT       RUN      0.422   0.636   -1.5%   +8.6%   +2.7%  -0.4   1.44
+5    PENDLEUSDT     RUN      0.406   0.624   +2.8%   +7.1%   -7.0%  -0.4   0.87
+6    UNIUSDT        RUN      0.402   0.642   +1.2%  +20.0%   +5.0%  -0.5   2.47
+7    YGGUSDT        -        0.401   0.554   -1.3%   +4.7%  -15.5%   1.4   0.85
+8    LDOUSDT        -        0.401   0.387   +0.7%   +5.8%   -4.0%  -1.2   1.33
+9    MANAUSDT       RUN      0.394   0.647   -3.4%  +13.1%   +3.4%   1.7   2.10
+10   ZKUSDT         -        0.392   0.306   -1.0%   +2.3%   -5.0%  -1.1   0.76
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
