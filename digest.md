@@ -1,66 +1,58 @@
-# Alt Strength Digest - 2026-06-24
+# Alt Strength Digest - 2026-06-25
 
-**Regime [BTC_LED]:** BTC below trend, 39% of alts beating it - defensive; treat signals with suspicion.
+**Regime [BTC_LED]:** BTC below both vs trend, 43% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 33/145 above W, 20 above M, 49 above Q, 23 above Y.  BTC -17.4% vs monthly open.
+Breadth: 45/145 above W, 22 above M, 46 above Q, 22 above Y.  BTC -17.0% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  HYPERUSDT      vol_trend=1.99  10d range=21.9%  days flagged=1
+  CELOUSDT       vol_trend=2.76  10d range=16.2%  days flagged=1
+  ENSOUSDT       vol_trend=1.61  10d range=22.0%  days flagged=1
+  HYPERUSDT      vol_trend=3.02  10d range=20.0%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  AAVEUSDT       IGNITE         RS_7d=+12.1%  vol_z=2.9
-  DODOUSDT       IGNITE         RS_7d=+23.8%  vol_z=3.0
-  TRXUSDT        RS-divergence  RS_7d=+8.0%  vol_z=0.4
-  BFUSDUSDT      RS-divergence  RS_7d=+6.0%  vol_z=-0.3
-  XUSDUSDT       RS-divergence  RS_7d=+6.1%  vol_z=0.2
-  USDEUSDT       RS-divergence  RS_7d=+6.0%  vol_z=-0.6
-  IDUSDT         RS-divergence  RS_7d=+29.5%  vol_z=0.4
-  QUICKUSDT      RS-divergence  RS_7d=+44.8%  vol_z=2.6
+  METUSDT        RS-divergence  RS_7d=+53.0%  vol_z=-0.4
+  AAVEUSDT       RS-divergence  RS_7d=+13.0%  vol_z=1.1
+  TRXUSDT        RS-divergence  RS_7d=+5.7%  vol_z=-1.4
+  CAKEUSDT       RS-divergence  RS_7d=+2.2%  vol_z=-1.2
+  WLFIUSDT       RS-divergence  RS_7d=+5.4%  vol_z=-0.5
+  DEXEUSDT       RS-divergence  RS_7d=+55.3%  vol_z=-0.8
 
 ## New entrants to the Early top-20
-  #2   TRXUSDT        early=0.691  stage=RUN
-  #3   BFUSDUSDT      early=0.682  stage=RUN
-  #4   DODOUSDT       early=0.673  stage=IGNITE
-  #5   XUSDUSDT       early=0.557  stage=RUN
-  #6   USDEUSDT       early=0.549  stage=-
-  #7   USDSUSDT       early=0.491  stage=RUN
-  #8   SAGAUSDT       early=0.476  stage=-
-  #9   HYPERUSDT      early=0.454  stage=ACCUM
-  #11  VICUSDT        early=0.438  stage=-
-  #12  UUSDT          early=0.432  stage=RUN
-  #13  RESOLVUSDT     early=0.426  stage=RUN
-  #14  WUSDT          early=0.418  stage=-
-  #15  EDUUSDT        early=0.409  stage=-
-  #16  AVAXUSDT       early=0.408  stage=-
-  #17  LAYERUSDT      early=0.402  stage=-
-  #20  FIDAUSDT       early=0.382  stage=-
+  #1   METUSDT        early=0.721  stage=RUN
+  #3   TRXUSDT        early=0.704  stage=-
+  #4   CAKEUSDT       early=0.586  stage=-
+  #5   WLFIUSDT       early=0.560  stage=-
+  #6   CELOUSDT       early=0.499  stage=ACCUM
+  #7   ENSOUSDT       early=0.488  stage=ACCUM
+  #8   HYPERUSDT      early=0.480  stage=ACCUM
+  #9   SAGAUSDT       early=0.474  stage=-
+  #10  EDUUSDT        early=0.433  stage=-
+  #12  AVAXUSDT       early=0.409  stage=-
+  #13  MEUSDT         early=0.406  stage=-
+  #14  LAYERUSDT      early=0.402  stage=-
+  #16  TNSRUSDT       early=0.390  stage=RUN
+  #17  ALICEUSDT      early=0.379  stage=RUN
+  #18  AXSUSDT        early=0.376  stage=RUN
+  #19  ONGUSDT        early=0.374  stage=-
+  #20  GUSDT          early=0.373  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  HYPERUSDT      vol_z=10.0  rank=#9  stage=ACCUM
-  QKCUSDT        vol_z=10.0  rank=#38  stage=-
-  MEGAUSDT       vol_z=10.0  rank=#32  stage=-
-  CELOUSDT       vol_z=10.0  rank=#44  stage=-
-  BARUSDT        vol_z=6.3  rank=#45  stage=-
-  GUSDT          vol_z=6.0  rank=#30  stage=-
-  ATMUSDT        vol_z=5.4  rank=#58  stage=EXT
-  LAZIOUSDT      vol_z=5.2  rank=#107  stage=-
-  TOWNSUSDT      vol_z=3.8  rank=#61  stage=-
-  AVNTUSDT       vol_z=3.7  rank=#74  stage=-
-  DODOUSDT       vol_z=3.0  rank=#4  stage=IGNITE
+  XPLUSDT        vol_z=10.0  rank=#50  stage=COOL
+  MEUSDT         vol_z=3.9  rank=#13  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    AAVEUSDT       IGNITE   0.705   0.783  +11.2%  +12.1%  +15.0%   2.9   0.82
-2    TRXUSDT        RUN      0.691   0.742   +2.7%   +8.0%  +12.1%   0.4   0.82
-3    BFUSDUSDT      RUN      0.682   0.557   +3.1%   +6.0%  +27.1%  -0.3   1.03
-4    DODOUSDT       IGNITE   0.673   0.937  +19.9%  +23.8%  +30.3%   3.0   1.06
-5    XUSDUSDT       RUN      0.557   0.794   +3.2%   +6.1%  +27.2%   0.2   0.32
-6    USDEUSDT       -        0.549   0.457   +3.1%   +6.0%  +27.0%  -0.6   0.21
-7    USDSUSDT       RUN      0.491   0.787   +3.2%   +6.1%  +27.2%   1.5   0.64
-8    SAGAUSDT       -        0.476   0.327   -2.9%   +4.8%  -26.2%  -0.4   1.36
-9    HYPERUSDT      ACCUM    0.454   0.538   -2.5%   -3.4%   -7.1%  10.0   1.99
-10   MITOUSDT       -        0.447   0.370   -0.6%  -10.8%  -18.0%   0.8   0.89
+1    METUSDT        RUN      0.721   0.816   +4.2%  +53.0%  +44.7%  -0.4   2.70
+2    AAVEUSDT       RUN      0.716   0.824   +2.2%  +13.0%  +19.0%   1.1   1.14
+3    TRXUSDT        -        0.704   0.495   +0.5%   +5.7%   +8.9%  -1.4   0.89
+4    CAKEUSDT       -        0.586   0.428   +0.5%   +2.2%  +15.9%  -1.2   0.61
+5    WLFIUSDT       -        0.560   0.728   +5.8%   +5.4%  +33.2%  -0.5   0.50
+6    CELOUSDT       ACCUM    0.499   0.645   -6.2%   +5.1%   +3.9%   2.6   2.76
+7    ENSOUSDT       ACCUM    0.488   0.682   +4.0%   +6.8%   +2.4%  -0.3   1.61
+8    HYPERUSDT      ACCUM    0.480   0.761   +9.4%   +6.6%   +4.9%   2.7   3.02
+9    SAGAUSDT       -        0.474   0.456   +1.1%   +5.7%  -14.9%  -0.9   1.77
+10   EDUUSDT        -        0.433   0.379   -1.0%  +10.3%  -18.8%  -1.2   1.38
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
