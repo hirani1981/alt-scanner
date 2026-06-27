@@ -1,65 +1,66 @@
 # Alt Strength Digest - 2026-06-27
 
-**Regime [NEUTRAL]:** BTC below both vs trend, 52% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC below both vs trend, 46% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 42/134 above W, 22 above M, 46 above Q, 21 above Y.  BTC -17.5% vs monthly open.
+Breadth: 37/130 above W, 17 above M, 42 above Q, 19 above Y.  BTC -18.2% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  EURIUSDT       vol_trend=1.78  10d range=5.5%  days flagged=1
-  HYPERUSDT      vol_trend=4.11  10d range=20.1%  days flagged=1
-  CELOUSDT       vol_trend=4.09  10d range=19.0%  days flagged=1
-  TAOUSDT        vol_trend=1.90  10d range=20.7%  days flagged=1
+  HYPERUSDT      vol_trend=4.11  10d range=20.5%  days flagged=1
+  CELOUSDT       vol_trend=4.09  10d range=19.9%  days flagged=1
+  TAOUSDT        vol_trend=1.90  10d range=21.2%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  AGLDUSDT       IGNITE         RS_7d=+44.6%  vol_z=8.3
-  WIFUSDT        IGNITE         RS_7d=+18.6%  vol_z=4.5
-  SOLUSDT        RS-divergence  RS_7d=+5.1%  vol_z=-1.4
-  JSTUSDT        RS-divergence  RS_7d=+8.0%  vol_z=-0.9
-  MMTUSDT        RS-divergence  RS_7d=+31.9%  vol_z=-0.3
-  METUSDT        RS-divergence  RS_7d=+17.2%  vol_z=-0.1
+  AGLDUSDT       IGNITE         RS_7d=+44.1%  vol_z=8.9
+  HOTUSDT        IGNITE         RS_7d=+22.7%  vol_z=10.0
+  JSTUSDT        RS-divergence  RS_7d=+9.5%  vol_z=-0.8
+  METUSDT        RS-divergence  RS_7d=+14.4%  vol_z=-0.0
 
 ## New entrants to the Early top-20
-  #1   SOLUSDT        early=0.679  stage=-
-  #2   AGLDUSDT       early=0.667  stage=IGNITE
-  #3   JSTUSDT        early=0.626  stage=RUN
-  #4   WIFUSDT        early=0.625  stage=IGNITE
-  #5   KAITOUSDT      early=0.503  stage=-
-  #6   EURIUSDT       early=0.501  stage=ACCUM
-  #7   HYPERUSDT      early=0.491  stage=ACCUM
-  #8   CELOUSDT       early=0.459  stage=ACCUM
-  #9   LAYERUSDT      early=0.438  stage=RUN
-  #11  AVAXUSDT       early=0.403  stage=-
-  #12  CHRUSDT        early=0.391  stage=-
-  #13  PUNDIXUSDT     early=0.390  stage=-
-  #14  GUSDT          early=0.384  stage=RUN
-  #15  RESOLVUSDT     early=0.381  stage=RUN
-  #16  SPKUSDT        early=0.378  stage=-
-  #17  TNSRUSDT       early=0.371  stage=RUN
-  #19  LUMIAUSDT      early=0.366  stage=RUN
-  #20  DYDXUSDT       early=0.365  stage=RUN
+  #1   AGLDUSDT       early=0.678  stage=IGNITE
+  #2   JSTUSDT        early=0.625  stage=RUN
+  #3   HOTUSDT        early=0.609  stage=IGNITE
+  #4   KAITOUSDT      early=0.507  stage=-
+  #5   HYPERUSDT      early=0.498  stage=ACCUM
+  #6   CELOUSDT       early=0.485  stage=ACCUM
+  #8   LAYERUSDT      early=0.436  stage=RUN
+  #9   AVAXUSDT       early=0.409  stage=-
+  #10  PUNDIXUSDT     early=0.405  stage=-
+  #11  PSGUSDT        early=0.404  stage=-
+  #12  CHRUSDT        early=0.396  stage=-
+  #13  RESOLVUSDT     early=0.392  stage=RUN
+  #14  0GUSDT         early=0.392  stage=-
+  #15  GUSDT          early=0.384  stage=RUN
+  #16  TNSRUSDT       early=0.377  stage=RUN
+  #18  DYDXUSDT       early=0.369  stage=RUN
+  #19  SNXUSDT        early=0.357  stage=-
+  #20  AWEUSDT        early=0.355  stage=RUN
 
 ## Volume surge alerts (vol_z >= 3.0)
-  ARKUSDT        vol_z=10.0  rank=#64  stage=-
-  PIVXUSDT       vol_z=10.0  rank=#63  stage=-
-  GLMUSDT        vol_z=10.0  rank=#45  stage=-
-  SNXUSDT        vol_z=8.6  rank=#22  stage=-
-  AGLDUSDT       vol_z=8.3  rank=#2  stage=IGNITE
-  CVCUSDT        vol_z=6.4  rank=#50  stage=-
-  WIFUSDT        vol_z=4.5  rank=#4  stage=IGNITE
+  HOTUSDT        vol_z=10.0  rank=#3  stage=IGNITE
+  QIUSDT         vol_z=10.0  rank=#57  stage=-
+  SNXUSDT        vol_z=10.0  rank=#19  stage=-
+  GLMUSDT        vol_z=10.0  rank=#61  stage=-
+  PIVXUSDT       vol_z=10.0  rank=#45  stage=-
+  ARKUSDT        vol_z=10.0  rank=#51  stage=-
+  AGLDUSDT       vol_z=8.9  rank=#1  stage=IGNITE
+  CVCUSDT        vol_z=7.3  rank=#43  stage=-
+  WIFUSDT        vol_z=5.9  rank=#44  stage=-
+  SUSDT          vol_z=4.3  rank=#33  stage=-
+  CELOUSDT       vol_z=3.0  rank=#6  stage=ACCUM
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    SOLUSDT        -        0.679   0.383   +0.1%   +5.1%   +7.4%  -1.4   1.13
-2    AGLDUSDT       IGNITE   0.667   0.818   +0.7%  +44.6%  +24.5%   8.3   3.77
-3    JSTUSDT        RUN      0.626   0.645   +2.9%   +8.0%  +10.9%  -0.9   0.56
-4    WIFUSDT        IGNITE   0.625   0.843  +16.3%  +18.6%  +19.9%   4.5   1.10
-5    KAITOUSDT      -        0.503   0.921   +8.1%  +28.6%  +51.3%   0.8   1.38
-6    EURIUSDT       ACCUM    0.501   0.538   -1.0%   +5.1%  +18.4%  -0.6   1.78
-7    HYPERUSDT      ACCUM    0.491   0.649   -4.1%   +5.7%   +8.3%   2.3   4.11
-8    CELOUSDT       ACCUM    0.459   0.746   +9.4%   +7.3%   +7.5%   2.7   4.09
-9    LAYERUSDT      RUN      0.438   0.654   +3.4%   +8.2%   -6.0%  -0.1   2.94
-10   TAOUSDT        ACCUM    0.430   0.360   -1.3%   -2.2%   -0.7%  -0.8   1.90
+1    AGLDUSDT       IGNITE   0.678   0.810   +0.3%  +44.1%  +24.0%   8.9   3.77
+2    JSTUSDT        RUN      0.625   0.650   +4.4%   +9.5%  +12.5%  -0.8   0.56
+3    HOTUSDT        IGNITE   0.609   0.822  +22.0%  +22.7%  +18.2%  10.0   0.75
+4    KAITOUSDT      -        0.507   0.897   +6.7%  +26.9%  +49.2%   1.0   1.38
+5    HYPERUSDT      ACCUM    0.498   0.643   -4.9%   +4.8%   +7.5%   2.6   4.11
+6    CELOUSDT       ACCUM    0.485   0.698   +5.7%   +3.7%   +3.9%   3.0   4.09
+7    TAOUSDT        ACCUM    0.437   0.351   -2.4%   -3.3%   -1.9%  -0.7   1.90
+8    LAYERUSDT      RUN      0.436   0.623   +2.2%   +6.8%   -7.2%  -0.1   2.94
+9    AVAXUSDT       -        0.409   0.463   -3.7%   +9.6%  -12.3%  -0.6   1.06
+10   PUNDIXUSDT     -        0.405   0.587   +3.8%   +2.2%  -13.3%   3.0   1.80
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
