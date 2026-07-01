@@ -1,79 +1,62 @@
-# Alt Strength Digest - 2026-06-30
+# Alt Strength Digest - 2026-07-01
 
-**Regime [ALT_LED]:** BTC below trend yet 67% of alts beating it - alt rotation under a weak BTC; watch closely.
+**Regime [ALT_LED]:** BTC below trend yet 66% of alts beating it - alt rotation under a weak BTC; watch closely.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 55/131 above W, 18 above M, 44 above Q, 21 above Y.  BTC -20.5% vs monthly open.
+Breadth: 69/135 above W, 69 above M, 69 above Q, 22 above Y.  BTC +0.1% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  HYPERUSDT      vol_trend=3.92  10d range=17.7%  days flagged=1
+  HYPERUSDT      vol_trend=4.76  10d range=17.6%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  AIUSDT         IGNITE         RS_7d=+30.4%  vol_z=9.0
-  ESPUSDT        IGNITE         RS_7d=+24.5%  vol_z=4.8
-  NMRUSDT        IGNITE         RS_7d=+5.6%  vol_z=2.2
-  APEUSDT        RS-divergence  RS_7d=+17.5%  vol_z=-0.3
-  EURIUSDT       RS-divergence  RS_7d=+7.4%  vol_z=0.8
-  SOLUSDT        RS-divergence  RS_7d=+12.8%  vol_z=-0.1
-  BFUSDUSDT      RS-divergence  RS_7d=+7.1%  vol_z=-0.4
-  DYDXUSDT       RS-divergence  RS_7d=+27.3%  vol_z=0.5
-  XUSDUSDT       RS-divergence  RS_7d=+7.1%  vol_z=-0.6
-  JSTUSDT        RS-divergence  RS_7d=+13.1%  vol_z=-0.6
-  UUSDT          RS-divergence  RS_7d=+7.1%  vol_z=-0.3
-  MORPHOUSDT     RS-divergence  RS_7d=+23.8%  vol_z=-0.1
-  USDEUSDT       RS-divergence  RS_7d=+7.0%  vol_z=-0.4
-  MEMEUSDT       RS-divergence  RS_7d=+21.9%  vol_z=-0.4
-  DODOUSDT       RS-divergence  RS_7d=+30.9%  vol_z=3.0
-  AIGENSYNUSDT   RS-divergence  RS_7d=+53.9%  vol_z=10.0
-  DEXEUSDT       RS-divergence  RS_7d=+6.3%  vol_z=-0.8
+  SOLUSDT        RS-divergence  RS_7d=+14.5%  vol_z=-1.3
+  JSTUSDT        RS-divergence  RS_7d=+14.2%  vol_z=-1.1
+  WLFIUSDT       RS-divergence  RS_7d=+6.6%  vol_z=-1.3
+  MORPHOUSDT     RS-divergence  RS_7d=+18.7%  vol_z=-0.7
+  NMRUSDT        RS-divergence  RS_7d=+13.6%  vol_z=-0.4
+  METUSDT        RS-divergence  RS_7d=+12.8%  vol_z=-0.4
+  DYDXUSDT       RS-divergence  RS_7d=+32.0%  vol_z=10.0
+  MEMEUSDT       RS-divergence  RS_7d=+30.5%  vol_z=-0.4
 
 ## New entrants to the Early top-20
-  #1   APEUSDT        early=0.707  stage=RUN
-  #2   EURIUSDT       early=0.703  stage=RUN
-  #3   SOLUSDT        early=0.698  stage=RUN
-  #4   BFUSDUSDT      early=0.697  stage=RUN
-  #5   DYDXUSDT       early=0.696  stage=RUN
-  #6   AIUSDT         early=0.678  stage=IGNITE
-  #7   ESPUSDT        early=0.667  stage=IGNITE
-  #8   XUSDUSDT       early=0.659  stage=RUN
-  #9   JSTUSDT        early=0.641  stage=RUN
-  #10  UUSDT          early=0.637  stage=RUN
-  #11  MORPHOUSDT     early=0.626  stage=RUN
-  #12  USDEUSDT       early=0.609  stage=-
-  #13  ZAMAUSDT       early=0.585  stage=-
-  #14  NMRUSDT        early=0.540  stage=IGNITE
-  #15  MEMEUSDT       early=0.522  stage=RUN
-  #16  HYPERUSDT      early=0.508  stage=ACCUM
-  #17  SUSDT          early=0.438  stage=-
-  #18  GASUSDT        early=0.429  stage=-
-  #19  CHRUSDT        early=0.416  stage=-
-  #20  AVAXUSDT       early=0.403  stage=-
+  #1   SOLUSDT        early=0.694  stage=-
+  #2   JSTUSDT        early=0.662  stage=RUN
+  #3   WLFIUSDT       early=0.661  stage=-
+  #4   MORPHOUSDT     early=0.629  stage=RUN
+  #5   NMRUSDT        early=0.610  stage=-
+  #6   HYPERUSDT      early=0.525  stage=ACCUM
+  #7   SUSDT          early=0.448  stage=-
+  #8   CHRUSDT        early=0.421  stage=-
+  #9   ONGUSDT        early=0.412  stage=-
+  #10  AGLDUSDT       early=0.410  stage=RUN
+  #11  AIUSDT         early=0.400  stage=-
+  #12  GLMUSDT        early=0.398  stage=-
+  #13  ACTUSDT        early=0.392  stage=-
+  #14  AVAXUSDT       early=0.390  stage=-
+  #15  PUMPUSDT       early=0.389  stage=-
+  #16  GUSDT          early=0.375  stage=RUN
+  #17  APEUSDT        early=0.372  stage=-
+  #18  WIFUSDT        early=0.372  stage=RUN
+  #20  EURIUSDT       early=0.360  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  HYPERUSDT      vol_z=10.0  rank=#16  stage=ACCUM
-  CELOUSDT       vol_z=10.0  rank=#39  stage=-
-  AIGENSYNUSDT   vol_z=10.0  rank=#49  stage=EXT
-  ONGUSDT        vol_z=9.3  rank=#26  stage=-
-  AIUSDT         vol_z=9.0  rank=#6  stage=IGNITE
-  GLMUSDT        vol_z=6.9  rank=#29  stage=-
-  PYTHUSDT       vol_z=5.8  rank=#52  stage=-
-  ESPUSDT        vol_z=4.8  rank=#7  stage=IGNITE
-  ONTUSDT        vol_z=3.7  rank=#44  stage=-
-  GASUSDT        vol_z=3.2  rank=#18  stage=-
-  DODOUSDT       vol_z=3.0  rank=#37  stage=EXT
+  DYDXUSDT       vol_z=10.0  rank=#30  stage=EXT
+  CELOUSDT       vol_z=10.0  rank=#35  stage=-
+  THEUSDT        vol_z=10.0  rank=#53  stage=-
+  NFPUSDT        vol_z=8.9  rank=#48  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    APEUSDT        RUN      0.707   0.734   +1.9%  +17.5%  +30.5%  -0.3   1.49
-2    EURIUSDT       RUN      0.703   0.728   +4.7%   +7.4%  +23.1%   0.8   1.63
-3    SOLUSDT        RUN      0.698   0.641   +0.5%  +12.8%  +12.0%  -0.1   1.09
-4    BFUSDUSDT      RUN      0.697   0.630   +2.9%   +7.1%  +25.7%  -0.4   1.07
-5    DYDXUSDT       RUN      0.696   0.841  +14.9%  +27.3%  +17.5%   0.5   0.96
-6    AIUSDT         IGNITE   0.678   0.854  +19.8%  +30.4%  +12.2%   9.0   1.32
-7    ESPUSDT        IGNITE   0.667   0.828   +0.3%  +24.5%  +33.6%   4.8   1.20
-8    XUSDUSDT       RUN      0.659   0.617   +2.8%   +7.1%  +25.7%  -0.6   0.79
-9    JSTUSDT        RUN      0.641   0.619   +2.7%  +13.1%  +17.7%  -0.6   0.61
-10   UUSDT          RUN      0.637   0.610   +2.8%   +7.1%  +25.7%  -0.3   0.67
+1    SOLUSDT        -        0.694   0.568   +1.6%  +14.5%  +12.2%  -1.3   1.02
+2    JSTUSDT        RUN      0.662   0.647   +1.7%  +14.2%  +13.9%  -1.1   0.62
+3    WLFIUSDT       -        0.661   0.548   +1.8%   +6.6%  +21.3%  -1.3   0.73
+4    MORPHOUSDT     RUN      0.629   0.773   +3.5%  +18.7%  +15.6%  -0.7   0.68
+5    NMRUSDT        -        0.610   0.814   +3.6%  +13.6%  +30.9%  -0.4   1.09
+6    HYPERUSDT      ACCUM    0.525   0.656   -0.2%  +13.9%   +5.9%  -0.3   4.76
+7    SUSDT          -        0.448   0.432   -2.0%  +10.9%  -32.8%  -0.6   2.22
+8    CHRUSDT        -        0.421   0.563   -0.0%   +5.6%  -19.9%   0.6   2.63
+9    ONGUSDT        -        0.412   0.464   -5.8%   +0.6%  -10.1%   0.3   2.16
+10   AGLDUSDT       RUN      0.410   0.636   -3.6%  +25.1%   -3.3%  -0.3   4.79
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
