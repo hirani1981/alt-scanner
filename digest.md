@@ -1,66 +1,55 @@
-# Alt Strength Digest - 2026-07-03
+# Alt Strength Digest - 2026-07-04
 
-**Regime [ALT_LED]:** BTC mixed vs trend, 61% of alts beating it - neutral; be selective.
+**Regime [ALT_LED]:** BTC mixed vs trend, 67% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 125/144 above W, 125 above M, 125 above Q, 23 above Y.  BTC +6.8% vs monthly open.
+Breadth: 121/144 above W, 123 above M, 123 above Q, 23 above Y.  BTC +6.5% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  HYPERUSDT      vol_trend=4.26  10d range=16.8%  days flagged=1
+  none
 
 ## New IGNITE / RS-divergence flags
-  NOMUSDT        IGNITE         RS_7d=+58.8%  vol_z=3.3
-  ARPAUSDT       IGNITE         RS_7d=+23.5%  vol_z=10.0
-  RAYUSDT        RS-divergence  RS_7d=+11.0%  vol_z=0.6
-  SOLUSDT        RS-divergence  RS_7d=+10.0%  vol_z=-0.9
+  ARPAUSDT       RS-divergence  RS_7d=+27.4%  vol_z=1.1
 
 ## New entrants to the Early top-20
-  #1   RAYUSDT        early=0.714  stage=RUN
-  #2   SOLUSDT        early=0.698  stage=-
-  #3   NOMUSDT        early=0.685  stage=IGNITE
-  #4   ARPAUSDT       early=0.485  stage=IGNITE
-  #5   SUSDT          early=0.463  stage=RUN
-  #6   CHRUSDT        early=0.434  stage=-
-  #7   PUMPUSDT       early=0.399  stage=RUN
-  #8   THEUSDT        early=0.395  stage=-
-  #9   BREVUSDT       early=0.391  stage=-
-  #10  MEUSDT         early=0.390  stage=-
-  #11  SKYUSDT        early=0.388  stage=RUN
-  #12  AVAXUSDT       early=0.381  stage=-
-  #13  RPLUSDT        early=0.380  stage=RUN
-  #14  WIFUSDT        early=0.380  stage=RUN
-  #15  HYPERUSDT      early=0.380  stage=ACCUM
-  #16  ARBUSDT        early=0.379  stage=-
-  #17  ORDIUSDT       early=0.368  stage=-
-  #18  BANANAUSDT     early=0.366  stage=-
-  #19  AIGENSYNUSDT   early=0.366  stage=RUN
-  #20  SLPUSDT        early=0.363  stage=-
+  #1   ARPAUSDT       early=0.649  stage=-
+  #2   SUSDT          early=0.438  stage=RUN
+  #3   THEUSDT        early=0.420  stage=-
+  #4   SLPUSDT        early=0.402  stage=RUN
+  #5   BANANAUSDT     early=0.396  stage=-
+  #6   PUMPUSDT       early=0.392  stage=-
+  #7   BREVUSDT       early=0.390  stage=-
+  #8   NOMUSDT        early=0.387  stage=-
+  #9   ARBUSDT        early=0.379  stage=-
+  #10  AVAXUSDT       early=0.376  stage=-
+  #11  MIRAUSDT       early=0.373  stage=-
+  #12  TRBUSDT        early=0.371  stage=RUN
+  #13  RAYUSDT        early=0.370  stage=RUN
+  #14  LTCUSDT        early=0.369  stage=-
+  #15  SNXUSDT        early=0.364  stage=-
+  #16  PYTHUSDT       early=0.363  stage=-
+  #17  NFPUSDT        early=0.362  stage=-
+  #18  STRKUSDT       early=0.361  stage=-
+  #19  ZKPUSDT        early=0.358  stage=-
+  #20  WIFUSDT        early=0.357  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  ARPAUSDT       vol_z=10.0  rank=#4  stage=IGNITE
-  ZKPUSDT        vol_z=10.0  rank=#113  stage=-
-  BANANAUSDT     vol_z=10.0  rank=#18  stage=-
-  AIGENSYNUSDT   vol_z=8.3  rank=#19  stage=RUN
-  MANAUSDT       vol_z=8.0  rank=#109  stage=-
-  THEUSDT        vol_z=7.5  rank=#8  stage=-
-  SLPUSDT        vol_z=5.0  rank=#20  stage=-
-  TLMUSDT        vol_z=4.4  rank=#71  stage=EXT
-  TRBUSDT        vol_z=4.1  rank=#33  stage=RUN
-  VANRYUSDT      vol_z=3.9  rank=#69  stage=-
-  NOMUSDT        vol_z=3.3  rank=#3  stage=IGNITE
+  GLMRUSDT       vol_z=10.0  rank=#135  stage=EXT
+  DOGSUSDT       vol_z=7.8  rank=#117  stage=-
+  STORJUSDT      vol_z=6.3  rank=#30  stage=RUN
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    RAYUSDT        RUN      0.714   0.782   +3.8%  +11.0%  +15.3%   0.6   1.37
-2    SOLUSDT        -        0.698   0.491   +0.3%  +10.0%  +17.9%  -0.9   1.12
-3    NOMUSDT        IGNITE   0.685   0.906  +32.8%  +58.8%   +8.9%   3.3   2.83
-4    ARPAUSDT       IGNITE   0.485   0.916  +27.6%  +23.5%  +11.0%  10.0   0.37
-5    SUSDT          RUN      0.463   0.716   +7.5%  +29.2%  -24.6%   0.4   2.07
-6    CHRUSDT        -        0.434   0.584   -0.2%   -1.0%  -16.7%   2.8   2.33
-7    PUMPUSDT       RUN      0.399   0.699   +4.9%  +15.8%   -5.7%  -0.1   1.37
-8    THEUSDT        -        0.395   0.797   +5.0%  +14.9%  -14.1%   7.5   3.50
-9    BREVUSDT       -        0.391   0.593   -9.6%   +4.1%  -15.7%   0.6   2.65
-10   MEUSDT         -        0.390   0.587   -4.6%   +5.8%  -11.0%   0.2   2.02
+1    ARPAUSDT       -        0.649   0.889   +1.4%  +27.4%  +18.1%   1.1   4.31
+2    SUSDT          RUN      0.438   0.649   -0.3%  +16.8%  -17.4%  -0.6   1.15
+3    THEUSDT        -        0.420   0.685   -2.9%  +12.8%  -11.5%  -0.1   4.40
+4    SLPUSDT        RUN      0.402   0.712   -7.6%  +15.6%   -2.0%  -0.0   4.15
+5    BANANAUSDT     -        0.396   0.697   -3.3%   +9.7%   -4.5%  -0.0   2.12
+6    PUMPUSDT       -        0.392   0.464   -2.9%  +12.5%   -2.1%  -1.5   1.16
+7    BREVUSDT       -        0.390   0.685   -0.8%   +6.3%   -5.2%  -0.2   2.93
+8    NOMUSDT        -        0.387   0.736  -12.4%  +34.1%   -1.3%  -0.0   3.48
+9    ARBUSDT        -        0.379   0.378   -1.8%   +4.0%   -9.1%  -1.5   0.96
+10   AVAXUSDT       -        0.376   0.352   -1.3%   +2.3%   -9.1%  -1.6   0.74
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
