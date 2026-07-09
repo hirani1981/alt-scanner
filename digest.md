@@ -2,55 +2,54 @@
 
 **Regime [BTC_LED]:** BTC mixed vs trend, 41% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 44/139 above W, 105 above M, 105 above Q, 24 above Y.  BTC +7.0% vs monthly open.
+Breadth: 42/127 above W, 99 above M, 99 above Q, 20 above Y.  BTC +7.8% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  SUNUSDT        vol_trend=2.35  10d range=15.5%  days flagged=1
+  SUNUSDT        vol_trend=2.35  10d range=15.7%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  SUNUSDT        RS-divergence  RS_7d=+10.4%  vol_z=-0.0
-  JSTUSDT        RS-divergence  RS_7d=+8.1%  vol_z=-1.3
-  ENSOUSDT       RS-divergence  RS_7d=+11.8%  vol_z=-0.2
+  MORPHOUSDT     RS-divergence  RS_7d=+3.7%  vol_z=0.1
 
 ## New entrants to the Early top-20
-  #1   SUNUSDT        early=0.862  stage=ACCUM
-  #2   JSTUSDT        early=0.635  stage=-
-  #3   ENSOUSDT       early=0.628  stage=-
-  #4   IMXUSDT        early=0.429  stage=RUN
-  #5   SENTUSDT       early=0.415  stage=-
-  #6   OGNUSDT        early=0.412  stage=RUN
-  #7   PEPEUSDT       early=0.410  stage=-
-  #8   YFIUSDT        early=0.402  stage=RUN
-  #9   BLURUSDT       early=0.398  stage=-
-  #10  CHIPUSDT       early=0.387  stage=-
-  #11  SCRTUSDT       early=0.380  stage=-
-  #12  EPICUSDT       early=0.373  stage=-
-  #13  ETHUSDT        early=0.371  stage=-
-  #14  SPELLUSDT      early=0.371  stage=-
-  #15  APTUSDT        early=0.369  stage=-
-  #17  KITEUSDT       early=0.358  stage=-
-  #18  PYTHUSDT       early=0.356  stage=-
-  #19  SXTUSDT        early=0.355  stage=-
-  #20  RSRUSDT        early=0.354  stage=RUN
+  #1   MORPHOUSDT     early=0.668  stage=-
+  #4   SUNUSDT        early=0.519  stage=ACCUM
+  #5   JSTUSDT        early=0.494  stage=-
+  #6   BLURUSDT       early=0.404  stage=-
+  #7   YFIUSDT        early=0.399  stage=RUN
+  #8   CHIPUSDT       early=0.386  stage=-
+  #9   EGLDUSDT       early=0.382  stage=-
+  #10  SPELLUSDT      early=0.378  stage=-
+  #11  EPICUSDT       early=0.376  stage=-
+  #12  SKLUSDT        early=0.372  stage=-
+  #13  APTUSDT        early=0.371  stage=-
+  #14  MUBARAKUSDT    early=0.369  stage=RUN
+  #15  RSRUSDT        early=0.366  stage=RUN
+  #17  KITEUSDT       early=0.360  stage=-
+  #18  GUNUSDT        early=0.354  stage=-
+  #19  SXTUSDT        early=0.352  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  EGLDUSDT       vol_z=10.0  rank=#22  stage=-
-  ARBUSDT        vol_z=5.6  rank=#61  stage=-
-  XLMUSDT        vol_z=3.6  rank=#37  stage=-
+  EGLDUSDT       vol_z=10.0  rank=#9  stage=-
+  SKLUSDT        vol_z=10.0  rank=#12  stage=-
+  SENTUSDT       vol_z=10.0  rank=#23  stage=-
+  ARBUSDT        vol_z=10.0  rank=#59  stage=-
+  RVNUSDT        vol_z=8.7  rank=#44  stage=-
+  XLMUSDT        vol_z=3.8  rank=#38  stage=-
+  RSRUSDT        vol_z=3.8  rank=#15  stage=RUN
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    SUNUSDT        ACCUM    0.862   0.825   +0.5%  +10.4%   +7.5%  -0.0   2.35
-2    JSTUSDT        -        0.635   0.670   +1.4%   +8.1%  +16.2%  -1.3   0.83
-3    ENSOUSDT       -        0.628   0.892   +3.9%  +11.8%  +24.8%  -0.2   0.93
-4    IMXUSDT        RUN      0.429   0.619   -3.2%  +12.6%   -2.8%  -0.5   2.60
-5    SENTUSDT       -        0.415   0.715   +3.0%   +3.4%  -12.7%   1.6   2.41
-6    OGNUSDT        RUN      0.412   0.721   -8.1%  +12.7%   +2.5%   0.3   4.17
-7    PEPEUSDT       -        0.410   0.397   -0.3%   +5.0%   -6.9%  -2.2   1.08
-8    YFIUSDT        RUN      0.402   0.793   -5.4%  +20.7%  +14.2%   0.1   4.73
-9    BLURUSDT       -        0.398   0.836   +0.6%  +20.9%   +3.5%  -0.0   4.87
-10   CHIPUSDT       -        0.387   0.514   -2.6%   +3.4%  -14.4%  -0.9   0.90
+1    MORPHOUSDT     -        0.668   0.822   +6.5%   +3.7%  +13.6%   0.1   1.02
+2    TIAUSDT        -        0.647   0.861   +3.5%  +11.9%  +26.0%   1.0   1.01
+3    UNIUSDT        RUN      0.611   0.763   +1.3%   +3.3%  +32.9%  -0.0   0.74
+4    SUNUSDT        ACCUM    0.519   0.762   -1.6%   +8.1%   +5.2%   0.7   2.35
+5    JSTUSDT        -        0.494   0.752   +2.4%   +9.2%  +17.4%  -0.4   0.83
+6    BLURUSDT       -        0.404   0.777   -0.4%  +19.7%   +2.5%   0.2   4.87
+7    YFIUSDT        RUN      0.399   0.770   -6.7%  +19.0%  +12.6%   0.4   4.73
+8    CHIPUSDT       -        0.386   0.523   -1.0%   +5.1%  -13.0%  -0.7   0.90
+9    EGLDUSDT       -        0.382   0.820   +3.5%   +7.3%   -2.3%  10.0   1.43
+10   SPELLUSDT      -        0.378   0.560   -5.2%   -0.7%  -25.9%   0.3   3.38
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
