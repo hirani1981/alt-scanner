@@ -1,56 +1,54 @@
 # Alt Strength Digest - 2026-07-14
 
-**Regime [NEUTRAL]:** BTC mixed vs trend, 51% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC mixed vs trend, 53% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 39/118 above W, 72 above M, 72 above Q, 20 above Y.  BTC +6.5% vs monthly open.
+Breadth: 40/115 above W, 79 above M, 79 above Q, 18 above Y.  BTC +6.9% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  USDEUSDT       vol_trend=2.20  10d range=10.9%  days flagged=1
+  none
 
 ## New IGNITE / RS-divergence flags
-  MUBARAKUSDT    RS-divergence  RS_7d=+14.3%  vol_z=-0.6
-  ETHUSDT        RS-divergence  RS_7d=+2.0%  vol_z=-2.5
-  JSTUSDT        RS-divergence  RS_7d=+10.0%  vol_z=-2.2
-  KAITOUSDT      RS-divergence  RS_7d=+11.5%  vol_z=-0.7
+  JSTUSDT        RS-divergence  RS_7d=+9.7%  vol_z=-1.1
+  KAITOUSDT      RS-divergence  RS_7d=+11.7%  vol_z=-0.5
 
 ## New entrants to the Early top-20
-  #1   MUBARAKUSDT    early=0.718  stage=RUN
-  #2   ETHUSDT        early=0.672  stage=-
-  #3   USDEUSDT       early=0.490  stage=ACCUM
-  #4   KITEUSDT       early=0.447  stage=-
-  #5   TREEUSDT       early=0.422  stage=-
-  #6   SXTUSDT        early=0.404  stage=-
-  #7   DCRUSDT        early=0.397  stage=-
-  #8   ARBUSDT        early=0.387  stage=RUN
-  #9   EGLDUSDT       early=0.383  stage=RUN
-  #10  SENTUSDT       early=0.380  stage=-
-  #11  PARTIUSDT      early=0.371  stage=-
-  #12  EPICUSDT       early=0.371  stage=-
-  #13  OPNUSDT        early=0.370  stage=-
-  #14  THEUSDT        early=0.367  stage=-
-  #15  PEPEUSDT       early=0.366  stage=-
-  #16  POLUSDT        early=0.364  stage=RUN
-  #17  PYRUSDT        early=0.363  stage=-
-  #18  TUSDT          early=0.353  stage=-
-  #19  CRCLBUSDT      early=0.347  stage=-
-  #20  JSTUSDT        early=0.346  stage=EXT
+  #2   KITEUSDT       early=0.450  stage=-
+  #3   TREEUSDT       early=0.421  stage=-
+  #4   DCRUSDT        early=0.418  stage=-
+  #5   THEUSDT        early=0.390  stage=-
+  #6   ARBUSDT        early=0.387  stage=RUN
+  #7   EGLDUSDT       early=0.387  stage=RUN
+  #8   MUBARAKUSDT    early=0.381  stage=RUN
+  #9   VIRTUALUSDT    early=0.380  stage=-
+  #10  OPNUSDT        early=0.370  stage=-
+  #11  PARTIUSDT      early=0.370  stage=-
+  #12  TUSDT          early=0.368  stage=-
+  #13  EPICUSDT       early=0.367  stage=-
+  #14  PEPEUSDT       early=0.364  stage=-
+  #15  POLUSDT        early=0.361  stage=RUN
+  #16  PYRUSDT        early=0.360  stage=-
+  #17  SXTUSDT        early=0.359  stage=-
+  #18  LINEAUSDT      early=0.356  stage=-
+  #19  XECUSDT        early=0.355  stage=-
+  #20  MUBUSDT        early=0.353  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  SXTUSDT        vol_z=9.6  rank=#17  stage=-
+  VANAUSDT       vol_z=3.5  rank=#33  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    MUBARAKUSDT    RUN      0.718   0.836   +1.8%  +14.3%  +28.5%  -0.6   1.50
-2    ETHUSDT        -        0.672   0.443   +0.0%   +2.0%   +8.6%  -2.5   0.80
-3    USDEUSDT       ACCUM    0.490   0.721   -0.2%   +1.6%   +5.4%  -0.7   2.20
-4    KITEUSDT       -        0.447   0.744   +0.7%  +17.3%  -28.4%  -0.6   1.32
-5    TREEUSDT       -        0.422   0.819   +3.4%   +7.4%   -3.2%  -0.0   4.47
-6    SXTUSDT        -        0.404   0.891   +3.6%  +24.9%   +3.0%   0.5   4.50
-7    DCRUSDT        -        0.397   0.853   +1.7%  +16.9%   +3.2%  -0.2   3.45
-8    ARBUSDT        RUN      0.387   0.640   -1.2%  +17.9%   +9.8%  -1.0   2.68
-9    EGLDUSDT       RUN      0.383   0.912   +5.6%  +21.5%  +16.3%   0.2   2.80
-10   SENTUSDT       -        0.380   0.776   +1.7%   +4.2%   -4.0%  -0.3   4.67
+1    TIAUSDT        -        0.634   0.571   +2.3%   +9.1%  +21.9%  -1.9   0.92
+2    KITEUSDT       -        0.450   0.679   -7.5%   +7.8%  -34.2%   0.5   1.32
+3    TREEUSDT       -        0.421   0.812   +4.7%   +8.8%   -1.9%   0.7   4.47
+4    DCRUSDT        -        0.418   0.681   -3.7%  +10.8%   -2.2%  -0.0   3.45
+5    THEUSDT        -        0.390   0.729   +1.3%   +8.5%  -13.7%   0.1   1.10
+6    ARBUSDT        RUN      0.387   0.654   -1.3%  +17.8%   +9.7%  -0.8   2.68
+7    EGLDUSDT       RUN      0.387   0.885   +1.7%  +17.0%  +12.0%   2.2   2.80
+8    MUBARAKUSDT    RUN      0.381   0.688   -5.7%   +5.9%  +19.1%  -0.0   1.50
+9    VIRTUALUSDT    -        0.380   0.519   +0.2%   +5.2%   -9.5%  -1.0   1.74
+10   OPNUSDT        -        0.370   0.523   +2.8%   +0.3%  -20.0%  -0.3   4.57
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
