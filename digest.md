@@ -1,53 +1,59 @@
 # Alt Strength Digest - 2026-07-16
 
-**Regime [BTC_LED]:** BTC above both vs trend, 43% of alts beating it - neutral; be selective.
+**Regime [BTC_LED]:** BTC above both vs trend, 41% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 76/134 above W, 93 above M, 93 above Q, 21 above Y.  BTC +9.7% vs monthly open.
+Breadth: 80/133 above W, 97 above M, 97 above Q, 22 above Y.  BTC +10.4% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
   none
 
 ## New IGNITE / RS-divergence flags
-  DGBUSDT        IGNITE         RS_7d=+33.8%  vol_z=10.0
+  DGBUSDT        IGNITE         RS_7d=+34.2%  vol_z=10.0
+  MANTRAUSDT     IGNITE         RS_7d=+25.4%  vol_z=7.2
 
 ## New entrants to the Early top-20
-  #1   DGBUSDT        early=0.614  stage=IGNITE
-  #2   PYTHUSDT       early=0.496  stage=RUN
-  #3   FFUSDT         early=0.428  stage=-
-  #4   PORTOUSDT      early=0.415  stage=-
-  #5   OPNUSDT        early=0.411  stage=-
-  #6   ALPINEUSDT     early=0.404  stage=-
-  #7   CRVUSDT        early=0.401  stage=-
-  #8   EGLDUSDT       early=0.401  stage=RUN
-  #9   SXTUSDT        early=0.397  stage=RUN
-  #10  TOWNSUSDT      early=0.394  stage=-
-  #11  GNOUSDT        early=0.387  stage=RUN
-  #12  DCRUSDT        early=0.378  stage=RUN
-  #13  VIRTUALUSDT    early=0.376  stage=-
-  #14  PLUMEUSDT      early=0.372  stage=-
-  #15  PARTIUSDT      early=0.370  stage=-
-  #16  XECUSDT        early=0.367  stage=-
-  #17  EPICUSDT       early=0.366  stage=-
-  #18  VANAUSDT       early=0.365  stage=RUN
-  #19  POLUSDT        early=0.363  stage=-
-  #20  0GUSDT         early=0.356  stage=-
+  #1   DGBUSDT        early=0.619  stage=IGNITE
+  #2   MANTRAUSDT     early=0.609  stage=IGNITE
+  #3   KITEUSDT       early=0.441  stage=-
+  #4   PORTOUSDT      early=0.438  stage=-
+  #5   FFUSDT         early=0.434  stage=-
+  #6   CRVUSDT        early=0.412  stage=-
+  #7   SXTUSDT        early=0.410  stage=RUN
+  #8   TOWNSUSDT      early=0.409  stage=-
+  #9   DCRUSDT        early=0.384  stage=RUN
+  #10  VANAUSDT       early=0.380  stage=RUN
+  #11  PARTIUSDT      early=0.374  stage=-
+  #12  XECUSDT        early=0.374  stage=-
+  #13  PLUMEUSDT      early=0.370  stage=-
+  #14  VIRTUALUSDT    early=0.366  stage=-
+  #15  EPICUSDT       early=0.364  stage=-
+  #16  PYRUSDT        early=0.363  stage=-
+  #17  ETHUSDT        early=0.362  stage=-
+  #18  POLUSDT        early=0.361  stage=-
+  #19  RUNEUSDT       early=0.361  stage=-
+  #20  0GUSDT         early=0.361  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
   DGBUSDT        vol_z=10.0  rank=#1  stage=IGNITE
+  MANTRAUSDT     vol_z=7.2  rank=#2  stage=IGNITE
+  BARUSDT        vol_z=5.8  rank=#51  stage=-
+  BANKUSDT       vol_z=4.4  rank=#58  stage=EXT
+  OPNUSDT        vol_z=3.3  rank=#23  stage=-
+  ONDOUSDT       vol_z=3.0  rank=#41  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    DGBUSDT        IGNITE   0.614   0.944  +25.4%  +33.8%  +26.7%  10.0   0.91
-2    PYTHUSDT       RUN      0.496   0.820   +5.4%   +8.3%  +30.4%  -0.4   0.75
-3    FFUSDT         -        0.428   0.599   -4.3%   +7.6%  -12.6%  -0.1   1.89
-4    PORTOUSDT      -        0.415   0.816   +3.9%  +20.2%   -6.1%  -0.1   3.55
-5    OPNUSDT        -        0.411   0.683   +1.3%   +3.3%  -13.2%   1.5   4.03
-6    ALPINEUSDT     -        0.404   0.781   +2.5%   +4.6%   -4.6%  -0.1   3.11
-7    CRVUSDT        -        0.401   0.555   +0.1%   +3.4%   -8.6%  -0.9   1.27
-8    EGLDUSDT       RUN      0.401   0.739   -1.2%   +5.4%   +5.5%  -0.1   2.73
-9    SXTUSDT        RUN      0.397   0.834   +1.6%  +21.2%  +10.1%  -0.3   5.04
-10   TOWNSUSDT      -        0.394   0.729   -0.7%   +2.1%   -5.5%   0.6   3.15
+1    DGBUSDT        IGNITE   0.619   0.942  +25.7%  +34.2%  +27.0%  10.0   0.91
+2    MANTRAUSDT     IGNITE   0.609   0.897  +30.8%  +25.4%   +1.7%   7.2   0.71
+3    KITEUSDT       -        0.441   0.700   -2.4%   +5.0%  -34.2%   1.5   1.71
+4    PORTOUSDT      -        0.438   0.707   -1.4%  +14.0%  -10.9%   0.3   3.55
+5    FFUSDT         -        0.434   0.596   -2.8%   +9.2%  -11.3%   0.2   1.89
+6    CRVUSDT        -        0.412   0.532   -0.3%   +3.0%   -9.0%  -0.7   1.27
+7    SXTUSDT        RUN      0.410   0.705   -3.0%  +15.7%   +5.1%  -0.3   5.04
+8    TOWNSUSDT      -        0.409   0.672   -2.7%   +0.1%   -7.4%   1.5   3.15
+9    DCRUSDT        RUN      0.384   0.816   +0.4%  +20.7%  +11.5%   0.1   3.92
+10   VANAUSDT       RUN      0.380   0.813   +1.6%   +5.5%   +7.8%   0.5   2.22
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
