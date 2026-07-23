@@ -1,56 +1,51 @@
-# Alt Strength Digest - 2026-07-22
+# Alt Strength Digest - 2026-07-23
 
-**Regime [BTC_LED]:** BTC trending but only 33% of alts beating it - BTC-led market; alts lagging.
+**Regime [BTC_LED]:** BTC above both vs trend, 43% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 84/122 above W, 75 above M, 75 above Q, 21 above Y.  BTC +12.4% vs monthly open.
+Breadth: 83/125 above W, 73 above M, 73 above Q, 21 above Y.  BTC +12.0% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  KGSTUSDT       vol_trend=4.82  10d range=0.1%  days flagged=1
+  KGSTUSDT       vol_trend=4.35  10d range=0.1%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
   none
 
 ## New entrants to the Early top-20
-  #1   SNDKBUSDT      early=0.444  stage=-
-  #2   HEMIUSDT       early=0.440  stage=-
-  #3   CRCLBUSDT      early=0.430  stage=-
-  #4   KGSTUSDT       early=0.423  stage=ACCUM
-  #6   CFGUSDT        early=0.413  stage=-
-  #7   ENSUSDT        early=0.409  stage=RUN
-  #8   ONEUSDT        early=0.405  stage=-
+  #1   LAUSDT         early=0.448  stage=-
+  #2   KITEUSDT       early=0.427  stage=-
+  #3   KGSTUSDT       early=0.426  stage=ACCUM
+  #4   REUSDT         early=0.423  stage=-
+  #5   HEMIUSDT       early=0.423  stage=RUN
+  #7   CFGUSDT        early=0.409  stage=-
+  #8   SNDKBUSDT      early=0.404  stage=-
   #9   OPNUSDT        early=0.402  stage=-
-  #10  REUSDT         early=0.395  stage=-
-  #11  TRUMPUSDT      early=0.387  stage=-
-  #12  PENGUUSDT      early=0.385  stage=-
-  #13  ACEUSDT        early=0.379  stage=-
-  #14  HOMEUSDT       early=0.371  stage=-
-  #15  ERAUSDT        early=0.369  stage=-
-  #16  KITEUSDT       early=0.368  stage=-
-  #17  VIRTUALUSDT    early=0.367  stage=RUN
-  #18  DEXEUSDT       early=0.366  stage=-
-  #19  NIGHTUSDT      early=0.365  stage=-
-  #20  ZBTUSDT        early=0.359  stage=-
+  #10  CRCLBUSDT      early=0.401  stage=-
+  #11  ONEUSDT        early=0.399  stage=-
+  #12  ACEUSDT        early=0.395  stage=RUN
+  #13  ENSUSDT        early=0.384  stage=RUN
+  #14  EWYBUSDT       early=0.374  stage=-
+  #15  XNOUSDT        early=0.374  stage=-
+  #16  SAPIENUSDT     early=0.373  stage=-
+  #17  HBARUSDT       early=0.367  stage=-
+  #18  NIGHTUSDT      early=0.367  stage=-
+  #19  DEXEUSDT       early=0.367  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  LISTAUSDT      vol_z=10.0  rank=#39  stage=-
-  VANAUSDT       vol_z=6.9  rank=#77  stage=COOL
-  MIRAUSDT       vol_z=6.2  rank=#85  stage=-
-  ZAMAUSDT       vol_z=5.1  rank=#51  stage=EXT
-  ERAUSDT        vol_z=3.6  rank=#15  stage=-
+  none
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    SNDKBUSDT      -        0.444   0.483   -1.0%   -0.6%  -31.4%   0.2   1.76
-2    HEMIUSDT       -        0.440   0.629   -6.9%   +8.6%  -12.1%   0.1   3.30
-3    CRCLBUSDT      -        0.430   0.487   -6.7%   -2.2%  -20.2%  -0.1   1.27
-4    KGSTUSDT       ACCUM    0.423   0.700   +1.0%   -1.7%   -2.8%   2.9   4.82
-5    UNIUSDT        -        0.417   0.693   +4.1%   +4.1%  +24.8%  -0.4   0.66
-6    CFGUSDT        -        0.413   0.485   +0.9%   -4.0%  -19.9%   0.4   1.21
-7    ENSUSDT        RUN      0.409   0.765   +1.7%   +3.9%   -4.3%   1.0   1.98
-8    ONEUSDT        -        0.405   0.759   -2.7%  +14.6%   -6.4%   2.2   4.18
-9    OPNUSDT        -        0.402   0.671   +2.9%   +6.8%   -9.5%  -0.1   2.11
-10   REUSDT         -        0.395   0.618  +25.7%   -0.5%  -45.3%   1.5   0.97
+1    LAUSDT         -        0.448   0.608   +1.6%   -0.4%  -24.8%  -0.3   2.86
+2    KITEUSDT       -        0.427   0.750   +4.6%   -0.1%  -26.7%   0.5   4.22
+3    KGSTUSDT       ACCUM    0.426   0.625   +0.7%   -2.8%   -4.5%  -0.5   4.35
+4    REUSDT         -        0.423   0.390   -2.7%   -9.1%  -45.6%  -0.4   1.41
+5    HEMIUSDT       RUN      0.423   0.702   -1.5%  +10.4%   -9.0%  -0.5   3.43
+6    UNIUSDT        -        0.415   0.614   +0.7%   +3.9%  +23.6%  -1.9   0.66
+7    CFGUSDT        -        0.409   0.272   -0.5%   -4.3%  -18.2%  -1.9   1.10
+8    SNDKBUSDT      -        0.404   0.590   -0.1%  +14.1%  -22.7%  -0.7   1.03
+9    OPNUSDT        -        0.402   0.772   +2.7%  +16.1%   -9.7%  -0.5   2.15
+10   CRCLBUSDT      -        0.401   0.617   +1.9%   +7.6%  -16.0%  -1.2   0.98
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
