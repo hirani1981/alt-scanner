@@ -1,58 +1,52 @@
-# Alt Strength Digest - 2026-07-24
+# Alt Strength Digest - 2026-07-25
 
-**Regime [BTC_LED]:** BTC mixed vs trend, 44% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC mixed vs trend, 55% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 59/124 above W, 68 above M, 68 above Q, 21 above Y.  BTC +9.6% vs monthly open.
+Breadth: 57/124 above W, 66 above M, 66 above Q, 19 above Y.  BTC +9.3% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  KGSTUSDT       vol_trend=4.54  10d range=0.1%  days flagged=1
+  none
 
 ## New IGNITE / RS-divergence flags
-  BEAMXUSDT      IGNITE         RS_7d=+6.9%  vol_z=5.4
+  EULUSDT        IGNITE         RS_7d=+33.6%  vol_z=7.9
 
 ## New entrants to the Early top-20
-  #1   BEAMXUSDT      early=0.504  stage=IGNITE
-  #2   KGSTUSDT       early=0.497  stage=ACCUM
-  #3   JSTUSDT        early=0.475  stage=-
-  #5   ALLOUSDT       early=0.450  stage=RUN
-  #6   BARDUSDT       early=0.423  stage=-
-  #7   REUSDT         early=0.422  stage=-
-  #8   ENSOUSDT       early=0.414  stage=-
-  #9   SAGAUSDT       early=0.403  stage=RUN
-  #10  LAUSDT         early=0.402  stage=-
-  #11  HBARUSDT       early=0.399  stage=-
-  #12  ONEUSDT        early=0.397  stage=-
-  #13  ZKCUSDT        early=0.393  stage=-
-  #14  MIRAUSDT       early=0.391  stage=-
-  #15  ERAUSDT        early=0.384  stage=-
-  #16  METUSDT        early=0.383  stage=-
-  #17  WLFIUSDT       early=0.377  stage=-
-  #18  ACEUSDT        early=0.373  stage=RUN
-  #19  KITEUSDT       early=0.366  stage=-
-  #20  DEXEUSDT       early=0.363  stage=-
+  #1   EULUSDT        early=0.630  stage=IGNITE
+  #2   LAUSDT         early=0.447  stage=RUN
+  #3   BARDUSDT       early=0.422  stage=-
+  #4   ONEUSDT        early=0.402  stage=RUN
+  #5   ERAUSDT        early=0.401  stage=RUN
+  #6   WLFIUSDT       early=0.397  stage=-
+  #7   HBARUSDT       early=0.396  stage=-
+  #8   REUSDT         early=0.395  stage=-
+  #9   ZKCUSDT        early=0.395  stage=-
+  #10  SAGAUSDT       early=0.392  stage=RUN
+  #11  MIRAUSDT       early=0.385  stage=-
+  #12  SNDKBUSDT      early=0.380  stage=-
+  #13  METUSDT        early=0.378  stage=-
+  #14  VANAUSDT       early=0.362  stage=-
+  #16  ONDOUSDT       early=0.362  stage=RUN
+  #17  DEXEUSDT       early=0.360  stage=-
+  #18  EWYBUSDT       early=0.358  stage=-
+  #19  KITEUSDT       early=0.355  stage=-
+  #20  NIGHTUSDT      early=0.353  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  VANAUSDT       vol_z=10.0  rank=#27  stage=-
-  STXUSDT        vol_z=10.0  rank=#79  stage=-
-  ACXUSDT        vol_z=8.7  rank=#119  stage=-
-  BEAMXUSDT      vol_z=5.4  rank=#1  stage=IGNITE
-  DEXEUSDT       vol_z=4.1  rank=#20  stage=-
-  TSLABUSDT      vol_z=3.2  rank=#25  stage=-
-  LAUSDT         vol_z=3.1  rank=#10  stage=-
+  EULUSDT        vol_z=7.9  rank=#1  stage=IGNITE
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    BEAMXUSDT      IGNITE   0.504   0.889  +15.3%   +6.9%  +21.9%   5.4   0.34
-2    KGSTUSDT       ACCUM    0.497   0.505   +1.3%   -0.5%   -4.9%  -0.5   4.54
-3    JSTUSDT        -        0.475   0.569   +3.6%   +4.8%  +20.4%  -1.4   0.77
-4    UNIUSDT        -        0.453   0.692   +3.2%   +4.6%  +24.3%  -0.4   0.72
-5    ALLOUSDT       RUN      0.450   0.813   +2.0%  +29.3%  +22.8%  -0.2   0.64
-6    BARDUSDT       -        0.423   0.575   -0.8%   +1.4%  -14.6%   1.1   2.60
-7    REUSDT         -        0.422   0.600   +7.8%  +31.0%  -15.5%  -0.2   1.38
-8    ENSOUSDT       -        0.414   0.843   +5.6%  +10.6%  +27.4%   0.0   0.54
-9    SAGAUSDT       RUN      0.403   0.712   +5.2%   +7.0%   -7.6%  -0.1   1.35
-10   LAUSDT         -        0.402   0.863   +8.9%  +31.3%   -3.1%   3.1   3.38
+1    EULUSDT        IGNITE   0.630   0.932  +16.4%  +33.6%  +19.3%   7.9   1.06
+2    LAUSDT         RUN      0.447   0.703   -5.6%  +27.5%  -11.4%  -0.3   3.86
+3    BARDUSDT       -        0.422   0.562   +0.5%   +4.1%  -14.2%  -0.5   2.80
+4    ONEUSDT        RUN      0.402   0.785   +0.1%  +19.2%   -0.7%  -0.4   3.91
+5    ERAUSDT        RUN      0.401   0.779   -6.2%  +35.7%   +3.1%  -0.3   5.24
+6    WLFIUSDT       -        0.397   0.450   -0.8%   +1.2%   -9.0%  -0.8   1.99
+7    HBARUSDT       -        0.396   0.463   -0.3%   +6.3%  -10.4%  -2.4   1.20
+8    REUSDT         -        0.395   0.635   -4.1%  +42.6%  -11.1%  -0.4   1.21
+9    ZKCUSDT        -        0.395   0.771   +2.6%   +5.0%   -6.9%  -0.2   2.51
+10   SAGAUSDT       RUN      0.392   0.710   -2.6%  +13.4%   -1.8%  -0.6   1.67
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
