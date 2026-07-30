@@ -1,55 +1,66 @@
 # Alt Strength Digest - 2026-07-30
 
-**Regime [BTC_LED]:** BTC above both vs trend, 40% of alts beating it - neutral; be selective.
+**Regime [BTC_LED]:** BTC above both vs trend, 41% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 30/129 above W, 61 above M, 61 above Q, 25 above Y.  BTC +10.5% vs monthly open.
+Breadth: 29/124 above W, 59 above M, 59 above Q, 26 above Y.  BTC +10.6% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
+  TWTUSDT        vol_trend=1.92  10d range=15.1%  days flagged=1
   QQQBUSDT       vol_trend=2.64  10d range=7.6%  days flagged=1
-  FLOKIUSDT      vol_trend=1.54  10d range=16.4%  days flagged=1
+  FLOKIUSDT      vol_trend=1.54  10d range=16.5%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  MSFTBUSDT      IGNITE         RS_7d=+18.3%  vol_z=5.4
+  BOMEUSDT       IGNITE         RS_7d=+37.0%  vol_z=1.9
+  MSFTBUSDT      IGNITE         RS_7d=+18.7%  vol_z=7.5
 
 ## New entrants to the Early top-20
-  #1   MSFTBUSDT      early=0.531  stage=IGNITE
-  #2   ONDOUSDT       early=0.530  stage=RUN
-  #3   QQQBUSDT       early=0.469  stage=ACCUM
-  #4   FLOKIUSDT      early=0.455  stage=ACCUM
-  #5   ZILUSDT        early=0.423  stage=-
-  #6   SHIBUSDT       early=0.396  stage=RUN
-  #8   FLOWUSDT       early=0.379  stage=-
-  #9   ACHUSDT        early=0.375  stage=-
-  #10  DEXEUSDT       early=0.373  stage=-
-  #11  SNDKBUSDT      early=0.366  stage=-
-  #12  EWYBUSDT       early=0.364  stage=-
-  #13  XUSDUSDT       early=0.359  stage=-
-  #14  MORPHOUSDT     early=0.358  stage=-
-  #15  UUSDT          early=0.356  stage=-
-  #16  PEOPLEUSDT     early=0.356  stage=RUN
-  #17  RIFUSDT        early=0.353  stage=-
-  #18  STORJUSDT      early=0.352  stage=-
-  #19  INTCBUSDT      early=0.352  stage=-
-  #20  PLUMEUSDT      early=0.351  stage=-
+  #1   BOMEUSDT       early=0.583  stage=IGNITE
+  #2   ONDOUSDT       early=0.535  stage=RUN
+  #3   MSFTBUSDT      early=0.534  stage=IGNITE
+  #4   TWTUSDT        early=0.527  stage=ACCUM
+  #5   QQQBUSDT       early=0.477  stage=ACCUM
+  #6   FLOKIUSDT      early=0.468  stage=ACCUM
+  #7   ZILUSDT        early=0.435  stage=-
+  #8   SHIBUSDT       early=0.398  stage=RUN
+  #9   ACHUSDT        early=0.392  stage=-
+  #10  RIFUSDT        early=0.386  stage=-
+  #11  DEXEUSDT       early=0.380  stage=-
+  #12  SNDKBUSDT      early=0.372  stage=-
+  #13  EWYBUSDT       early=0.371  stage=-
+  #14  STORJUSDT      early=0.361  stage=-
+  #15  PEOPLEUSDT     early=0.359  stage=RUN
+  #16  MORPHOUSDT     early=0.357  stage=-
+  #17  INTCBUSDT      early=0.356  stage=-
+  #18  LAUSDT         early=0.356  stage=-
+  #19  ENSOUSDT       early=0.352  stage=RUN
+  #20  VANAUSDT       early=0.345  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  MSFTBUSDT      vol_z=5.4  rank=#1  stage=IGNITE
-  METABUSDT      vol_z=4.8  rank=#34  stage=-
-  KAITOUSDT      vol_z=3.1  rank=#113  stage=EXT
+  RLCUSDT        vol_z=7.9  rank=#47  stage=-
+  MSFTBUSDT      vol_z=7.5  rank=#3  stage=IGNITE
+  MMTUSDT        vol_z=6.5  rank=#69  stage=EXT
+  METABUSDT      vol_z=5.7  rank=#30  stage=-
+  SNDKBUSDT      vol_z=4.3  rank=#12  stage=-
+  ROBOUSDT       vol_z=4.1  rank=#41  stage=-
+  AMDBUSDT       vol_z=3.6  rank=#21  stage=-
+  GIGGLEUSDT     vol_z=3.5  rank=#80  stage=-
+  KAITOUSDT      vol_z=3.5  rank=#121  stage=EXT
+  COTIUSDT       vol_z=3.2  rank=#109  stage=EXT
+  STRKUSDT       vol_z=3.1  rank=#28  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    MSFTBUSDT      IGNITE   0.531   0.915   +4.8%  +18.3%   +8.1%   5.4   1.26
-2    ONDOUSDT       RUN      0.530   0.837   +3.2%   +5.6%  +23.8%  -0.1   1.04
-3    QQQBUSDT       ACCUM    0.469   0.588   +1.2%   -1.0%  -15.9%   1.9   2.64
-4    FLOKIUSDT      ACCUM    0.455   0.462   -0.2%   -2.6%  -13.6%  -0.4   1.54
-5    ZILUSDT        -        0.423   0.622   +0.7%   +5.1%  -17.5%   0.0   2.89
-6    SHIBUSDT       RUN      0.396   0.670   -1.2%  +12.6%   -0.0%  -0.4   3.66
-7    HOLOUSDT       RUN      0.387   0.759   -9.9%   +6.0%   -2.9%   2.3   2.22
-8    FLOWUSDT       -        0.379   0.729   -4.0%   +9.2%   -8.9%   0.8   2.70
-9    ACHUSDT        -        0.375   0.779   -6.0%  +13.9%   +1.4%   1.3   3.61
-10   DEXEUSDT       -        0.373   0.461   -9.3%  +52.5%  -90.2%  -0.5   2.51
+1    BOMEUSDT       IGNITE   0.583   0.919   +5.3%  +37.0%  +30.9%   1.9   3.37
+2    ONDOUSDT       RUN      0.535   0.827   +2.9%   +5.3%  +23.4%   0.4   1.04
+3    MSFTBUSDT      IGNITE   0.534   0.912   +5.1%  +18.7%   +8.5%   7.5   1.26
+4    TWTUSDT        ACCUM    0.527   0.811   +3.4%  +15.8%   -2.7%   1.5   1.92
+5    QQQBUSDT       ACCUM    0.477   0.555   +1.2%   -1.0%  -15.9%   2.4   2.64
+6    FLOKIUSDT      ACCUM    0.468   0.442   -0.6%   -3.0%  -14.0%  -0.1   1.54
+7    ZILUSDT        -        0.435   0.562   -0.3%   +4.1%  -18.3%   0.1   2.89
+8    SHIBUSDT       RUN      0.398   0.624   -1.7%  +12.1%   -0.5%  -0.3   3.66
+9    ACHUSDT        -        0.392   0.725  -11.2%   +7.7%   -4.2%   1.6   3.61
+10   RIFUSDT        -        0.386   0.391   -5.6%  -23.9%  -10.4%  -0.1   1.69
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
