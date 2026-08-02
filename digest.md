@@ -1,55 +1,55 @@
 # Alt Strength Digest - 2026-08-02
 
-**Regime [BTC_LED]:** BTC below both vs trend, 43% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC below both vs trend, 45% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 28/117 above W, 80 above M, 60 above Q, 19 above Y.  BTC +0.6% vs monthly open.
+Breadth: 26/119 above W, 76 above M, 59 above Q, 19 above Y.  BTC +0.3% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
   USDSUSDT       vol_trend=1.67  10d range=0.3%  days flagged=1
+  ROSEUSDT       vol_trend=1.94  10d range=13.7%  days flagged=1
   QQQBUSDT       vol_trend=2.04  10d range=5.5%  days flagged=1
-  ROSEUSDT       vol_trend=1.94  10d range=12.7%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  RUNEUSDT       RS-divergence  RS_7d=+5.5%  vol_z=-1.9
+  none
 
 ## New entrants to the Early top-20
-  #1   RUNEUSDT       early=0.660  stage=-
-  #2   1000SATSUSDT   early=0.556  stage=-
-  #3   USDSUSDT       early=0.534  stage=ACCUM
-  #4   QQQBUSDT       early=0.512  stage=ACCUM
-  #5   PUMPUSDT       early=0.511  stage=-
-  #6   ROSEUSDT       early=0.504  stage=ACCUM
-  #7   JSTUSDT        early=0.475  stage=-
-  #8   REZUSDT        early=0.407  stage=-
-  #9   EWYBUSDT       early=0.380  stage=-
-  #10  CFXUSDT        early=0.374  stage=-
-  #11  UUSDT          early=0.374  stage=-
-  #12  FILUSDT        early=0.372  stage=-
-  #13  CAKEUSDT       early=0.369  stage=-
-  #15  AEVOUSDT       early=0.358  stage=-
-  #16  MUBARAKUSDT    early=0.356  stage=RUN
-  #17  SNDKBUSDT      early=0.351  stage=-
-  #18  BNBUSDT        early=0.350  stage=-
-  #19  SHIBUSDT       early=0.348  stage=RUN
-  #20  BROCCOLI714USDT early=0.343  stage=-
+  #1   USDSUSDT       early=0.532  stage=ACCUM
+  #2   ROSEUSDT       early=0.519  stage=ACCUM
+  #3   PUMPUSDT       early=0.514  stage=-
+  #4   QQQBUSDT       early=0.513  stage=ACCUM
+  #5   JSTUSDT        early=0.475  stage=-
+  #6   REZUSDT        early=0.411  stage=-
+  #7   MIRAUSDT       early=0.404  stage=-
+  #8   EWYBUSDT       early=0.391  stage=-
+  #9   FILUSDT        early=0.375  stage=-
+  #10  UUSDT          early=0.375  stage=-
+  #11  CAKEUSDT       early=0.365  stage=-
+  #12  AEVOUSDT       early=0.361  stage=-
+  #14  1000SATSUSDT   early=0.357  stage=-
+  #15  MUBARAKUSDT    early=0.355  stage=RUN
+  #16  SNDKBUSDT      early=0.354  stage=-
+  #17  BNBUSDT        early=0.349  stage=-
+  #18  SHIBUSDT       early=0.349  stage=RUN
+  #19  NEIROUSDT      early=0.348  stage=-
+  #20  KSMUSDT        early=0.345  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  ERAUSDT        vol_z=7.2  rank=#41  stage=-
-  HYPERUSDT      vol_z=6.8  rank=#29  stage=-
+  HYPERUSDT      vol_z=10.0  rank=#26  stage=-
+  ERAUSDT        vol_z=10.0  rank=#36  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    RUNEUSDT       -        0.660   0.544   +1.1%   +5.5%   +7.1%  -1.9   0.97
-2    1000SATSUSDT   -        0.556   0.921   +6.0%  +25.5%  +16.4%   0.8   4.10
-3    USDSUSDT       ACCUM    0.534   0.478   -0.7%   +3.3%   -1.1%  -1.1   1.67
-4    QQQBUSDT       ACCUM    0.512   0.676   +0.1%   +2.7%   -5.2%   0.5   2.04
-5    PUMPUSDT       -        0.511   0.819   +2.2%  +11.6%  +32.1%  -0.6   1.16
-6    ROSEUSDT       ACCUM    0.504   0.780   +1.1%   +8.7%   -8.9%   0.2   1.94
-7    JSTUSDT        -        0.475   0.565   +0.3%   +4.0%  +15.3%  -2.0   0.84
-8    REZUSDT        -        0.407   0.761   +6.0%  +10.3%  -14.2%   0.1   1.47
-9    EWYBUSDT       -        0.380   0.545   +1.8%   -2.4%  -15.8%  -0.3   4.07
-10   CFXUSDT        -        0.374   0.532   -1.8%   -1.7%   -9.2%  -0.3   3.00
+1    USDSUSDT       ACCUM    0.532   0.473   -0.4%   +3.7%   -0.8%  -0.9   1.67
+2    ROSEUSDT       ACCUM    0.519   0.693   -0.9%   +6.6%  -10.7%   1.2   1.94
+3    PUMPUSDT       -        0.514   0.779   +0.9%  +10.1%  +30.3%  -0.4   1.16
+4    QQQBUSDT       ACCUM    0.513   0.679   +0.3%   +2.9%   -5.0%   1.8   2.04
+5    JSTUSDT        -        0.475   0.571   +0.5%   +4.1%  +15.5%  -1.7   0.84
+6    REZUSDT        -        0.411   0.750   +6.0%  +10.2%  -14.2%   0.3   1.47
+7    MIRAUSDT       -        0.404   0.598   -0.9%   +0.6%  -12.4%   0.1   4.50
+8    EWYBUSDT       -        0.391   0.502   +1.0%   -3.2%  -16.5%  -0.2   4.07
+9    FILUSDT        -        0.375   0.442   +2.3%   +0.1%  -11.4%  -1.4   1.31
+10   UUSDT          -        0.375   0.441   -0.4%   +3.7%   -0.8%  -1.4   1.41
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
