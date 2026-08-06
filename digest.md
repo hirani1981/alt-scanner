@@ -1,8 +1,8 @@
 # Alt Strength Digest - 2026-08-06
 
-**Regime [NEUTRAL]:** BTC above both vs trend, 52% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC above both vs trend, 54% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 76/134 above W, 82 above M, 66 above Q, 22 above Y.  BTC +3.1% vs monthly open.
+Breadth: 81/140 above W, 90 above M, 66 above Q, 26 above Y.  BTC +3.1% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
   SPYBUSDT       vol_trend=3.99  10d range=6.3%  days flagged=1
@@ -14,50 +14,56 @@ Breadth: 76/134 above W, 82 above M, 66 above Q, 22 above Y.  BTC +3.1% vs month
   none
 
 ## New entrants to the Early top-20
-  #1   SPYBUSDT       early=0.542  stage=ACCUM
-  #2   QQQBUSDT       early=0.534  stage=ACCUM
-  #3   HOMEUSDT       early=0.480  stage=RUN
-  #4   TSLABUSDT      early=0.432  stage=-
-  #5   SOXLBUSDT      early=0.423  stage=-
-  #6   BFUSDUSDT      early=0.420  stage=ACCUM
-  #7   SAHARAUSDT     early=0.418  stage=-
-  #8   EURIUSDT       early=0.413  stage=ACCUM
-  #9   FIDAUSDT       early=0.413  stage=-
-  #10  PORTALUSDT     early=0.405  stage=RUN
-  #11  INTCBUSDT      early=0.392  stage=-
-  #12  SYNUSDT        early=0.391  stage=-
-  #13  GOOGLBUSDT     early=0.382  stage=RUN
-  #14  BIOUSDT        early=0.380  stage=-
-  #15  MUBARAKUSDT    early=0.377  stage=RUN
-  #16  ADAUSDT        early=0.371  stage=-
-  #17  NBISBUSDT      early=0.370  stage=-
-  #18  ALGOUSDT       early=0.370  stage=-
-  #19  NVDABUSDT      early=0.365  stage=RUN
-  #20  BABYUSDT       early=0.361  stage=-
+  #1   ADAUSDT        early=0.577  stage=RUN
+  #2   SPYBUSDT       early=0.545  stage=ACCUM
+  #3   QQQBUSDT       early=0.538  stage=ACCUM
+  #4   HOMEUSDT       early=0.481  stage=RUN
+  #5   TSLABUSDT      early=0.440  stage=-
+  #6   FIDAUSDT       early=0.423  stage=-
+  #7   SAHARAUSDT     early=0.422  stage=-
+  #8   SOXLBUSDT      early=0.414  stage=-
+  #9   BFUSDUSDT      early=0.412  stage=ACCUM
+  #10  EURIUSDT       early=0.409  stage=ACCUM
+  #11  PORTALUSDT     early=0.405  stage=RUN
+  #12  ERAUSDT        early=0.402  stage=-
+  #13  SYNUSDT        early=0.395  stage=-
+  #14  INTCBUSDT      early=0.393  stage=-
+  #15  HYPERUSDT      early=0.393  stage=-
+  #16  BIOUSDT        early=0.392  stage=-
+  #17  GOOGLBUSDT     early=0.388  stage=RUN
+  #18  SNDKBUSDT      early=0.380  stage=-
+  #19  NBISBUSDT      early=0.379  stage=RUN
+  #20  NVDABUSDT      early=0.373  stage=RUN
 
 ## Volume surge alerts (vol_z >= 3.0)
-  CTSIUSDT       vol_z=10.0  rank=#118  stage=EXT
-  POWRUSDT       vol_z=8.8  rank=#114  stage=-
-  BABYUSDT       vol_z=8.1  rank=#20  stage=-
-  HEIUSDT        vol_z=5.2  rank=#56  stage=EXT
-  NOMUSDT        vol_z=4.4  rank=#31  stage=-
-  EURIUSDT       vol_z=3.9  rank=#8  stage=ACCUM
-  AXSUSDT        vol_z=3.5  rank=#40  stage=-
-  COOKIEUSDT     vol_z=3.4  rank=#49  stage=-
+  BABYUSDT       vol_z=10.0  rank=#24  stage=-
+  CTSIUSDT       vol_z=10.0  rank=#124  stage=EXT
+  POWRUSDT       vol_z=10.0  rank=#100  stage=-
+  HEIUSDT        vol_z=9.2  rank=#128  stage=EXT
+  COOKIEUSDT     vol_z=7.1  rank=#48  stage=-
+  EURIUSDT       vol_z=6.7  rank=#10  stage=ACCUM
+  NOMUSDT        vol_z=5.6  rank=#26  stage=-
+  BFUSDUSDT      vol_z=4.5  rank=#9  stage=ACCUM
+  AXSUSDT        vol_z=4.5  rank=#39  stage=-
+  ZBTUSDT        vol_z=4.1  rank=#95  stage=EXT
+  HFTUSDT        vol_z=4.0  rank=#54  stage=EXT
+  MIRAUSDT       vol_z=3.4  rank=#32  stage=-
+  RESOLVUSDT     vol_z=3.3  rank=#51  stage=-
+  SUSHIUSDT      vol_z=3.2  rank=#104  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    SPYBUSDT       ACCUM    0.542   0.735   -0.2%   +3.6%   +0.9%   1.5   3.99
-2    QQQBUSDT       ACCUM    0.534   0.712   -0.5%   +3.8%   -1.1%   0.9   1.93
-3    HOMEUSDT       RUN      0.480   0.662   +6.7%  +80.7%  -38.1%  -0.3   2.82
-4    TSLABUSDT      -        0.432   0.531   -0.2%   +3.8%  -22.0%  -0.6   1.17
-5    SOXLBUSDT      -        0.423   0.468   -2.8%   +2.8%  -21.5%  -0.7   1.44
-6    BFUSDUSDT      ACCUM    0.420   0.709   -0.2%   -0.0%   -2.2%   1.2   1.76
-7    SAHARAUSDT     -        0.418   0.506   -2.8%   +7.8%  -21.0%  -0.6   1.37
-8    EURIUSDT       ACCUM    0.413   0.733   -0.4%   +0.2%   -1.0%   3.9   2.28
-9    FIDAUSDT       -        0.413   0.614   -6.0%   +9.0%  -14.9%   0.4   3.71
-10   PORTALUSDT     RUN      0.405   0.684   -0.2%  +15.2%   -8.0%  -0.2   2.21
+1    ADAUSDT        RUN      0.577   0.751   +5.2%  +18.7%  +12.8%  -0.2   1.66
+2    SPYBUSDT       ACCUM    0.545   0.701   -0.4%   +3.5%   +0.8%   2.9   3.99
+3    QQQBUSDT       ACCUM    0.538   0.676   -0.1%   +4.2%   -0.7%   1.2   1.93
+4    HOMEUSDT       RUN      0.481   0.680  +18.0%  +99.7%  -31.5%   0.4   2.82
+5    TSLABUSDT      -        0.440   0.463   -0.6%   +3.4%  -22.4%  -0.4   1.17
+6    FIDAUSDT       -        0.423   0.568   -6.3%   +8.6%  -15.2%   0.6   3.71
+7    SAHARAUSDT     -        0.422   0.549   -0.7%  +10.1%  -19.3%  -0.1   1.37
+8    SOXLBUSDT      -        0.414   0.597   +4.4%  +10.5%  -15.6%  -0.2   1.44
+9    BFUSDUSDT      ACCUM    0.412   0.626   -0.2%   -0.0%   -2.2%   4.5   1.76
+10   EURIUSDT       ACCUM    0.409   0.672   -0.5%   +0.1%   -1.1%   6.7   2.28
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
