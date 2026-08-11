@@ -1,8 +1,8 @@
 # Alt Strength Digest - 2026-08-11
 
-**Regime [ALT_LED]:** BTC mixed vs trend, 67% of alts beating it - neutral; be selective.
+**Regime [ALT_LED]:** BTC mixed vs trend, 62% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 71/145 above W, 103 above M, 74 above Q, 23 above Y.  BTC +1.9% vs monthly open.
+Breadth: 64/144 above W, 98 above M, 74 above Q, 19 above Y.  BTC +1.9% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
   none
@@ -11,37 +11,41 @@ Breadth: 71/145 above W, 103 above M, 74 above Q, 23 above Y.  BTC +1.9% vs mont
   none
 
 ## New entrants to the Early top-20
-  #2   CRVUSDT        early=0.517  stage=RUN
-  #3   CVXUSDT        early=0.514  stage=RUN
-  #5   GUNUSDT        early=0.435  stage=RUN
-  #8   TOWNSUSDT      early=0.407  stage=RUN
-  #9   AXSUSDT        early=0.396  stage=-
-  #12  C98USDT        early=0.391  stage=RUN
-  #13  BIOUSDT        early=0.390  stage=-
-  #14  SHELLUSDT      early=0.390  stage=RUN
-  #15  PHAUSDT        early=0.385  stage=RUN
-  #16  IOTXUSDT       early=0.384  stage=RUN
-  #17  VELODROMEUSDT  early=0.378  stage=-
-  #18  ROBOUSDT       early=0.376  stage=-
-  #19  SAGAUSDT       early=0.372  stage=RUN
-  #20  SOLVUSDT       early=0.367  stage=-
+  #4   GUNUSDT        early=0.432  stage=RUN
+  #5   PHAUSDT        early=0.406  stage=-
+  #6   AXSUSDT        early=0.402  stage=-
+  #7   BIOUSDT        early=0.397  stage=-
+  #10  MUBARAKUSDT    early=0.380  stage=RUN
+  #11  ROBOUSDT       early=0.380  stage=RUN
+  #12  SAGAUSDT       early=0.378  stage=RUN
+  #13  ALTUSDT        early=0.369  stage=-
+  #14  BROCCOLI714USDT early=0.369  stage=RUN
+  #15  ACTUSDT        early=0.365  stage=RUN
+  #16  THEUSDT        early=0.364  stage=RUN
+  #17  NILUSDT        early=0.364  stage=RUN
+  #18  ALLOUSDT       early=0.361  stage=RUN
+  #19  ALICEUSDT      early=0.360  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  RVNUSDT        vol_z=9.7  rank=#57  stage=-
+  RADUSDT        vol_z=7.2  rank=#79  stage=EXT
+  MAVUSDT        vol_z=6.1  rank=#29  stage=RUN
+  AUDIOUSDT      vol_z=4.7  rank=#50  stage=-
+  PROMUSDT       vol_z=3.5  rank=#113  stage=EXT
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    SPYBUSDT       ACCUM    0.658   0.657   +0.1%   +0.2%   +2.5%  -0.3   3.88
-2    CRVUSDT        RUN      0.517   0.849   +1.9%  +31.0%  +29.0%  -0.5   1.78
-3    CVXUSDT        RUN      0.514   0.751   +1.0%  +23.5%  +39.2%  -1.4   1.37
-4    EURIUSDT       ACCUM    0.455   0.633   -0.2%   +0.2%   +0.8%  -0.3   4.75
-5    GUNUSDT        RUN      0.435   0.697   +3.9%  +20.8%  -16.5%  -0.5   2.90
-6    HOMEUSDT       -        0.427   0.477   -0.6%   +2.6%  -35.3%  -0.7   1.04
-7    ERAUSDT        -        0.414   0.509   -0.3%   +6.7%  -16.1%  -0.5   1.87
-8    TOWNSUSDT      RUN      0.407   0.853   +0.6%  +18.6%  +37.8%  -0.4   0.25
-9    AXSUSDT        -        0.396   0.514   -0.6%  +10.4%   -8.5%  -1.5   1.59
-10   SPCXBUSDT      -        0.392   0.581   -0.3%  +17.8%   -6.5%  -1.0   2.15
+1    EURIUSDT       ACCUM    0.457   0.650   -0.2%   +0.1%   +0.7%   0.3   4.75
+2    SPYBUSDT       ACCUM    0.451   0.648   -0.1%   +0.0%   +2.3%   0.1   3.88
+3    HOMEUSDT       -        0.434   0.441   -2.3%   +0.7%  -36.4%  -0.5   1.04
+4    GUNUSDT        RUN      0.432   0.749   +9.4%  +27.2%  -12.1%   0.1   2.90
+5    PHAUSDT        -        0.406   0.530   -6.0%  +11.4%   -9.0%  -0.5   1.70
+6    AXSUSDT        -        0.402   0.521   -1.1%   +9.8%   -9.0%  -1.2   1.59
+7    BIOUSDT        -        0.397   0.503   -2.9%  +11.4%   -9.1%  -1.0   1.43
+8    SPCXBUSDT      -        0.393   0.590   +0.1%  +18.2%   -6.2%  -0.9   2.15
+9    BABYUSDT       RUN      0.385   0.781   +1.3%  +26.6%   +2.1%  -0.1   5.46
+10   MUBARAKUSDT    RUN      0.380   0.757  -18.8%  +28.4%  +36.4%   0.0   4.21
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
