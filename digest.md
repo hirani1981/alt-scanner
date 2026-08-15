@@ -1,67 +1,55 @@
-# Alt Strength Digest - 2026-08-14
+# Alt Strength Digest - 2026-08-15
 
-**Regime [ALT_LED]:** BTC below trend yet 62% of alts beating it - alt rotation under a weak BTC; watch closely.
+**Regime [ALT_LED]:** BTC below both vs trend, 57% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 57/144 above W, 79 above M, 64 above Q, 22 above Y.  BTC -0.0% vs monthly open.
+Breadth: 58/146 above W, 84 above M, 67 above Q, 22 above Y.  BTC +0.2% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  RENDERUSDT     vol_trend=1.68  10d range=11.5%  days flagged=1
-  GOOGLBUSDT     vol_trend=1.57  10d range=12.4%  days flagged=1
+  LINKUSDT       vol_trend=1.60  10d range=12.9%  days flagged=1
+  BNSOLUSDT      vol_trend=1.57  10d range=7.2%  days flagged=1
+  RENDERUSDT     vol_trend=1.71  10d range=10.3%  days flagged=1
+  GOOGLBUSDT     vol_trend=1.77  10d range=7.5%  days flagged=1
+  MSTRBUSDT      vol_trend=2.35  10d range=14.5%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  ETHFIUSDT      IGNITE         RS_7d=+21.9%  vol_z=1.7
-  SPYBUSDT       RS-divergence  RS_7d=+3.7%  vol_z=0.4
-  JSTUSDT        RS-divergence  RS_7d=+3.3%  vol_z=-0.2
+  SPYBUSDT       RS-divergence  RS_7d=+3.5%  vol_z=-0.8
+  ETHFIUSDT      RS-divergence  RS_7d=+21.8%  vol_z=-1.8
+  PLUMEUSDT      RS-divergence  RS_7d=+12.0%  vol_z=-0.2
+  JSTUSDT        RS-divergence  RS_7d=+8.4%  vol_z=-3.0
+  BOMEUSDT       RS-divergence  RS_7d=+34.8%  vol_z=-0.8
 
 ## New entrants to the Early top-20
-  #3   ETHFIUSDT      early=0.636  stage=IGNITE
-  #4   JSTUSDT        early=0.615  stage=-
-  #5   LINKUSDT       early=0.524  stage=RUN
-  #7   RENDERUSDT     early=0.468  stage=ACCUM
-  #10  ATMUSDT        early=0.404  stage=-
-  #11  ATUSDT         early=0.392  stage=RUN
-  #12  BANANAS31USDT  early=0.378  stage=RUN
-  #13  MOVEUSDT       early=0.377  stage=-
-  #14  DODOUSDT       early=0.375  stage=-
-  #15  AVNTUSDT       early=0.373  stage=RUN
-  #16  WLDUSDT        early=0.372  stage=-
-  #17  CRVUSDT        early=0.365  stage=RUN
-  #18  MITOUSDT       early=0.364  stage=RUN
-  #19  MOVRUSDT       early=0.364  stage=-
-  #20  REDUSDT        early=0.362  stage=-
+  #2   LINKUSDT       early=0.701  stage=ACCUM
+  #4   ETHFIUSDT      early=0.654  stage=RUN
+  #6   JSTUSDT        early=0.600  stage=-
+  #7   BNSOLUSDT      early=0.533  stage=ACCUM
+  #9   RENDERUSDT     early=0.502  stage=ACCUM
+  #10  NILUSDT        early=0.491  stage=-
+  #12  ATMUSDT        early=0.409  stage=-
+  #13  MSTRBUSDT      early=0.402  stage=ACCUM
+  #14  2ZUSDT         early=0.394  stage=-
+  #15  STORJUSDT      early=0.391  stage=-
+  #16  ATUSDT         early=0.387  stage=RUN
+  #17  MOVEUSDT       early=0.385  stage=-
+  #18  AVNTUSDT       early=0.384  stage=RUN
+  #19  GUNUSDT        early=0.379  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  2ZUSDT         vol_z=10.0  rank=#27  stage=-
-  RONINUSDT      vol_z=10.0  rank=#108  stage=-
-  DOLOUSDT       vol_z=10.0  rank=#80  stage=-
-  EDENUSDT       vol_z=9.8  rank=#119  stage=EXT
-  REDUSDT        vol_z=9.7  rank=#20  stage=-
-  PLUMEUSDT      vol_z=8.5  rank=#67  stage=-
-  ONGUSDT        vol_z=8.0  rank=#105  stage=-
-  ALLOUSDT       vol_z=7.9  rank=#38  stage=-
-  BNSOLUSDT      vol_z=7.1  rank=#32  stage=RUN
-  MOVEUSDT       vol_z=6.2  rank=#13  stage=-
-  ACEUSDT        vol_z=6.2  rank=#96  stage=EXT
-  RVNUSDT        vol_z=5.4  rank=#22  stage=-
-  SCRTUSDT       vol_z=5.2  rank=#29  stage=-
-  ALICEUSDT      vol_z=4.4  rank=#127  stage=-
-  XPLUSDT        vol_z=3.7  rank=#85  stage=-
-  PIXELUSDT      vol_z=3.3  rank=#70  stage=-
-  GPSUSDT        vol_z=3.3  rank=#43  stage=-
+  none
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    SPYBUSDT       ACCUM    0.845   0.627   +0.7%   +3.7%   +5.9%   0.4   2.83
-2    NVDABUSDT      RUN      0.674   0.640   +0.8%   +4.0%   +9.9%  -0.1   0.95
-3    ETHFIUSDT      IGNITE   0.636   0.820   +2.6%  +21.9%   +5.7%   1.7   0.94
-4    JSTUSDT        -        0.615   0.667   +1.3%   +3.3%  +10.5%  -0.2   1.21
-5    LINKUSDT       RUN      0.524   0.750   +1.7%  +12.9%   +8.0%   0.4   1.47
-6    EURIUSDT       ACCUM    0.501   0.707   +1.3%   +3.4%   +3.9%   1.2   3.24
-7    RENDERUSDT     ACCUM    0.468   0.250   +0.2%   -1.8%  -15.7%  -0.6   1.68
-8    HOMEUSDT       -        0.445   0.436   -0.0%  +10.1%  -43.3%  -0.4   1.07
-9    GOOGLBUSDT     ACCUM    0.429   0.486   +0.7%   +0.5%   -4.3%   0.7   1.57
-10   ATMUSDT        -        0.404   0.456  -12.6%   +1.4%  -42.5%   0.8   1.84
+1    SPYBUSDT       ACCUM    0.855   0.623   +0.1%   +3.5%   +4.9%  -0.8   2.60
+2    LINKUSDT       ACCUM    0.701   0.667   +3.1%  +14.7%  +12.2%  -1.5   1.60
+3    NVDABUSDT      RUN      0.667   0.602   +0.1%   +3.2%  +10.6%  -1.2   1.03
+4    ETHFIUSDT      RUN      0.654   0.623   +0.7%  +21.8%   +9.2%  -1.8   1.32
+5    PLUMEUSDT      -        0.652   0.874   +1.0%  +12.0%  +24.0%  -0.2   2.93
+6    JSTUSDT        -        0.600   0.550   +0.7%   +8.4%   +9.5%  -3.0   1.12
+7    BNSOLUSDT      ACCUM    0.533   0.508   +0.1%   +2.2%   +1.8%  -1.4   1.57
+8    EURIUSDT       ACCUM    0.510   0.688   +0.0%   +3.2%   +2.4%  -0.6   2.94
+9    RENDERUSDT     ACCUM    0.502   0.275   +0.3%   -1.4%  -13.1%  -1.8   1.71
+10   NILUSDT        -        0.491   0.809   +0.3%  +34.3%  +33.5%  -0.6   2.15
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
