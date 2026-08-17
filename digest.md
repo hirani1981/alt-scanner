@@ -1,49 +1,52 @@
 # Alt Strength Digest - 2026-08-17
 
-**Regime [NEUTRAL]:** BTC below both vs trend, 45% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC below both vs trend, 46% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 76/108 above W, 59 above M, 55 above Q, 11 above Y.  BTC +0.4% vs monthly open.
+Breadth: 85/118 above W, 67 above M, 58 above Q, 15 above Y.  BTC +1.1% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  XPLUSDT        vol_trend=4.34  10d range=10.6%  days flagged=1
+  XPLUSDT        vol_trend=4.34  10d range=10.3%  days flagged=1
+  MSTRBUSDT      vol_trend=1.98  10d range=12.3%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  ONGUSDT        IGNITE         RS_7d=+45.4%  vol_z=1.6
+  ONGUSDT        IGNITE         RS_7d=+42.0%  vol_z=3.3
 
 ## New entrants to the Early top-20
-  #2   ONGUSDT        early=0.549  stage=IGNITE
-  #3   GPSUSDT        early=0.545  stage=RUN
-  #4   ETHFIUSDT      early=0.539  stage=RUN
-  #6   LINKUSDT       early=0.536  stage=RUN
-  #8   NILUSDT        early=0.500  stage=RUN
-  #9   JSTUSDT        early=0.492  stage=-
-  #10  XPLUSDT        early=0.457  stage=ACCUM
-  #11  COWUSDT        early=0.428  stage=-
-  #12  BIGTIMEUSDT    early=0.398  stage=-
-  #13  CHIPUSDT       early=0.390  stage=-
-  #14  BELUSDT        early=0.388  stage=RUN
-  #16  ONTUSDT        early=0.381  stage=-
-  #17  ROBOUSDT       early=0.369  stage=RUN
-  #18  ALLOUSDT       early=0.364  stage=-
-  #19  MOVRUSDT       early=0.359  stage=-
-  #20  WALUSDT        early=0.357  stage=-
+  #1   ONGUSDT        early=0.550  stage=IGNITE
+  #2   ETHFIUSDT      early=0.543  stage=RUN
+  #5   XPLUSDT        early=0.513  stage=ACCUM
+  #6   JSTUSDT        early=0.506  stage=-
+  #7   NILUSDT        early=0.502  stage=RUN
+  #8   COWUSDT        early=0.436  stage=-
+  #9   MSTRBUSDT      early=0.433  stage=ACCUM
+  #10  BIGTIMEUSDT    early=0.406  stage=-
+  #11  ONTUSDT        early=0.404  stage=-
+  #13  BELUSDT        early=0.394  stage=RUN
+  #14  ALLOUSDT       early=0.369  stage=-
+  #15  MOVRUSDT       early=0.369  stage=-
+  #16  CHIPUSDT       early=0.364  stage=-
+  #17  UUSDT          early=0.363  stage=-
+  #18  XAIUSDT        early=0.358  stage=-
+  #19  DIAUSDT        early=0.354  stage=-
+  #20  SOPHUSDT       early=0.352  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  GPSUSDT        vol_z=10.0  rank=#56  stage=EXT
+  ONGUSDT        vol_z=3.3  rank=#1  stage=IGNITE
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    PLUMEUSDT      RUN      0.558   0.854   +1.1%   +8.5%  +27.6%  -0.3   5.11
-2    ONGUSDT        IGNITE   0.549   0.941  +13.6%  +45.4%  +33.1%   1.6   4.38
-3    GPSUSDT        RUN      0.545   0.951   +7.5%  +27.9%  +33.3%  -0.3   3.17
-4    ETHFIUSDT      RUN      0.539   0.658   +1.0%  +33.3%  +16.7%  -1.8   1.69
-5    EURIUSDT       ACCUM    0.537   0.609   -0.3%   +1.7%   +4.1%  -0.7   2.43
-6    LINKUSDT       RUN      0.536   0.672   +0.8%  +16.0%  +16.8%  -1.5   1.66
-7    SPYBUSDT       ACCUM    0.521   0.536   -0.4%   +1.9%   +7.2%  -0.9   1.79
-8    NILUSDT        RUN      0.500   0.782   +4.2%  +24.4%  +44.7%  -0.8   1.72
-9    JSTUSDT        -        0.492   0.594   +0.7%   +9.2%  +14.1%  -2.7   0.97
-10   XPLUSDT        ACCUM    0.457   0.588   -0.1%   -3.4%   -6.8%  -0.3   4.34
+1    ONGUSDT        IGNITE   0.550   0.929  +10.9%  +42.0%  +30.0%   3.3   4.38
+2    ETHFIUSDT      RUN      0.543   0.634   +0.3%  +32.4%  +15.9%  -1.3   1.69
+3    EURIUSDT       ACCUM    0.542   0.698   -0.9%   +1.1%   +3.5%  -0.0   2.43
+4    SPYBUSDT       ACCUM    0.531   0.517   -1.0%   +1.2%   +6.5%  -0.9   1.79
+5    XPLUSDT        ACCUM    0.513   0.625   +1.6%   -1.7%   -5.2%  -0.2   4.34
+6    JSTUSDT        -        0.506   0.569   +0.1%   +8.5%  +13.4%  -2.1   0.97
+7    NILUSDT        RUN      0.502   0.790   +2.5%  +22.4%  +42.4%  -0.5   1.72
+8    COWUSDT        -        0.436   0.560   -5.5%   +8.5%  -14.2%  -0.1   5.58
+9    MSTRBUSDT      ACCUM    0.433   0.666   -0.3%   -1.9%   +0.4%   0.0   1.98
+10   BIGTIMEUSDT    -        0.406   0.420   -4.6%   -1.9%  -19.9%  -0.3   2.26
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
