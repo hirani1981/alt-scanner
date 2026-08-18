@@ -1,51 +1,52 @@
 # Alt Strength Digest - 2026-08-18
 
-**Regime [BTC_LED]:** BTC above both vs trend, 42% of alts beating it - neutral; be selective.
+**Regime [BTC_LED]:** BTC trending but only 39% of alts beating it - BTC-led market; alts lagging.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 73/129 above W, 78 above M, 62 above Q, 15 above Y.  BTC +2.0% vs monthly open.
+Breadth: 74/144 above W, 84 above M, 68 above Q, 17 above Y.  BTC +2.3% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  MSTRBUSDT      vol_trend=2.05  10d range=12.0%  days flagged=1
-  XPLUSDT        vol_trend=4.44  10d range=10.5%  days flagged=1
+  MSTRBUSDT      vol_trend=2.05  10d range=11.9%  days flagged=1
+  XPLUSDT        vol_trend=4.44  10d range=10.4%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  none
+  NILUSDT        RS-divergence  RS_7d=+35.5%  vol_z=-0.7
 
 ## New entrants to the Early top-20
-  #1   ONGUSDT        early=0.581  stage=RUN
-  #2   NILUSDT        early=0.530  stage=RUN
-  #3   MSTRBUSDT      early=0.504  stage=ACCUM
-  #4   XPLUSDT        early=0.463  stage=ACCUM
-  #5   ALLOUSDT       early=0.453  stage=-
-  #7   COWUSDT        early=0.437  stage=-
-  #10  CHIPUSDT       early=0.425  stage=-
-  #11  ONTUSDT        early=0.414  stage=-
-  #12  WLFIUSDT       early=0.386  stage=RUN
-  #13  HAEDALUSDT     early=0.382  stage=RUN
-  #14  XAIUSDT        early=0.381  stage=RUN
-  #15  ETHFIUSDT      early=0.374  stage=-
-  #16  POLUSDT        early=0.373  stage=-
-  #17  2ZUSDT         early=0.372  stage=-
-  #18  JTOUSDT        early=0.372  stage=-
-  #19  ALICEUSDT      early=0.367  stage=RUN
-  #20  PIXELUSDT      early=0.367  stage=RUN
+  #1   NILUSDT        early=0.673  stage=RUN
+  #2   ONGUSDT        early=0.574  stage=RUN
+  #3   MSTRBUSDT      early=0.503  stage=ACCUM
+  #4   XPLUSDT        early=0.458  stage=ACCUM
+  #5   ALLOUSDT       early=0.457  stage=-
+  #9   CHIPUSDT       early=0.420  stage=-
+  #10  ONTUSDT        early=0.400  stage=-
+  #11  WLFIUSDT       early=0.388  stage=RUN
+  #12  REDUSDT        early=0.383  stage=-
+  #13  COWUSDT        early=0.380  stage=-
+  #14  ETHFIUSDT      early=0.380  stage=-
+  #15  POLUSDT        early=0.379  stage=-
+  #16  SKYUSDT        early=0.378  stage=-
+  #17  XAIUSDT        early=0.377  stage=RUN
+  #18  2ZUSDT         early=0.372  stage=-
+  #19  MOVRUSDT       early=0.370  stage=-
+  #20  LINKUSDT       early=0.364  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  GALAUSDT       vol_z=8.9  rank=#54  stage=-
+  REDUSDT        vol_z=4.9  rank=#12  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    ONGUSDT        RUN      0.581   0.926   +4.5%  +37.1%  +19.2%  -0.1   4.95
-2    NILUSDT        RUN      0.530   0.776   +1.1%  +36.6%  +37.8%  -0.8   1.49
-3    MSTRBUSDT      ACCUM    0.504   0.561   -0.2%   -0.3%   +2.2%  -1.0   2.05
-4    XPLUSDT        ACCUM    0.463   0.606   +0.3%   -4.2%   -4.8%  -0.3   4.44
-5    ALLOUSDT       -        0.453   0.572   +0.5%   -3.6%  -34.3%  -0.6   3.71
-6    BFUSDUSDT      ACCUM    0.442   0.579   +0.6%   -0.9%   +0.9%  -0.4   3.02
-7    COWUSDT        -        0.437   0.681   +4.3%   +7.4%  -13.8%  -0.2   5.58
-8    EURIUSDT       ACCUM    0.435   0.656   +0.6%   -0.5%   +2.3%  -0.6   2.29
-9    SPYBUSDT       ACCUM    0.429   0.529   +0.5%   -0.7%   +4.4%  -0.9   1.54
-10   CHIPUSDT       -        0.425   0.742   +1.5%  +24.4%   -6.3%  -0.5   3.53
+1    NILUSDT        RUN      0.673   0.749   +0.3%  +35.5%  +36.7%  -0.7   1.49
+2    ONGUSDT        RUN      0.574   0.924  +11.1%  +45.7%  +26.7%   0.6   4.95
+3    MSTRBUSDT      ACCUM    0.503   0.718   -0.1%   -0.1%   +2.3%  -0.0   2.05
+4    XPLUSDT        ACCUM    0.458   0.627   +0.8%   -3.7%   -4.3%   0.2   4.44
+5    ALLOUSDT       -        0.457   0.563   -0.7%   -4.8%  -35.1%  -0.3   3.71
+6    BFUSDUSDT      ACCUM    0.438   0.734   +0.4%   -1.1%   +0.7%  -0.3   3.02
+7    EURIUSDT       ACCUM    0.435   0.679   +0.2%   -0.9%   +2.0%   0.0   2.29
+8    SPYBUSDT       ACCUM    0.428   0.619   -0.1%   -1.3%   +3.8%  -0.1   1.54
+9    CHIPUSDT       -        0.420   0.730   +2.8%  +25.9%   -5.1%  -0.3   3.53
+10   ONTUSDT        -        0.400   0.762   +7.7%   +8.2%   -5.8%   0.2   3.30
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
