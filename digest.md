@@ -1,60 +1,71 @@
 # Alt Strength Digest - 2026-08-19
 
-**Regime [BTC_LED]:** BTC trending but only 38% of alts beating it - BTC-led market; alts lagging.
+**Regime [BTC_LED]:** BTC trending but only 26% of alts beating it - BTC-led market; alts lagging.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 83/135 above W, 79 above M, 65 above Q, 15 above Y.  BTC +3.3% vs monthly open.
+Breadth: 109/144 above W, 97 above M, 73 above Q, 20 above Y.  BTC +8.8% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  SUNUSDT        vol_trend=2.17  10d range=9.0%  days flagged=1
-  XPLUSDT        vol_trend=4.89  10d range=10.2%  days flagged=1
-  MSTRBUSDT      vol_trend=2.05  10d range=10.9%  days flagged=1
+  SUNUSDT        vol_trend=2.17  10d range=8.9%  days flagged=1
+  XPLUSDT        vol_trend=4.89  10d range=10.0%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  MRVLBUSDT      IGNITE         RS_7d=+9.6%  vol_z=2.2
+  ETHUSDT        IGNITE         RS_7d=+3.3%  vol_z=4.2
 
 ## New entrants to the Early top-20
-  #1   ONGUSDT        early=0.589  stage=RUN
-  #2   LINKUSDT       early=0.579  stage=RUN
-  #3   CAKEUSDT       early=0.548  stage=RUN
-  #4   MRVLBUSDT      early=0.508  stage=IGNITE
-  #5   ALLOUSDT       early=0.482  stage=-
-  #6   SUNUSDT        early=0.474  stage=ACCUM
-  #7   XPLUSDT        early=0.471  stage=ACCUM
-  #8   CHIPUSDT       early=0.457  stage=-
-  #9   MSTRBUSDT      early=0.450  stage=ACCUM
-  #11  OPGUSDT        early=0.414  stage=-
-  #12  SKYUSDT        early=0.403  stage=-
-  #13  WLFIUSDT       early=0.393  stage=RUN
-  #14  SIGNUSDT       early=0.391  stage=-
-  #15  ALICEUSDT      early=0.390  stage=RUN
-  #16  POLUSDT        early=0.390  stage=RUN
-  #17  LDOUSDT        early=0.389  stage=-
-  #18  GNOUSDT        early=0.387  stage=-
-  #19  ETHFIUSDT      early=0.383  stage=RUN
-  #20  COWUSDT        early=0.381  stage=-
+  #1   SUNUSDT        early=0.492  stage=ACCUM
+  #2   XPLUSDT        early=0.485  stage=ACCUM
+  #3   ETHUSDT        early=0.466  stage=IGNITE
+  #4   CHIPUSDT       early=0.463  stage=-
+  #5   REDUSDT        early=0.461  stage=-
+  #7   SKYUSDT        early=0.416  stage=-
+  #8   COMPUSDT       early=0.400  stage=-
+  #9   GNOUSDT        early=0.399  stage=-
+  #10  ALLOUSDT       early=0.394  stage=-
+  #11  WLFIUSDT       early=0.392  stage=-
+  #12  ALICEUSDT      early=0.391  stage=RUN
+  #13  ETHFIUSDT      early=0.391  stage=RUN
+  #14  ACMUSDT        early=0.391  stage=-
+  #15  ONGUSDT        early=0.390  stage=RUN
+  #16  MSTRBUSDT      early=0.379  stage=-
+  #17  BBUSDT         early=0.378  stage=-
+  #18  GALAUSDT       early=0.374  stage=-
+  #19  LINKUSDT       early=0.373  stage=RUN
+  #20  CFGUSDT        early=0.365  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  CYBERUSDT      vol_z=10.0  rank=#55  stage=-
-  ACMUSDT        vol_z=5.4  rank=#22  stage=-
-  SIGNUSDT       vol_z=4.0  rank=#14  stage=-
-  ALLOUSDT       vol_z=3.4  rank=#5  stage=-
-  GNOUSDT        vol_z=3.3  rank=#18  stage=-
-  CFGUSDT        vol_z=3.3  rank=#32  stage=-
-  USDEUSDT       vol_z=3.1  rank=#114  stage=COOL
+  CYBERUSDT      vol_z=10.0  rank=#45  stage=-
+  NEXOUSDT       vol_z=8.3  rank=#40  stage=-
+  ACMUSDT        vol_z=7.5  rank=#14  stage=-
+  TREEUSDT       vol_z=6.7  rank=#51  stage=-
+  CFGUSDT        vol_z=5.8  rank=#20  stage=-
+  COINBUSDT      vol_z=5.8  rank=#109  stage=-
+  MRVLBUSDT      vol_z=5.6  rank=#83  stage=COOL
+  SOLUSDT        vol_z=5.6  rank=#26  stage=-
+  SIGNUSDT       vol_z=5.5  rank=#24  stage=-
+  BCHUSDT        vol_z=4.7  rank=#29  stage=-
+  ZECUSDT        vol_z=4.6  rank=#23  stage=-
+  GNOUSDT        vol_z=4.5  rank=#9  stage=-
+  ETHUSDT        vol_z=4.2  rank=#3  stage=IGNITE
+  RSRUSDT        vol_z=3.8  rank=#106  stage=-
+  CAKEUSDT       vol_z=3.8  rank=#22  stage=RUN
+  PENDLEUSDT     vol_z=3.7  rank=#31  stage=-
+  USDEUSDT       vol_z=3.6  rank=#111  stage=-
+  ALLOUSDT       vol_z=3.5  rank=#10  stage=-
+  MSTRBUSDT      vol_z=3.2  rank=#16  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    ONGUSDT        RUN      0.589   0.895   +6.8%  +47.7%  +29.6%   0.8   5.27
-2    LINKUSDT       RUN      0.579   0.804   +2.0%  +10.0%  +14.1%   0.1   1.51
-3    CAKEUSDT       RUN      0.548   0.767   +0.6%   +4.5%  +10.8%   0.4   0.94
-4    MRVLBUSDT      IGNITE   0.508   0.868  +15.1%   +9.6%  +26.8%   2.2   1.49
-5    ALLOUSDT       -        0.482   0.664   -3.3%   -0.5%  -38.4%   3.4   3.56
-6    SUNUSDT        ACCUM    0.474   0.448   -2.4%   -9.6%   -9.1%   1.1   2.17
-7    XPLUSDT        ACCUM    0.471   0.612   +1.7%   +2.4%   -8.5%  -0.2   4.89
-8    CHIPUSDT       -        0.457   0.607   +3.3%  +14.4%   -9.0%  -0.3   3.62
-9    MSTRBUSDT      ACCUM    0.450   0.619   +1.4%   -2.5%   -3.1%   0.2   2.05
-10   EURIUSDT       ACCUM    0.424   0.674   +0.2%   -1.3%   +2.5%   0.4   2.20
+1    SUNUSDT        ACCUM    0.492   0.401   -6.5%  -13.4%  -13.0%   2.5   2.17
+2    XPLUSDT        ACCUM    0.485   0.497   -0.9%   -0.3%  -10.8%   0.0   4.89
+3    ETHUSDT        IGNITE   0.466   0.839   +3.2%   +3.3%   +4.8%   4.2   0.59
+4    CHIPUSDT       -        0.463   0.558   +1.7%  +12.6%  -10.4%  -0.0   3.62
+5    REDUSDT        -        0.461   0.585   -3.9%   +4.0%  -10.9%   0.7   4.56
+6    EURIUSDT       ACCUM    0.447   0.562   -4.6%   -6.1%   -2.5%   1.2   2.20
+7    SKYUSDT        -        0.416   0.742   +0.7%   +4.6%   -7.6%   1.2   1.21
+8    COMPUSDT       -        0.400   0.733   -3.5%   +3.4%   +1.2%   2.5   2.49
+9    GNOUSDT        -        0.399   0.807   -0.2%   +3.7%   -1.2%   4.5   2.44
+10   ALLOUSDT       -        0.394   0.578   -8.8%   -6.2%  -41.9%   3.5   3.56
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
