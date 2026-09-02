@@ -1,57 +1,57 @@
 # Alt Strength Digest - 2026-09-02
 
-**Regime [NEUTRAL]:** BTC above both vs trend, 51% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC above both vs trend, 49% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 88/150 above W, 56 above M, 98 above Q, 28 above Y.  BTC -2.5% vs monthly open.
+Breadth: 95/149 above W, 61 above M, 104 above Q, 30 above Y.  BTC -1.6% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  CAKEUSDT       vol_trend=1.89  10d range=13.6%  days flagged=1
-  HOODBUSDT      vol_trend=1.87  10d range=11.4%  days flagged=1
+  CAKEUSDT       vol_trend=1.89  10d range=13.4%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  UNIUSDT        IGNITE         RS_7d=+37.9%  vol_z=2.6
-  MINAUSDT       RS-divergence  RS_7d=+16.6%  vol_z=-0.2
-  CHIPUSDT       RS-divergence  RS_7d=+28.5%  vol_z=0.2
+  UNIUSDT        IGNITE         RS_7d=+36.8%  vol_z=3.9
+  ARBUSDT        IGNITE         RS_7d=+36.6%  vol_z=1.9
+  FFUSDT         IGNITE         RS_7d=+15.5%  vol_z=1.9
 
 ## New entrants to the Early top-20
-  #1   TWTUSDT        early=0.594  stage=RUN
-  #2   UNIUSDT        early=0.589  stage=IGNITE
-  #3   EGLDUSDT       early=0.574  stage=RUN
-  #4   CAKEUSDT       early=0.525  stage=ACCUM
-  #5   ENSOUSDT       early=0.466  stage=-
-  #6   METABUSDT      early=0.453  stage=-
-  #7   ZKUSDT         early=0.424  stage=-
-  #8   HOODBUSDT      early=0.414  stage=ACCUM
-  #9   SOPHUSDT       early=0.404  stage=RUN
-  #10  ZKCUSDT        early=0.400  stage=-
-  #11  AAPLBUSDT      early=0.392  stage=-
-  #12  BEBUSDT        early=0.390  stage=-
-  #13  JASMYUSDT      early=0.388  stage=-
-  #14  0GUSDT         early=0.383  stage=-
-  #16  ZKPUSDT        early=0.379  stage=-
-  #17  IQUSDT         early=0.378  stage=-
-  #18  VETUSDT        early=0.377  stage=-
-  #19  DASHUSDT       early=0.372  stage=-
-  #20  STRAXUSDT      early=0.372  stage=-
+  #1   UNIUSDT        early=0.594  stage=IGNITE
+  #2   ARBUSDT        early=0.552  stage=IGNITE
+  #3   CAKEUSDT       early=0.523  stage=ACCUM
+  #4   ENSOUSDT       early=0.468  stage=-
+  #5   METABUSDT      early=0.450  stage=-
+  #6   FFUSDT         early=0.445  stage=IGNITE
+  #7   ZKUSDT         early=0.428  stage=-
+  #8   SCRUSDT        early=0.415  stage=-
+  #9   SOPHUSDT       early=0.401  stage=RUN
+  #10  JASMYUSDT      early=0.397  stage=-
+  #11  ZKCUSDT        early=0.395  stage=-
+  #13  TWTUSDT        early=0.392  stage=RUN
+  #14  0GUSDT         early=0.385  stage=-
+  #15  ZKPUSDT        early=0.382  stage=-
+  #16  DASHUSDT       early=0.372  stage=RUN
+  #17  STRKUSDT       early=0.371  stage=-
+  #18  UUSDT          early=0.370  stage=-
+  #20  ZENUSDT        early=0.370  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  TUSDT          vol_z=10.0  rank=#147  stage=EXT
-  SOPHUSDT       vol_z=3.8  rank=#9  stage=RUN
-  LAUSDT         vol_z=3.1  rank=#40  stage=-
+  TUSDT          vol_z=10.0  rank=#109  stage=-
+  SOPHUSDT       vol_z=7.6  rank=#9  stage=RUN
+  LAUSDT         vol_z=4.9  rank=#25  stage=-
+  UNIUSDT        vol_z=3.9  rank=#1  stage=IGNITE
+  EGLDUSDT       vol_z=3.8  rank=#59  stage=EXT
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    TWTUSDT        RUN      0.594   0.816   +1.4%  +22.5%  +22.0%  -0.3   2.80
-2    UNIUSDT        IGNITE   0.589   0.952   +1.2%  +37.9%  +24.2%   2.6   2.00
-3    EGLDUSDT       RUN      0.574   0.908   +6.2%  +26.3%  +29.2%   0.8   1.74
-4    CAKEUSDT       ACCUM    0.525   0.635   -0.1%   +6.5%   +3.4%  -0.3   1.89
-5    ENSOUSDT       -        0.466   0.705   +5.3%   +9.1%  -20.9%  -0.1   5.22
-6    METABUSDT      -        0.453   0.508   +1.0%   +2.8%  -18.9%  -0.6   1.42
-7    ZKUSDT         -        0.424   0.510   -1.1%   +4.0%   -8.9%  -0.4   2.98
-8    HOODBUSDT      ACCUM    0.414   0.489   -0.6%   -3.9%   -6.9%   0.2   1.87
-9    SOPHUSDT       RUN      0.404   0.807   +5.7%  +17.2%  -10.7%   3.8   1.37
-10   ZKCUSDT        -        0.400   0.701   -0.3%  +21.4%   +5.9%  -0.1   5.24
+1    UNIUSDT        IGNITE   0.594   0.928   +0.4%  +36.8%  +23.2%   3.9   2.00
+2    ARBUSDT        IGNITE   0.552   0.909  +12.5%  +36.6%  +23.2%   1.9   2.50
+3    CAKEUSDT       ACCUM    0.523   0.637   +0.1%   +6.7%   +3.6%  -0.1   1.89
+4    ENSOUSDT       -        0.468   0.636   +2.0%   +5.7%  -23.4%   0.0   5.22
+5    METABUSDT      -        0.450   0.571   +3.1%   +4.9%  -17.3%  -0.3   1.42
+6    FFUSDT         IGNITE   0.445   0.936   +9.5%  +15.5%  +37.3%   1.9   1.00
+7    ZKUSDT         -        0.428   0.535   -0.8%   +4.4%   -8.6%  -0.2   2.98
+8    SCRUSDT        -        0.415   0.350   -1.2%   +1.6%   -1.4%  -0.5   2.12
+9    SOPHUSDT       RUN      0.401   0.822   +8.7%  +20.5%   -8.1%   7.6   1.37
+10   JASMYUSDT      -        0.397   0.414   -5.1%   -1.9%  -10.0%  -0.3   1.52
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
