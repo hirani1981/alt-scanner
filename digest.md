@@ -1,77 +1,56 @@
-# Alt Strength Digest - 2026-09-07
+# Alt Strength Digest - 2026-09-08
 
 **Regime [ALT_LED]:** BTC trending, 83% of alts beating it - risk-on for alts.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 64/149 above W, 127 above M, 119 above Q, 36 above Y.  BTC +0.8% vs monthly open.
+Breadth: 64/149 above W, 126 above M, 116 above Q, 37 above Y.  BTC +0.2% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  SEIUSDT        vol_trend=1.52  10d range=15.3%  days flagged=1
-  USDEUSDT       vol_trend=1.66  10d range=0.1%  days flagged=1
+  LINEAUSDT      vol_trend=1.63  10d range=17.3%  days flagged=1
+  ADXUSDT        vol_trend=2.00  10d range=8.3%  days flagged=1
+  ARKMUSDT       vol_trend=1.52  10d range=11.3%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  IOSTUSDT       IGNITE         RS_7d=+68.5%  vol_z=8.9
-  KAVAUSDT       IGNITE         RS_7d=+24.0%  vol_z=5.1
-  ORCAUSDT       IGNITE         RS_7d=+21.7%  vol_z=10.0
-  AEROUSDT       IGNITE         RS_7d=+32.0%  vol_z=3.3
-  ICPUSDT        IGNITE         RS_7d=+26.8%  vol_z=5.9
-  CAKEUSDT       RS-divergence  RS_7d=+18.7%  vol_z=1.4
-  WIFUSDT        RS-divergence  RS_7d=+8.7%  vol_z=0.2
+  FORMUSDT       IGNITE         RS_7d=+16.1%  vol_z=3.4
+  WIFUSDT        RS-divergence  RS_7d=+9.5%  vol_z=-0.9
 
 ## New entrants to the Early top-20
-  #1   CAKEUSDT       early=0.718  stage=RUN
-  #2   XVGUSDT        early=0.573  stage=RUN
-  #3   IOSTUSDT       early=0.550  stage=IGNITE
-  #4   PENDLEUSDT     early=0.545  stage=RUN
-  #5   KAVAUSDT       early=0.536  stage=IGNITE
-  #6   WIFUSDT        early=0.533  stage=-
-  #7   ORCAUSDT       early=0.488  stage=IGNITE
-  #8   SEIUSDT        early=0.481  stage=ACCUM
-  #9   AEROUSDT       early=0.478  stage=IGNITE
-  #11  ICPUSDT        early=0.467  stage=IGNITE
-  #12  USDEUSDT       early=0.451  stage=ACCUM
-  #13  TUSDT          early=0.421  stage=-
-  #14  ZKPUSDT        early=0.418  stage=-
-  #15  ROSEUSDT       early=0.407  stage=-
-  #16  FILUSDT        early=0.396  stage=RUN
-  #17  APTUSDT        early=0.390  stage=RUN
-  #18  ALGOUSDT       early=0.389  stage=-
-  #19  NOMUSDT        early=0.387  stage=-
-  #20  EGLDUSDT       early=0.380  stage=RUN
+  #1   XVGUSDT        early=0.579  stage=RUN
+  #2   CAKEUSDT       early=0.577  stage=RUN
+  #3   DOTUSDT        early=0.569  stage=RUN
+  #4   KAVAUSDT       early=0.562  stage=RUN
+  #5   WIFUSDT        early=0.534  stage=-
+  #6   LINEAUSDT      early=0.505  stage=ACCUM
+  #7   AEROUSDT       early=0.495  stage=RUN
+  #8   ICPUSDT        early=0.482  stage=-
+  #9   ADXUSDT        early=0.466  stage=ACCUM
+  #11  ARKMUSDT       early=0.446  stage=ACCUM
+  #12  FORMUSDT       early=0.441  stage=IGNITE
+  #13  ZKPUSDT        early=0.412  stage=RUN
+  #14  INJUSDT        early=0.409  stage=-
+  #15  TUSDT          early=0.382  stage=RUN
+  #16  REZUSDT        early=0.381  stage=-
+  #17  NOMUSDT        early=0.375  stage=-
+  #18  BROCCOLI714USDT early=0.372  stage=-
+  #19  APTUSDT        early=0.372  stage=-
+  #20  OPUSDT         early=0.370  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  ORCAUSDT       vol_z=10.0  rank=#7  stage=IGNITE
-  IOSTUSDT       vol_z=8.9  rank=#3  stage=IGNITE
-  YGGUSDT        vol_z=8.5  rank=#118  stage=-
-  SOPHUSDT       vol_z=8.2  rank=#43  stage=-
-  CFGUSDT        vol_z=8.0  rank=#75  stage=-
-  SOLVUSDT       vol_z=6.9  rank=#68  stage=EXT
-  DOTUSDT        vol_z=6.4  rank=#34  stage=RUN
-  ASTRUSDT       vol_z=6.4  rank=#61  stage=-
-  ICPUSDT        vol_z=5.9  rank=#11  stage=IGNITE
-  KAVAUSDT       vol_z=5.1  rank=#5  stage=IGNITE
-  TIAUSDT        vol_z=4.9  rank=#59  stage=-
-  REZUSDT        vol_z=4.4  rank=#49  stage=-
-  WLDUSDT        vol_z=4.2  rank=#121  stage=-
-  INJUSDT        vol_z=3.7  rank=#136  stage=-
-  JSTUSDT        vol_z=3.6  rank=#30  stage=-
-  ARKMUSDT       vol_z=3.6  rank=#93  stage=-
-  LINEAUSDT      vol_z=3.3  rank=#41  stage=-
-  AEROUSDT       vol_z=3.3  rank=#9  stage=IGNITE
-  LUNAUSDT       vol_z=3.2  rank=#107  stage=-
+  SOPHUSDT       vol_z=9.4  rank=#84  stage=EXT
+  FORMUSDT       vol_z=3.4  rank=#12  stage=IGNITE
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    CAKEUSDT       RUN      0.718   0.764   +1.1%  +18.7%  +27.5%   1.4   2.66
-2    XVGUSDT        RUN      0.573   0.726   +2.5%  +12.7%  +13.1%   1.1   3.27
-3    IOSTUSDT       IGNITE   0.550   0.942  +36.8%  +68.5%  +32.5%   8.9   2.44
-4    PENDLEUSDT     RUN      0.545   0.847   +6.9%  +25.3%  +29.9%   1.1   1.57
-5    KAVAUSDT       IGNITE   0.536   0.869  +12.1%  +24.0%  +18.2%   5.1   1.15
-6    WIFUSDT        -        0.533   0.546   +1.1%   +8.7%  +24.6%   0.2   0.96
-7    ORCAUSDT       IGNITE   0.488   0.916  +11.1%  +21.7%  +16.2%  10.0   2.02
-8    SEIUSDT        ACCUM    0.481   0.590   +0.8%   +9.7%   -2.8%   1.3   1.52
-9    AEROUSDT       IGNITE   0.478   0.831  +15.2%  +32.0%  +18.1%   3.3   1.21
-10   SAHARAUSDT     -        0.470   0.599   +2.0%  +10.6%   -9.3%   1.3   5.24
+1    XVGUSDT        RUN      0.579   0.771   +1.1%  +17.1%   +7.3%  -0.4   2.77
+2    CAKEUSDT       RUN      0.577   0.842   +2.8%  +23.3%  +29.8%  -0.6   2.82
+3    DOTUSDT        RUN      0.569   0.715   +1.1%  +20.6%  +10.3%  -0.7   1.86
+4    KAVAUSDT       RUN      0.562   0.743   +2.5%  +25.6%  +18.5%  -0.8   1.49
+5    WIFUSDT        -        0.534   0.536   +0.3%   +9.5%  +25.4%  -0.9   1.05
+6    LINEAUSDT      ACCUM    0.505   0.337   +0.2%   +6.8%   -0.3%  -1.3   1.63
+7    AEROUSDT       RUN      0.495   0.883   +6.1%  +36.3%  +28.9%   0.6   1.80
+8    ICPUSDT        -        0.482   0.751   +1.5%  +19.6%  +14.7%  -0.8   1.85
+9    ADXUSDT        ACCUM    0.466   0.475   +1.4%   -1.3%  -24.0%  -0.3   2.00
+10   SAHARAUSDT     -        0.463   0.611   +0.6%  +10.7%   -7.2%  -0.3   5.37
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
