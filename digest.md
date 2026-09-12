@@ -1,69 +1,56 @@
-# Alt Strength Digest - 2026-09-11
+# Alt Strength Digest - 2026-09-12
 
-**Regime [ALT_LED]:** BTC mixed vs trend, 64% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC mixed vs trend, 53% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 42/149 above W, 95 above M, 100 above Q, 30 above Y.  BTC -1.6% vs monthly open.
+Breadth: 39/149 above W, 94 above M, 103 above Q, 31 above Y.  BTC -1.7% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  HOLOUSDT       vol_trend=3.82  10d range=17.7%  days flagged=1
-  SEIUSDT        vol_trend=1.73  10d range=18.4%  days flagged=1
+  AAPLBUSDT      vol_trend=1.52  10d range=7.6%  days flagged=1
+  RUNEUSDT       vol_trend=1.56  10d range=15.3%  days flagged=1
+  ALGOUSDT       vol_trend=1.51  10d range=16.5%  days flagged=1
+  HOLOUSDT       vol_trend=5.06  10d range=17.6%  days flagged=1
+  NVDABUSDT      vol_trend=1.81  10d range=7.9%  days flagged=1
+  SEIUSDT        vol_trend=1.69  10d range=18.4%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  NEARUSDT       IGNITE         RS_7d=+17.4%  vol_z=1.9
-  DOGSUSDT       IGNITE         RS_7d=+26.9%  vol_z=1.8
-  METUSDT        IGNITE         RS_7d=+52.5%  vol_z=8.9
-  TFUELUSDT      IGNITE         RS_7d=+21.5%  vol_z=10.0
-  ETHUSDT        IGNITE         RS_7d=+6.2%  vol_z=1.9
-  LSKUSDT        IGNITE         RS_7d=+35.5%  vol_z=2.4
-  THETAUSDT      IGNITE         RS_7d=+13.4%  vol_z=10.0
-  BMNRBUSDT      RS-divergence  RS_7d=+3.9%  vol_z=0.2
+  PUNDIXUSDT     IGNITE         RS_7d=+17.4%  vol_z=4.4
+  MUBARAKUSDT    RS-divergence  RS_7d=+0.1%  vol_z=-0.8
 
 ## New entrants to the Early top-20
-  #1   NEARUSDT       early=0.715  stage=IGNITE
-  #2   DOGSUSDT       early=0.587  stage=IGNITE
-  #4   KAVAUSDT       early=0.571  stage=RUN
-  #5   BMNRBUSDT      early=0.558  stage=-
-  #6   METUSDT        early=0.496  stage=IGNITE
-  #7   HOLOUSDT       early=0.493  stage=ACCUM
-  #8   TFUELUSDT      early=0.480  stage=IGNITE
-  #9   ETHUSDT        early=0.471  stage=IGNITE
-  #10  SEIUSDT        early=0.458  stage=ACCUM
-  #11  KATUSDT        early=0.454  stage=-
-  #12  LSKUSDT        early=0.448  stage=IGNITE
-  #13  NEWTUSDT       early=0.428  stage=-
-  #14  THETAUSDT      early=0.427  stage=IGNITE
-  #15  REZUSDT        early=0.409  stage=RUN
-  #16  JSTUSDT        early=0.401  stage=-
-  #17  XTZUSDT        early=0.393  stage=RUN
-  #18  DOTUSDT        early=0.391  stage=RUN
-  #19  IOSTUSDT       early=0.386  stage=RUN
-  #20  SAGAUSDT       early=0.385  stage=-
+  #2   KAVAUSDT       early=0.573  stage=RUN
+  #3   VTHOUSDT       early=0.559  stage=RUN
+  #4   AAPLBUSDT      early=0.539  stage=ACCUM
+  #5   RUNEUSDT       early=0.531  stage=ACCUM
+  #6   ETHFIUSDT      early=0.516  stage=RUN
+  #7   THETAUSDT      early=0.511  stage=-
+  #8   ALGOUSDT       early=0.496  stage=ACCUM
+  #9   HOLOUSDT       early=0.487  stage=ACCUM
+  #11  SEIUSDT        early=0.456  stage=ACCUM
+  #12  KATUSDT        early=0.448  stage=RUN
+  #13  REZUSDT        early=0.424  stage=RUN
+  #14  CFGUSDT        early=0.417  stage=-
+  #16  JSTUSDT        early=0.406  stage=-
+  #17  PUNDIXUSDT     early=0.398  stage=IGNITE
+  #18  XTZUSDT        early=0.389  stage=RUN
+  #19  LITEBUSDT      early=0.388  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  THETAUSDT      vol_z=10.0  rank=#14  stage=IGNITE
-  TFUELUSDT      vol_z=10.0  rank=#8  stage=IGNITE
-  BLURUSDT       vol_z=10.0  rank=#80  stage=-
-  METUSDT        vol_z=8.9  rank=#6  stage=IGNITE
-  HOLOUSDT       vol_z=7.9  rank=#7  stage=ACCUM
-  SAHARAUSDT     vol_z=6.1  rank=#57  stage=-
-  NVDABUSDT      vol_z=5.1  rank=#76  stage=-
-  ORCLBUSDT      vol_z=3.9  rank=#50  stage=-
-  MINAUSDT       vol_z=3.3  rank=#68  stage=EXT
-  RAYUSDT        vol_z=3.1  rank=#63  stage=EXT
+  LSKUSDT        vol_z=6.5  rank=#75  stage=EXT
+  PUNDIXUSDT     vol_z=4.4  rank=#17  stage=IGNITE
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    NEARUSDT       IGNITE   0.715   0.848   +0.3%  +17.4%  +23.6%   1.9   1.85
-2    DOGSUSDT       IGNITE   0.587   0.911  +13.0%  +26.9%  +24.4%   1.8   2.37
-3    QQQBUSDT       ACCUM    0.575   0.505   +0.1%   +2.6%  -18.8%   2.1   1.59
-4    KAVAUSDT       RUN      0.571   0.851   +2.8%  +36.3%  +32.8%   1.3   1.79
-5    BMNRBUSDT      -        0.558   0.568   +5.1%   +3.9%  +14.7%   0.2   0.84
-6    METUSDT        IGNITE   0.496   0.977  +28.0%  +52.5%  +42.9%   8.9   1.56
-7    HOLOUSDT       ACCUM    0.493   0.527   +1.9%   +0.9%  -27.5%   7.9   3.82
-8    TFUELUSDT      IGNITE   0.480   0.915  +20.1%  +21.5%  +24.8%  10.0   1.05
-9    ETHUSDT        IGNITE   0.471   0.769   +2.8%   +6.2%  +10.6%   1.9   0.94
-10   SEIUSDT        ACCUM    0.458   0.394   -0.4%   -2.1%   -8.7%   0.3   1.73
+1    QQQBUSDT       ACCUM    0.580   0.220   +0.0%   +2.7%  -19.7%  -2.0   1.69
+2    KAVAUSDT       RUN      0.573   0.725   +1.5%  +35.6%  +36.2%  -1.1   1.98
+3    VTHOUSDT       RUN      0.559   0.922   +2.4%  +49.5%  +52.4%   0.0   5.13
+4    AAPLBUSDT      ACCUM    0.539   0.384   +0.1%   +7.0%  -10.4%  -1.7   1.52
+5    RUNEUSDT       ACCUM    0.531   0.651   +0.5%   +9.7%   -0.3%  -1.0   1.56
+6    ETHFIUSDT      RUN      0.516   0.848   +5.0%  +27.8%  +31.6%  -0.8   1.66
+7    THETAUSDT      -        0.511   0.837   +0.5%  +10.1%  +17.3%  -0.0   2.23
+8    ALGOUSDT       ACCUM    0.496   0.428   +0.5%   +2.8%   -1.8%  -1.5   1.51
+9    HOLOUSDT       ACCUM    0.487   0.464   +0.9%   -2.7%  -27.7%  -0.3   5.06
+10   NVDABUSDT      ACCUM    0.484   0.454   +0.3%   -2.0%  -20.2%  -0.7   1.81
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
