@@ -1,52 +1,61 @@
 # Alt Strength Digest - 2026-09-19
 
-**Regime [ALT_LED]:** BTC trending, 70% of alts beating it - risk-on for alts.
+**Regime [ALT_LED]:** BTC trending, 71% of alts beating it - risk-on for alts.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 136/148 above W, 126 above M, 114 above Q, 43 above Y.  BTC +3.1% vs monthly open.
+Breadth: 138/148 above W, 127 above M, 112 above Q, 42 above Y.  BTC +3.5% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  BANKUSDT       vol_trend=2.08  10d range=18.9%  days flagged=1
+  BANKUSDT       vol_trend=2.08  10d range=19.1%  days flagged=1
   NVDABUSDT      vol_trend=1.87  10d range=6.8%  days flagged=1
   GOOGLBUSDT     vol_trend=2.36  10d range=9.0%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  XTZUSDT        IGNITE         RS_7d=+15.4%  vol_z=2.3
+  STRKUSDT       IGNITE         RS_7d=+48.4%  vol_z=1.7
+  ZAMAUSDT       IGNITE         RS_7d=+51.6%  vol_z=2.7
+  INJUSDT        IGNITE         RS_7d=+18.4%  vol_z=1.7
+  XTZUSDT        IGNITE         RS_7d=+19.9%  vol_z=8.8
 
 ## New entrants to the Early top-20
-  #1   BANKUSDT       early=0.567  stage=ACCUM
-  #2   PENDLEUSDT     early=0.559  stage=RUN
-  #3   OPUSDT         early=0.504  stage=-
-  #4   SUSDT          early=0.503  stage=-
-  #5   MSTRBUSDT      early=0.478  stage=-
-  #6   GENIUSUSDT     early=0.476  stage=-
-  #7   AEROUSDT       early=0.467  stage=-
-  #8   THETAUSDT      early=0.467  stage=-
-  #9   DYMUSDT        early=0.459  stage=-
-  #11  METUSDT        early=0.449  stage=-
-  #14  PYTHUSDT       early=0.435  stage=RUN
-  #15  HEIUSDT        early=0.430  stage=-
-  #16  INJUSDT        early=0.426  stage=-
-  #17  CUSDT          early=0.425  stage=-
-  #18  XLMUSDT        early=0.405  stage=-
-  #19  AXSUSDT        early=0.394  stage=-
-  #20  ACHUSDT        early=0.390  stage=RUN
+  #1   SAGAUSDT       early=0.582  stage=RUN
+  #2   PENDLEUSDT     early=0.560  stage=RUN
+  #3   AVAXUSDT       early=0.544  stage=-
+  #4   REDUSDT        early=0.539  stage=RUN
+  #5   STRKUSDT       early=0.509  stage=IGNITE
+  #6   OPUSDT         early=0.507  stage=-
+  #7   ZAMAUSDT       early=0.505  stage=IGNITE
+  #8   MSTRBUSDT      early=0.480  stage=-
+  #9   GENIUSUSDT     early=0.474  stage=-
+  #10  AEROUSDT       early=0.469  stage=-
+  #11  THETAUSDT      early=0.467  stage=-
+  #12  BANKUSDT       early=0.464  stage=ACCUM
+  #14  DYMUSDT        early=0.451  stage=-
+  #16  QKCUSDT        early=0.445  stage=-
+  #18  ENAUSDT        early=0.439  stage=-
+  #19  INJUSDT        early=0.425  stage=IGNITE
+  #20  CUSDT          early=0.418  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  BANKUSDT       vol_z=10.0  rank=#1  stage=ACCUM
+  BANKUSDT       vol_z=10.0  rank=#12  stage=ACCUM
+  ARUSDT         vol_z=10.0  rank=#102  stage=EXT
+  ESPUSDT        vol_z=9.6  rank=#140  stage=-
+  XTZUSDT        vol_z=8.8  rank=#31  stage=IGNITE
+  AUSDT          vol_z=5.3  rank=#37  stage=-
+  PROVEUSDT      vol_z=5.0  rank=#36  stage=-
+  FUSDT          vol_z=3.6  rank=#74  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    BANKUSDT       ACCUM    0.567   0.521   -1.1%   +2.0%  -26.9%  10.0   2.08
-2    PENDLEUSDT     RUN      0.559   0.668   +2.7%  +15.8%  +58.4%  -1.3   1.44
-3    OPUSDT         -        0.504   0.855   +3.5%  +24.5%  +15.0%   0.4   1.29
-4    SUSDT          -        0.503   0.792   +1.3%  +14.1%  +18.2%  -0.4   1.31
-5    MSTRBUSDT      -        0.478   0.589   +0.9%  +13.6%  +22.4%  -1.3   1.15
-6    GENIUSUSDT     -        0.476   0.611   -1.6%   +7.8%   -2.9%  -0.2   4.43
-7    AEROUSDT       -        0.467   0.672   +3.4%  +11.8%  +24.5%  -0.9   1.11
-8    THETAUSDT      -        0.467   0.785   +4.6%  +10.0%  +21.0%  -0.4   1.07
-9    DYMUSDT        -        0.459   0.544   -1.3%   +5.8%   -5.8%  -0.8   2.48
-10   SPYBUSDT       ACCUM    0.455   0.478   -0.1%   -4.8%   -9.9%   2.0   3.65
+1    SAGAUSDT       RUN      0.582   0.877  +12.2%  +54.7%  +77.7%   0.6   3.31
+2    PENDLEUSDT     RUN      0.560   0.770   +6.2%  +19.8%  +63.7%  -0.5   1.44
+3    AVAXUSDT       -        0.544   0.824  +12.4%  +19.0%  +14.2%   1.3   1.17
+4    REDUSDT        RUN      0.539   0.772   +1.4%   +8.7%  +28.0%   1.5   1.10
+5    STRKUSDT       IGNITE   0.509   0.869   +1.4%  +48.4%  +57.9%   1.7   2.09
+6    OPUSDT         -        0.507   0.824   +3.3%  +24.2%  +14.7%   1.4   1.29
+7    ZAMAUSDT       IGNITE   0.505   0.916  +27.9%  +51.6%  +49.6%   2.7   1.12
+8    MSTRBUSDT      -        0.480   0.559   +1.5%  +14.3%  +23.2%  -1.0   1.15
+9    GENIUSUSDT     -        0.474   0.587   -0.3%   +9.2%   -1.6%  -0.1   4.43
+10   AEROUSDT       -        0.469   0.693   +5.2%  +13.7%  +26.6%  -0.3   1.11
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
