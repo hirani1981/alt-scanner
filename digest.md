@@ -1,69 +1,78 @@
 # Alt Strength Digest - 2026-09-25
 
-**Regime [ALT_LED]:** BTC trending, 67% of alts beating it - risk-on for alts.
+**Regime [ALT_LED]:** BTC trending, 76% of alts beating it - risk-on for alts.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 116/147 above W, 133 above M, 118 above Q, 57 above Y.  BTC +7.2% vs monthly open.
+Breadth: 126/147 above W, 137 above M, 118 above Q, 59 above Y.  BTC +7.7% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  AMDBUSDT       vol_trend=2.90  10d range=21.0%  days flagged=1
-  BABYUSDT       vol_trend=5.03  10d range=24.3%  days flagged=1
-  XRPUSDT        vol_trend=1.71  10d range=26.8%  days flagged=1
-  INTCBUSDT      vol_trend=1.74  10d range=25.2%  days flagged=1
-  ALICEUSDT      vol_trend=1.86  10d range=23.2%  days flagged=1
-  BIOUSDT        vol_trend=1.59  10d range=25.4%  days flagged=1
+  COMPUSDT       vol_trend=2.20  10d range=24.2%  days flagged=1
+  ICPUSDT        vol_trend=1.63  10d range=25.9%  days flagged=1
+  AMDBUSDT       vol_trend=2.90  10d range=22.2%  days flagged=1
+  BABYUSDT       vol_trend=5.03  10d range=23.9%  days flagged=1
+  INTCBUSDT      vol_trend=1.74  10d range=26.1%  days flagged=1
+  XRPUSDT        vol_trend=1.71  10d range=25.5%  days flagged=1
+  ALICEUSDT      vol_trend=1.86  10d range=22.8%  days flagged=1
   AIUSDT         vol_trend=2.57  10d range=25.4%  days flagged=1
-  SHIBUSDT       vol_trend=2.03  10d range=26.5%  days flagged=1
-  KAITOUSDT      vol_trend=1.62  10d range=28.0%  days flagged=1
-  TRBUSDT        vol_trend=2.05  10d range=27.9%  days flagged=1
-  USDEUSDT       vol_trend=3.81  10d range=11.5%  days flagged=1
-  AXSUSDT        vol_trend=1.74  10d range=25.2%  days flagged=1
-  XLMUSDT        vol_trend=1.76  10d range=23.8%  days flagged=1
-  CRCLBUSDT      vol_trend=1.68  10d range=23.2%  days flagged=1
-  NVDABUSDT      vol_trend=1.85  10d range=8.0%  days flagged=1
-  COMPUSDT       vol_trend=2.20  10d range=25.0%  days flagged=1
-  ICPUSDT        vol_trend=1.63  10d range=25.4%  days flagged=1
+  BIOUSDT        vol_trend=1.59  10d range=25.0%  days flagged=1
+  WLDUSDT        vol_trend=1.65  10d range=26.9%  days flagged=1
+  KAITOUSDT      vol_trend=1.62  10d range=27.5%  days flagged=1
+  SHIBUSDT       vol_trend=2.03  10d range=25.8%  days flagged=1
+  TRBUSDT        vol_trend=2.05  10d range=27.6%  days flagged=1
+  PIXELUSDT      vol_trend=2.33  10d range=28.0%  days flagged=1
+  ACHUSDT        vol_trend=1.57  10d range=23.7%  days flagged=1
+  XLMUSDT        vol_trend=1.76  10d range=23.4%  days flagged=1
+  CRCLBUSDT      vol_trend=1.68  10d range=23.0%  days flagged=1
+  NVDABUSDT      vol_trend=1.85  10d range=7.9%  days flagged=1
+  NEIROUSDT      vol_trend=1.81  10d range=27.1%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  QNTUSDT        IGNITE         RS_7d=+46.7%  vol_z=1.8
-  FETUSDT        RS-divergence  RS_7d=+18.3%  vol_z=-1.4
-  BEAMXUSDT      RS-divergence  RS_7d=+7.8%  vol_z=-0.4
+  QNTUSDT        IGNITE         RS_7d=+45.9%  vol_z=10.0
+  WAXPUSDT       IGNITE         RS_7d=+13.5%  vol_z=2.5
+  ARKUSDT        IGNITE         RS_7d=+52.5%  vol_z=1.8
+  RUNEUSDT       RS-divergence  RS_7d=+14.8%  vol_z=0.1
+  ZKUSDT         RS-divergence  RS_7d=+5.0%  vol_z=-0.8
 
 ## New entrants to the Early top-20
-  #1   FETUSDT        early=0.669  stage=-
-  #2   BEAMXUSDT      early=0.583  stage=RUN
-  #3   ETCUSDT        early=0.567  stage=RUN
-  #4   SEIUSDT        early=0.546  stage=RUN
-  #5   AMDBUSDT       early=0.544  stage=ACCUM
-  #7   XRPUSDT        early=0.522  stage=ACCUM
-  #9   ALICEUSDT      early=0.496  stage=ACCUM
-  #10  QNTUSDT        early=0.492  stage=IGNITE
-  #11  BIOUSDT        early=0.490  stage=ACCUM
-  #12  AIUSDT         early=0.486  stage=ACCUM
-  #13  SHIBUSDT       early=0.483  stage=ACCUM
-  #14  KAITOUSDT      early=0.480  stage=ACCUM
-  #15  TRBUSDT        early=0.473  stage=ACCUM
-  #17  USDEUSDT       early=0.456  stage=ACCUM
-  #18  AXSUSDT        early=0.454  stage=ACCUM
-  #19  AEROUSDT       early=0.454  stage=-
-  #20  XLMUSDT        early=0.453  stage=ACCUM
+  #1   RUNEUSDT       early=0.684  stage=RUN
+  #2   COMPUSDT       early=0.652  stage=ACCUM
+  #3   ICPUSDT        early=0.636  stage=ACCUM
+  #4   ZROUSDT        early=0.575  stage=RUN
+  #5   ETCUSDT        early=0.572  stage=-
+  #6   ENSUSDT        early=0.569  stage=-
+  #7   RENDERUSDT     early=0.568  stage=RUN
+  #8   GRTUSDT        early=0.561  stage=RUN
+  #9   ZKUSDT         early=0.558  stage=-
+  #11  AMDBUSDT       early=0.545  stage=ACCUM
+  #12  SEIUSDT        early=0.538  stage=RUN
+  #14  FETUSDT        early=0.531  stage=RUN
+  #16  SUIUSDT        early=0.520  stage=RUN
+  #17  BROCCOLI714USDT early=0.518  stage=RUN
+  #18  SOLUSDT        early=0.514  stage=-
+  #19  XRPUSDT        early=0.513  stage=ACCUM
+  #20  APTUSDT        early=0.502  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  QIUSDT         vol_z=10.0  rank=#116  stage=EXT
-  SAGAUSDT       vol_z=4.0  rank=#142  stage=EXT
+  QNTUSDT        vol_z=10.0  rank=#21  stage=IGNITE
+  QIUSDT         vol_z=10.0  rank=#124  stage=EXT
+  VTHOUSDT       vol_z=10.0  rank=#143  stage=-
+  AXSUSDT        vol_z=6.7  rank=#93  stage=-
+  SAGAUSDT       vol_z=5.5  rank=#116  stage=EXT
+  BABYUSDT       vol_z=4.1  rank=#13  stage=ACCUM
+  XPLUSDT        vol_z=3.4  rank=#97  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    FETUSDT        -        0.669   0.596   +0.1%  +18.3%  +27.1%  -1.4   1.91
-2    BEAMXUSDT      RUN      0.583   0.707   +0.0%   +7.8%  +30.2%  -0.4   0.94
-3    ETCUSDT        RUN      0.567   0.684   +0.8%  +11.3%  +12.4%  -0.6   2.55
-4    SEIUSDT        RUN      0.546   0.756   +0.2%  +24.8%  +24.9%  -0.5   2.61
-5    AMDBUSDT       ACCUM    0.544   0.677   +1.0%   +9.3%  +23.0%  -0.7   2.90
-6    BABYUSDT       ACCUM    0.540   0.553   -0.8%   +4.7%   -6.2%  -0.2   5.03
-7    XRPUSDT        ACCUM    0.522   0.442   +0.1%   +5.4%   +1.1%  -1.3   1.71
-8    INTCBUSDT      ACCUM    0.512   0.595   +1.7%  +13.5%  +34.5%  -1.2   1.74
-9    ALICEUSDT      ACCUM    0.496   0.524   +0.1%   +5.0%   -3.1%  -0.9   1.86
-10   QNTUSDT        IGNITE   0.492   0.968   +7.5%  +46.7%  +43.5%   1.8   2.51
+1    RUNEUSDT       RUN      0.684   0.720   +1.4%  +14.8%  +24.9%   0.1   1.55
+2    COMPUSDT       ACCUM    0.652   0.600   +0.7%   +9.0%  +15.4%   0.1   2.20
+3    ICPUSDT        ACCUM    0.636   0.636   +4.7%   +8.0%  +25.8%  -0.4   1.63
+4    ZROUSDT        RUN      0.575   0.731   +4.9%  +29.3%  +20.7%  -0.4   2.30
+5    ETCUSDT        -        0.572   0.657   +2.7%  +13.4%  +14.5%  -0.1   2.55
+6    ENSUSDT        -        0.569   0.445   +2.0%  +10.5%  +12.4%  -0.8   1.84
+7    RENDERUSDT     RUN      0.568   0.798   +5.4%  +21.0%  +19.4%   0.2   2.10
+8    GRTUSDT        RUN      0.561   0.736   +2.2%  +25.3%  +40.0%  -0.1   2.20
+9    ZKUSDT         -        0.558   0.464   +2.2%   +5.0%  +32.6%  -0.8   1.18
+10   PLUMEUSDT      RUN      0.552   0.790   +2.5%  +24.8%  +23.7%   0.3   1.99
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
