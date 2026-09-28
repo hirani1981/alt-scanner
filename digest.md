@@ -1,56 +1,66 @@
 # Alt Strength Digest - 2026-09-28
 
-**Regime [ALT_LED]:** BTC trending, 80% of alts beating it - risk-on for alts.
+**Regime [ALT_LED]:** BTC trending, 74% of alts beating it - risk-on for alts.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 8/148 above W, 136 above M, 126 above Q, 56 above Y.  BTC +5.4% vs monthly open.
+Breadth: 17/147 above W, 132 above M, 121 above Q, 58 above Y.  BTC +6.0% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  AMDBUSDT       vol_trend=1.61  10d range=15.3%  days flagged=1
-  EULUSDT        vol_trend=1.71  10d range=18.0%  days flagged=1
-  RADUSDT        vol_trend=2.50  10d range=21.3%  days flagged=1
-  ICPUSDT        vol_trend=1.55  10d range=20.5%  days flagged=1
-  NMRUSDT        vol_trend=1.87  10d range=16.9%  days flagged=1
-  MOVEUSDT       vol_trend=2.20  10d range=17.6%  days flagged=1
+  AMDBUSDT       vol_trend=1.61  10d range=15.4%  days flagged=1
+  EULUSDT        vol_trend=1.71  10d range=18.5%  days flagged=1
+  ICPUSDT        vol_trend=1.55  10d range=20.9%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  HUMAUSDT       RS-divergence  RS_7d=+21.5%  vol_z=-0.6
+  LINKUSDT       IGNITE         RS_7d=+14.0%  vol_z=1.7
+  HBARUSDT       IGNITE         RS_7d=+33.0%  vol_z=10.0
+  ALGOUSDT       IGNITE         RS_7d=+22.8%  vol_z=7.0
+  IOTAUSDT       IGNITE         RS_7d=+15.6%  vol_z=5.8
+  NIGHTUSDT      RS-divergence  RS_7d=+15.7%  vol_z=1.1
 
 ## New entrants to the Early top-20
-  #1   HUMAUSDT       early=0.649  stage=RUN
-  #2   AMDBUSDT       early=0.554  stage=ACCUM
-  #3   AUDIOUSDT      early=0.530  stage=RUN
-  #4   EULUSDT        early=0.528  stage=ACCUM
-  #5   SEIUSDT        early=0.512  stage=RUN
-  #6   RADUSDT        early=0.486  stage=ACCUM
-  #7   ICPUSDT        early=0.480  stage=ACCUM
-  #8   NMRUSDT        early=0.479  stage=ACCUM
-  #9   MOVEUSDT       early=0.458  stage=ACCUM
-  #11  XAIUSDT        early=0.424  stage=RUN
-  #12  PENGUUSDT      early=0.418  stage=-
-  #13  ACEUSDT        early=0.414  stage=RUN
-  #14  MAGICUSDT      early=0.405  stage=-
-  #15  RUNEUSDT       early=0.395  stage=RUN
-  #17  GLMRUSDT       early=0.385  stage=RUN
-  #18  BCHUSDT        early=0.382  stage=RUN
-  #19  ETCUSDT        early=0.378  stage=-
-  #20  BONKUSDT       early=0.367  stage=-
+  #1   NIGHTUSDT      early=0.560  stage=RUN
+  #2   AMDBUSDT       early=0.553  stage=ACCUM
+  #3   LINKUSDT       early=0.492  stage=IGNITE
+  #4   HBARUSDT       early=0.475  stage=IGNITE
+  #5   EULUSDT        early=0.470  stage=ACCUM
+  #6   ALGOUSDT       early=0.437  stage=IGNITE
+  #8   XAIUSDT        early=0.432  stage=-
+  #9   ICPUSDT        early=0.424  stage=ACCUM
+  #10  IOTAUSDT       early=0.424  stage=IGNITE
+  #11  ACEUSDT        early=0.423  stage=-
+  #12  PENGUUSDT      early=0.413  stage=-
+  #14  MAGICUSDT      early=0.393  stage=RUN
+  #15  RUNEUSDT       early=0.390  stage=RUN
+  #16  ETCUSDT        early=0.383  stage=-
+  #17  BCHUSDT        early=0.383  stage=-
+  #18  JUVUSDT        early=0.381  stage=-
+  #19  GLMRUSDT       early=0.381  stage=RUN
+  #20  APEUSDT        early=0.379  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  HBARUSDT       vol_z=10.0  rank=#4  stage=IGNITE
+  NMRUSDT        vol_z=9.2  rank=#62  stage=-
+  ALGOUSDT       vol_z=7.0  rank=#6  stage=IGNITE
+  IOTAUSDT       vol_z=5.8  rank=#10  stage=IGNITE
+  JUVUSDT        vol_z=5.1  rank=#18  stage=-
+  QNTUSDT        vol_z=4.4  rank=#130  stage=EXT
+  AMDBUSDT       vol_z=4.1  rank=#2  stage=ACCUM
+  IMXUSDT        vol_z=3.8  rank=#40  stage=RUN
+  GRTUSDT        vol_z=3.5  rank=#120  stage=EXT
+  SEIUSDT        vol_z=3.5  rank=#55  stage=RUN
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    HUMAUSDT       RUN      0.649   0.752   +2.5%  +21.5%  +25.8%  -0.6   2.12
-2    AMDBUSDT       ACCUM    0.554   0.674   -0.6%   +3.8%  +23.8%   2.7   1.61
-3    AUDIOUSDT      RUN      0.530   0.874   +5.7%  +33.8%  +27.5%   0.4   3.39
-4    EULUSDT        ACCUM    0.528   0.587   -3.3%   +5.1%   -2.1%   1.6   1.71
-5    SEIUSDT        RUN      0.512   0.927   +4.8%  +43.1%  +68.2%   1.2   1.93
-6    RADUSDT        ACCUM    0.486   0.521   +0.1%   +7.1%   +3.4%  -0.6   2.50
-7    ICPUSDT        ACCUM    0.480   0.391   -1.9%   +4.5%  +15.1%  -1.3   1.55
-8    NMRUSDT        ACCUM    0.479   0.734   +0.1%  +12.1%   +5.7%   1.0   1.87
-9    MOVEUSDT       ACCUM    0.458   0.456   -3.9%   +1.1%   -3.5%   0.1   2.20
-10   BABYUSDT       -        0.426   0.577   -3.2%  +12.9%   +2.3%  -0.3   4.75
+1    NIGHTUSDT      RUN      0.560   0.697   +1.3%  +15.7%  +33.3%   1.1   1.14
+2    AMDBUSDT       ACCUM    0.553   0.665   -1.8%   +2.5%  +22.3%   4.1   1.61
+3    LINKUSDT       IGNITE   0.492   0.800   +4.5%  +14.0%  +18.5%   1.7   1.49
+4    HBARUSDT       IGNITE   0.475   0.962  +26.3%  +33.0%  +48.5%  10.0   1.37
+5    EULUSDT        ACCUM    0.470   0.532   -6.4%   +1.8%   -5.1%   2.4   1.71
+6    ALGOUSDT       IGNITE   0.437   0.923  +12.7%  +22.8%  +42.1%   7.0   1.29
+7    BABYUSDT       -        0.436   0.511   -5.7%  +10.0%   -0.4%   0.5   4.75
+8    XAIUSDT        -        0.432   0.554   -5.0%  +18.3%  +13.9%  -0.0   4.54
+9    ICPUSDT        ACCUM    0.424   0.480   -4.4%   +1.9%  +12.2%  -0.1   1.55
+10   IOTAUSDT       IGNITE   0.424   0.825   +7.2%  +15.6%  +27.8%   5.8   1.11
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
