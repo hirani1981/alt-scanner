@@ -1,54 +1,63 @@
 # Alt Strength Digest - 2026-09-29
 
-**Regime [ALT_LED]:** BTC above both vs trend, 57% of alts beating it - neutral; be selective.
+**Regime [ALT_LED]:** BTC trending, 68% of alts beating it - risk-on for alts.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 23/147 above W, 134 above M, 114 above Q, 59 above Y.  BTC +6.2% vs monthly open.
+Breadth: 46/147 above W, 136 above M, 120 above Q, 65 above Y.  BTC +7.4% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  LINEAUSDT      vol_trend=1.56  10d range=16.1%  days flagged=1
-  XLMUSDT        vol_trend=1.57  10d range=20.6%  days flagged=1
-  IOTAUSDT       vol_trend=2.14  10d range=21.9%  days flagged=1
+  COMPUSDT       vol_trend=2.19  10d range=20.6%  days flagged=1
+  LINEAUSDT      vol_trend=1.56  10d range=15.4%  days flagged=1
+  XLMUSDT        vol_trend=1.57  10d range=20.9%  days flagged=1
+  IOTAUSDT       vol_trend=2.14  10d range=21.8%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  CELOUSDT       IGNITE         RS_7d=+9.3%  vol_z=2.0
-  AAVEUSDT       RS-divergence  RS_7d=+7.5%  vol_z=-1.7
+  AAVEUSDT       IGNITE         RS_7d=+20.0%  vol_z=4.2
+  NIGHTUSDT      IGNITE         RS_7d=+29.0%  vol_z=3.4
+  CELOUSDT       IGNITE         RS_7d=+19.9%  vol_z=10.0
 
 ## New entrants to the Early top-20
-  #1   AAVEUSDT       early=0.656  stage=-
-  #2   RUNEUSDT       early=0.597  stage=RUN
-  #3   LINEAUSDT      early=0.532  stage=ACCUM
-  #4   XLMUSDT        early=0.508  stage=ACCUM
-  #5   ICPUSDT        early=0.508  stage=RUN
-  #6   IOTAUSDT       early=0.486  stage=ACCUM
-  #7   CELOUSDT       early=0.464  stage=IGNITE
-  #10  0GUSDT         early=0.426  stage=RUN
-  #11  ACEUSDT        early=0.423  stage=-
-  #12  JUVUSDT        early=0.416  stage=-
-  #13  OPNUSDT        early=0.403  stage=-
-  #14  VIRTUALUSDT    early=0.393  stage=-
-  #15  AUDIOUSDT      early=0.389  stage=RUN
-  #16  2ZUSDT         early=0.381  stage=RUN
-  #17  LTCUSDT        early=0.379  stage=RUN
-  #18  JASMYUSDT      early=0.378  stage=RUN
-  #19  AMPUSDT        early=0.378  stage=RUN
-  #20  SKYUSDT        early=0.377  stage=-
+  #1   COMPUSDT       early=0.694  stage=ACCUM
+  #2   RUNEUSDT       early=0.603  stage=RUN
+  #3   SKYUSDT        early=0.567  stage=RUN
+  #4   LINEAUSDT      early=0.524  stage=ACCUM
+  #5   XLMUSDT        early=0.500  stage=ACCUM
+  #6   ICPUSDT        early=0.498  stage=RUN
+  #7   PUMPUSDT       early=0.497  stage=-
+  #8   BONKUSDT       early=0.489  stage=-
+  #9   IOTAUSDT       early=0.483  stage=ACCUM
+  #10  AAVEUSDT       early=0.480  stage=IGNITE
+  #11  NIGHTUSDT      early=0.452  stage=IGNITE
+  #12  CELOUSDT       early=0.436  stage=IGNITE
+  #15  VIRTUALUSDT    early=0.394  stage=RUN
+  #16  PENGUUSDT      early=0.393  stage=-
+  #17  ETCUSDT        early=0.388  stage=-
+  #18  OPNUSDT        early=0.388  stage=-
+  #19  LTCUSDT        early=0.382  stage=-
+  #20  GRAMUSDT       early=0.376  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  CELOUSDT       vol_z=10.0  rank=#12  stage=IGNITE
+  ALICEUSDT      vol_z=4.9  rank=#31  stage=RUN
+  BABYUSDT       vol_z=4.9  rank=#13  stage=RUN
+  AAVEUSDT       vol_z=4.2  rank=#10  stage=IGNITE
+  NMRUSDT        vol_z=3.8  rank=#47  stage=RUN
+  INITUSDT       vol_z=3.6  rank=#75  stage=RUN
+  NIGHTUSDT      vol_z=3.4  rank=#11  stage=IGNITE
+  0GUSDT         vol_z=3.4  rank=#103  stage=EXT
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    AAVEUSDT       -        0.656   0.477   +3.2%   +7.5%  +17.2%  -1.7   1.23
-2    RUNEUSDT       RUN      0.597   0.932   +1.6%  +26.7%  +60.1%  -0.2   3.78
-3    LINEAUSDT      ACCUM    0.532   0.469   -2.1%   +2.6%   +9.9%  -1.0   1.56
-4    XLMUSDT        ACCUM    0.508   0.660   -3.3%   +7.3%  +19.8%  -0.7   1.57
-5    ICPUSDT        RUN      0.508   0.773   +4.4%  +11.8%  +29.8%  -0.7   1.42
-6    IOTAUSDT       ACCUM    0.486   0.800   -1.0%  +16.6%  +31.0%   0.0   2.14
-7    CELOUSDT       IGNITE   0.464   0.834   +3.7%   +9.3%  +31.1%   2.0   1.10
-8    BABYUSDT       RUN      0.446   0.625   -0.6%   +4.6%   +1.9%   0.5   3.62
-9    PLUMEUSDT      -        0.427   0.587   -3.5%  +11.4%  +12.3%  -0.8   2.30
-10   0GUSDT         RUN      0.426   0.925   +3.8%  +26.5%  +69.9%   1.1   0.74
+1    COMPUSDT       ACCUM    0.694   0.809   +6.6%  +11.0%  +29.3%   0.5   2.19
+2    RUNEUSDT       RUN      0.603   0.847   +0.1%  +24.8%  +57.7%   0.5   3.78
+3    SKYUSDT        RUN      0.567   0.817   +7.1%  +25.7%  +13.6%   0.3   1.51
+4    LINEAUSDT      ACCUM    0.524   0.494   +0.8%   +5.7%  +13.2%  -0.4   1.56
+5    XLMUSDT        ACCUM    0.500   0.698   -1.2%   +9.7%  +22.3%   0.3   1.57
+6    ICPUSDT        RUN      0.498   0.839   +5.7%  +13.2%  +31.4%   1.1   1.42
+7    PUMPUSDT       -        0.497   0.831  +16.6%  +32.3%  +19.5%   0.1   1.38
+8    BONKUSDT       -        0.489   0.577  +10.0%   +9.8%  +28.3%  -0.5   0.90
+9    IOTAUSDT       ACCUM    0.483   0.715   -2.0%  +15.5%  +29.7%   0.7   2.14
+10   AAVEUSDT       IGNITE   0.480   0.905  +15.1%  +20.0%  +30.8%   4.2   1.23
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
