@@ -1,46 +1,52 @@
 # Alt Strength Digest - 2026-10-07
 
-**Regime [BTC_LED]:** BTC trending but only 36% of alts beating it - BTC-led market; alts lagging.
+**Regime [BTC_LED]:** BTC mixed vs trend, 37% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 49/148 above W, 62 above M, 62 above Q, 55 above Y.  BTC +0.8% vs monthly open.
+Breadth: 33/148 above W, 50 above M, 50 above Q, 52 above Y.  BTC -0.6% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  ACEUSDT        vol_trend=1.68  10d range=11.9%  days flagged=1
+  none
 
 ## New IGNITE / RS-divergence flags
-  GTCUSDT        RS-divergence  RS_7d=+95.5%  vol_z=0.1
+  BEAMXUSDT      RS-divergence  RS_7d=+29.2%  vol_z=0.3
+  STXUSDT        RS-divergence  RS_7d=+2.6%  vol_z=0.7
 
 ## New entrants to the Early top-20
-  #3   NMRUSDT        early=0.569  stage=RUN
-  #4   ACEUSDT        early=0.565  stage=ACCUM
-  #5   STXUSDT        early=0.499  stage=RUN
-  #6   RAYUSDT        early=0.430  stage=RUN
-  #7   UMAUSDT        early=0.423  stage=-
-  #9   AXSUSDT        early=0.406  stage=RUN
-  #10  OGNUSDT        early=0.405  stage=-
-  #11  CHIPUSDT       early=0.403  stage=-
-  #13  C98USDT        early=0.395  stage=-
-  #14  SANDUSDT       early=0.390  stage=RUN
-  #15  MAGICUSDT      early=0.389  stage=RUN
-  #17  SPCXBUSDT      early=0.386  stage=-
-  #18  BANDUSDT       early=0.382  stage=-
+  #1   BEAMXUSDT      early=0.717  stage=RUN
+  #3   STXUSDT        early=0.650  stage=RUN
+  #4   CHIPUSDT       early=0.410  stage=-
+  #5   SOXSBUSDT      early=0.402  stage=-
+  #7   OGNUSDT        early=0.399  stage=-
+  #8   RESOLVUSDT     early=0.396  stage=-
+  #9   C98USDT        early=0.396  stage=-
+  #10  SANDUSDT       early=0.392  stage=RUN
+  #11  MAGICUSDT      early=0.388  stage=RUN
+  #12  MANAUSDT       early=0.387  stage=RUN
+  #13  SPCXBUSDT      early=0.384  stage=RUN
+  #16  PORTOUSDT      early=0.376  stage=-
+  #18  FLUXUSDT       early=0.373  stage=RUN
+  #19  MRVLBUSDT      early=0.369  stage=RUN
+  #20  NMRUSDT        early=0.369  stage=RUN
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  LAZIOUSDT      vol_z=10.0  rank=#28  stage=-
+  QQQBUSDT       vol_z=3.8  rank=#64  stage=-
+  PARTIUSDT      vol_z=3.7  rank=#15  stage=RUN
+  PORTOUSDT      vol_z=3.7  rank=#16  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    PUMPUSDT       RUN      0.666   0.615   +6.2%   +8.3%  +39.1%  -1.2   1.03
-2    PARTIUSDT      RUN      0.578   0.909   +9.6%  +31.2%  +33.0%   0.4   2.06
-3    NMRUSDT        RUN      0.569   0.975   +6.8%  +48.8%  +69.9%   1.0   2.81
-4    ACEUSDT        ACCUM    0.565   0.720   +2.3%   +5.4%   -3.4%  -0.3   1.68
-5    STXUSDT        RUN      0.499   0.826   +5.9%   +7.0%  +35.9%  -0.5   0.83
-6    RAYUSDT        RUN      0.430   0.682   +3.4%  +13.9%  +79.2%  -1.2   0.68
-7    UMAUSDT        -        0.423   0.575   -3.4%   -0.8%   -0.3%   0.1   3.53
-8    MRNABUSDT      ACCUM    0.415   0.553   -0.1%   -4.3%  +19.0%  -0.2   3.34
-9    AXSUSDT        RUN      0.406   0.767   -1.0%   +4.3%  +18.0%  -0.1   2.84
-10   OGNUSDT        -        0.405   0.680   -3.1%   +2.1%   +5.7%  -0.1   3.57
+1    BEAMXUSDT      RUN      0.717   0.818   +3.6%  +29.2%  +56.4%   0.3   3.88
+2    PUMPUSDT       RUN      0.674   0.692   +4.9%   +7.0%  +37.4%  -0.4   1.03
+3    STXUSDT        RUN      0.650   0.800   +1.5%   +2.6%  +30.3%   0.7   0.83
+4    CHIPUSDT       -        0.410   0.361   -6.3%  +13.3%  -13.9%  -0.9   0.96
+5    SOXSBUSDT      -        0.402   0.555   +9.8%   -3.4%  -30.8%   0.6   1.05
+6    EDUUSDT        -        0.399   0.785   -1.0%  +18.6%   +9.3%   0.5   3.95
+7    OGNUSDT        -        0.399   0.727   -0.7%   +4.6%   +8.3%   0.2   3.57
+8    RESOLVUSDT     -        0.396   0.690  -11.0%   +4.0%   +3.2%   0.8   3.50
+9    C98USDT        -        0.396   0.683   -6.0%   +2.1%   +5.1%   0.7   2.54
+10   SANDUSDT       RUN      0.392   0.869   +8.1%  +60.8%  +65.5%   0.8   4.87
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
