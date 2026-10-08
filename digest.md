@@ -1,53 +1,61 @@
 # Alt Strength Digest - 2026-10-08
 
-**Regime [NEUTRAL]:** BTC mixed vs trend, 54% of alts beating it - neutral; be selective.
+**Regime [ALT_LED]:** BTC mixed vs trend, 56% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 43/148 above W, 56 above M, 56 above Q, 55 above Y.  BTC -1.1% vs monthly open.
+Breadth: 47/148 above W, 59 above M, 59 above Q, 56 above Y.  BTC -2.0% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  SANTOSUSDT     vol_trend=2.27  10d range=10.2%  days flagged=1
-  PORTOUSDT      vol_trend=1.82  10d range=14.8%  days flagged=1
-  BARUSDT        vol_trend=2.00  10d range=12.7%  days flagged=1
+  LPTUSDT        vol_trend=1.53  10d range=16.4%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  WUSDT          IGNITE         RS_7d=+40.6%  vol_z=1.8
-  GLMRUSDT       RS-divergence  RS_7d=+33.6%  vol_z=-0.5
-  RLCUSDT        RS-divergence  RS_7d=+108.7%  vol_z=-0.0
+  WUSDT          IGNITE         RS_7d=+25.7%  vol_z=3.8
+  AEVOUSDT       IGNITE         RS_7d=+7.6%  vol_z=10.0
+  WINUSDT        IGNITE         RS_7d=+23.6%  vol_z=9.1
+  CTSIUSDT       IGNITE         RS_7d=+35.0%  vol_z=4.6
+  PARTIUSDT      RS-divergence  RS_7d=+31.2%  vol_z=-0.3
+  STXUSDT        RS-divergence  RS_7d=+4.9%  vol_z=-0.6
+  RLCUSDT        RS-divergence  RS_7d=+109.5%  vol_z=0.4
 
 ## New entrants to the Early top-20
-  #1   GLMRUSDT       early=0.720  stage=RUN
-  #3   SANTOSUSDT     early=0.561  stage=ACCUM
-  #4   PORTOUSDT      early=0.550  stage=ACCUM
-  #5   BARUSDT        early=0.542  stage=ACCUM
-  #6   WUSDT          early=0.520  stage=IGNITE
-  #7   ATMUSDT        early=0.419  stage=-
-  #8   CHIPUSDT       early=0.401  stage=RUN
-  #9   SPCXBUSDT      early=0.395  stage=-
-  #12  SANDUSDT       early=0.386  stage=RUN
-  #13  OPNUSDT        early=0.385  stage=-
-  #14  HEMIUSDT       early=0.382  stage=-
-  #15  MANAUSDT       early=0.380  stage=RUN
-  #16  OGNUSDT        early=0.379  stage=-
-  #17  MAGICUSDT      early=0.379  stage=RUN
-  #19  ATOMUSDT       early=0.377  stage=-
-  #20  NMRUSDT        early=0.376  stage=RUN
+  #2   STXUSDT        early=0.688  stage=RUN
+  #3   LPTUSDT        early=0.681  stage=ACCUM
+  #4   WUSDT          early=0.673  stage=IGNITE
+  #5   AEVOUSDT       early=0.622  stage=IGNITE
+  #7   WINUSDT        early=0.553  stage=IGNITE
+  #8   SENTUSDT       early=0.540  stage=RUN
+  #9   CTSIUSDT       early=0.494  stage=IGNITE
+  #11  CHIPUSDT       early=0.422  stage=RUN
+  #12  AXSUSDT        early=0.406  stage=-
+  #13  SPCXBUSDT      early=0.405  stage=RUN
+  #14  LAZIOUSDT      early=0.397  stage=-
+  #15  RADUSDT        early=0.392  stage=-
+  #17  MANAUSDT       early=0.389  stage=-
+  #18  SANDUSDT       early=0.386  stage=RUN
+  #19  MRVLBUSDT      early=0.385  stage=RUN
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  AEVOUSDT       vol_z=10.0  rank=#5  stage=IGNITE
+  OGNUSDT        vol_z=10.0  rank=#69  stage=EXT
+  ERAUSDT        vol_z=10.0  rank=#83  stage=-
+  WINUSDT        vol_z=9.1  rank=#7  stage=IGNITE
+  METUSDT        vol_z=4.8  rank=#78  stage=EXT
+  CTSIUSDT       vol_z=4.6  rank=#9  stage=IGNITE
+  WUSDT          vol_z=3.8  rank=#4  stage=IGNITE
+  ONTUSDT        vol_z=3.4  rank=#31  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    GLMRUSDT       RUN      0.720   0.869   +7.9%  +33.6%  +72.5%  -0.5   2.54
-2    EDUUSDT        -        0.591   0.859   +2.0%  +29.6%  +15.9%  -0.2   4.04
-3    SANTOSUSDT     ACCUM    0.561   0.690   +1.3%   +4.2%   -5.1%  -0.5   2.27
-4    PORTOUSDT      ACCUM    0.550   0.586   +1.8%   +3.3%   -6.0%  -0.5   1.82
-5    BARUSDT        ACCUM    0.542   0.562   +0.4%   +1.9%   -3.4%  -0.7   2.00
-6    WUSDT          IGNITE   0.520   0.938  +13.1%  +40.6%  +68.9%   1.8   0.93
-7    ATMUSDT        -        0.419   0.614   +0.1%   +1.9%  -13.0%  -0.6   1.84
-8    CHIPUSDT       RUN      0.401   0.770   +3.8%  +26.6%   -6.6%  -0.3   1.00
-9    SPCXBUSDT      -        0.395   0.576   +0.1%  +15.4%   +3.9%  -1.4   1.38
-10   PARTIUSDT      RUN      0.387   0.744   -0.5%  +29.2%  +27.6%  -0.7   2.41
+1    PARTIUSDT      RUN      0.740   0.761   +1.0%  +31.2%  +29.5%  -0.3   2.41
+2    STXUSDT        RUN      0.688   0.634   +3.8%   +4.9%  +33.5%  -0.6   1.04
+3    LPTUSDT        ACCUM    0.681   0.802   +9.2%   +9.3%  +17.1%   0.7   1.53
+4    WUSDT          IGNITE   0.673   0.874   +1.1%  +25.7%  +50.9%   3.8   0.93
+5    AEVOUSDT       IGNITE   0.622   0.804   +6.2%   +7.6%   +6.9%  10.0   0.77
+6    EDUUSDT        -        0.592   0.828   +5.8%  +34.4%  +20.2%   0.2   4.04
+7    WINUSDT        IGNITE   0.553   0.942  +11.1%  +23.6%  +53.3%   9.1   1.19
+8    SENTUSDT       RUN      0.540   0.803   +2.7%  +24.8%  +68.2%  -0.2   1.28
+9    CTSIUSDT       IGNITE   0.494   0.950  +27.4%  +35.0%  +41.8%   4.6   0.90
+10   SKLUSDT        -        0.470   0.830  +10.2%  +10.3%  +22.1%   0.9   0.83
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
