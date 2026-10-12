@@ -1,78 +1,57 @@
-# Alt Strength Digest - 2026-10-11
+# Alt Strength Digest - 2026-10-12
 
-**Regime [ALT_LED]:** BTC mixed vs trend, 61% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC mixed vs trend, 48% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 71/149 above W, 87 above M, 87 above Q, 63 above Y.  BTC +0.0% vs monthly open.
+Breadth: 55/149 above W, 88 above M, 88 above Q, 61 above Y.  BTC +0.3% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  SPCXBUSDT      vol_trend=1.60  10d range=16.8%  days flagged=1
-  PYTHUSDT       vol_trend=1.58  10d range=22.1%  days flagged=1
+  NEOUSDT        vol_trend=1.82  10d range=18.7%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  WALUSDT        IGNITE         RS_7d=+7.9%  vol_z=2.5
-  BATUSDT        IGNITE         RS_7d=+59.4%  vol_z=2.7
-  METISUSDT      IGNITE         RS_7d=+15.1%  vol_z=4.2
-  CFXUSDT        IGNITE         RS_7d=+27.3%  vol_z=6.6
-  DYMUSDT        IGNITE         RS_7d=+11.0%  vol_z=4.4
-  ZKUSDT         IGNITE         RS_7d=+24.5%  vol_z=4.0
-  LUMIAUSDT      IGNITE         RS_7d=+50.1%  vol_z=6.8
-  CKBUSDT        IGNITE         RS_7d=+62.8%  vol_z=10.0
-  APTUSDT        IGNITE         RS_7d=+16.1%  vol_z=1.7
-  ROSEUSDT       IGNITE         RS_7d=+13.9%  vol_z=3.2
-  PLUMEUSDT      IGNITE         RS_7d=+24.8%  vol_z=1.6
-  IOUSDT         IGNITE         RS_7d=+6.5%  vol_z=3.9
+  METISUSDT      IGNITE         RS_7d=+22.3%  vol_z=3.5
+  IOUSDT         IGNITE         RS_7d=+14.7%  vol_z=2.4
+  RSRUSDT        IGNITE         RS_7d=+46.5%  vol_z=10.0
 
 ## New entrants to the Early top-20
-  #1   WALUSDT        early=0.694  stage=IGNITE
-  #2   SPCXBUSDT      early=0.599  stage=ACCUM
-  #3   BATUSDT        early=0.576  stage=IGNITE
-  #4   METISUSDT      early=0.568  stage=IGNITE
-  #5   RONINUSDT      early=0.541  stage=-
-  #6   CFXUSDT        early=0.536  stage=IGNITE
-  #7   DYMUSDT        early=0.532  stage=IGNITE
-  #8   ZKUSDT         early=0.521  stage=IGNITE
-  #9   LUMIAUSDT      early=0.520  stage=IGNITE
-  #10  CKBUSDT        early=0.504  stage=IGNITE
-  #11  APTUSDT        early=0.498  stage=IGNITE
-  #12  PYTHUSDT       early=0.491  stage=ACCUM
-  #13  ROSEUSDT       early=0.465  stage=IGNITE
-  #15  FILUSDT        early=0.460  stage=-
-  #16  IOUSDT         early=0.436  stage=IGNITE
-  #17  ATOMUSDT       early=0.428  stage=-
-  #18  FRAXUSDT       early=0.420  stage=RUN
-  #19  RADUSDT        early=0.413  stage=-
-  #20  BFUSDUSDT      early=0.413  stage=-
+  #1   METISUSDT      early=0.583  stage=IGNITE
+  #2   ALTUSDT        early=0.556  stage=-
+  #3   RONINUSDT      early=0.545  stage=-
+  #4   LINEAUSDT      early=0.526  stage=-
+  #5   NEOUSDT        early=0.522  stage=ACCUM
+  #6   EIGENUSDT      early=0.516  stage=-
+  #7   AXLUSDT        early=0.487  stage=RUN
+  #8   FILUSDT        early=0.487  stage=RUN
+  #9   IOUSDT         early=0.468  stage=IGNITE
+  #10  ATOMUSDT       early=0.437  stage=-
+  #11  QQQBUSDT       early=0.434  stage=-
+  #12  ERAUSDT        early=0.425  stage=RUN
+  #13  ARPAUSDT       early=0.414  stage=-
+  #14  BFUSDUSDT      early=0.412  stage=-
+  #15  CTSIUSDT       early=0.407  stage=RUN
+  #16  CHIPUSDT       early=0.402  stage=RUN
+  #17  RADUSDT        early=0.396  stage=COOL
+  #18  KAIAUSDT       early=0.392  stage=RUN
+  #19  DODOUSDT       early=0.390  stage=-
+  #20  ACTUSDT        early=0.389  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  CKBUSDT        vol_z=10.0  rank=#10  stage=IGNITE
-  MANTAUSDT      vol_z=10.0  rank=#56  stage=-
-  SUSDT          vol_z=10.0  rank=#86  stage=EXT
-  NEOUSDT        vol_z=7.3  rank=#48  stage=-
-  LUMIAUSDT      vol_z=6.8  rank=#9  stage=IGNITE
-  CFXUSDT        vol_z=6.6  rank=#6  stage=IGNITE
-  CHIPUSDT       vol_z=4.8  rank=#37  stage=RUN
-  STRKUSDT       vol_z=4.8  rank=#71  stage=EXT
-  DYMUSDT        vol_z=4.4  rank=#7  stage=IGNITE
-  SENTUSDT       vol_z=4.3  rank=#103  stage=COOL
-  METISUSDT      vol_z=4.2  rank=#4  stage=IGNITE
-  ZKUSDT         vol_z=4.0  rank=#8  stage=IGNITE
-  IOUSDT         vol_z=3.9  rank=#16  stage=IGNITE
-  ROSEUSDT       vol_z=3.2  rank=#13  stage=IGNITE
-  FRAXUSDT       vol_z=3.1  rank=#18  stage=RUN
+  RSRUSDT        vol_z=10.0  rank=#22  stage=IGNITE
+  WUSDT          vol_z=3.7  rank=#63  stage=EXT
+  METISUSDT      vol_z=3.5  rank=#1  stage=IGNITE
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    WALUSDT        IGNITE   0.694   0.771   +4.2%   +7.9%  +33.0%   2.5   2.47
-2    SPCXBUSDT      ACCUM    0.599   0.360   -0.5%   +6.7%   +0.8%  -1.3   1.60
-3    BATUSDT        IGNITE   0.576   0.897  +12.0%  +59.4% +106.4%   2.7   3.40
-4    METISUSDT      IGNITE   0.568   0.812   +8.8%  +15.1%  +20.2%   4.2   1.25
-5    RONINUSDT      -        0.541   0.680   +2.1%   +5.7%  +27.9%   0.7   1.55
-6    CFXUSDT        IGNITE   0.536   0.869   +7.6%  +27.3%  +32.2%   6.6   2.83
-7    DYMUSDT        IGNITE   0.532   0.835  +12.7%  +11.0%  +36.5%   4.4   0.62
-8    ZKUSDT         IGNITE   0.521   0.863   +2.8%  +24.5%  +54.3%   4.0   2.07
-9    LUMIAUSDT      IGNITE   0.520   0.954  +23.0%  +50.1%  +55.5%   6.8   4.24
-10   CKBUSDT        IGNITE   0.504   0.938  +41.7%  +62.8%  +81.2%  10.0   1.74
+1    METISUSDT      IGNITE   0.583   0.865   +7.8%  +22.3%  +22.7%   3.5   1.52
+2    ALTUSDT        -        0.556   0.815   +4.2%   +8.9%  +20.8%   0.7   1.39
+3    RONINUSDT      -        0.545   0.707   +3.0%   +9.4%  +29.0%  -0.7   1.64
+4    LINEAUSDT      -        0.526   0.776   +4.4%  +10.5%   +8.0%   0.2   0.87
+5    NEOUSDT        ACCUM    0.522   0.528   -2.9%   +2.3%   +8.7%  -0.6   1.82
+6    EIGENUSDT      -        0.516   0.681   +2.9%   +9.7%  +19.8%  -0.7   1.19
+7    AXLUSDT        RUN      0.487   0.807   +3.0%   +8.7%  +23.6%   0.3   0.79
+8    FILUSDT        RUN      0.487   0.625   +1.0%   +7.3%  +42.9%  -1.2   0.93
+9    IOUSDT         IGNITE   0.468   0.918   +5.9%  +14.7%  +37.8%   2.4   1.30
+10   ATOMUSDT       -        0.437   0.538   -1.6%   +6.8%   +8.6%  -0.7   2.49
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
