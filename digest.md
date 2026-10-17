@@ -1,59 +1,51 @@
-# Alt Strength Digest - 2026-10-16
+# Alt Strength Digest - 2026-10-17
 
-**Regime [BTC_LED]:** BTC mixed vs trend, 38% of alts beating it - neutral; be selective.
+**Regime [BTC_LED]:** BTC mixed vs trend, 31% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 24/148 above W, 49 above M, 49 above Q, 48 above Y.  BTC -2.2% vs monthly open.
+Breadth: 24/148 above W, 52 above M, 52 above Q, 52 above Y.  BTC -2.5% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  ALTUSDT        vol_trend=2.34  10d range=23.5%  days flagged=1
-  SPCXBUSDT      vol_trend=1.55  10d range=20.8%  days flagged=1
-  QQQBUSDT       vol_trend=1.62  10d range=7.3%  days flagged=1
-  AMDBUSDT       vol_trend=1.66  10d range=23.8%  days flagged=1
+  SPCXBUSDT      vol_trend=1.88  10d range=18.9%  days flagged=1
+  TSLABUSDT      vol_trend=1.89  10d range=11.0%  days flagged=1
+  NVDABUSDT      vol_trend=1.74  10d range=11.7%  days flagged=1
+  QQQBUSDT       vol_trend=1.90  10d range=7.2%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  AUSDT          IGNITE         RS_7d=+0.3%  vol_z=1.8
-  INJUSDT        IGNITE         RS_7d=+25.1%  vol_z=3.9
-  ALTUSDT        RS-divergence  RS_7d=+4.8%  vol_z=1.2
+  FILUSDT        RS-divergence  RS_7d=+10.3%  vol_z=-2.1
 
 ## New entrants to the Early top-20
-  #1   ALTUSDT        early=0.889  stage=ACCUM
-  #2   AUSDT          early=0.643  stage=IGNITE
-  #3   DUSKUSDT       early=0.571  stage=RUN
-  #4   BEAMXUSDT      early=0.531  stage=RUN
-  #5   AVAUSDT        early=0.524  stage=-
-  #6   EDUUSDT        early=0.521  stage=RUN
-  #7   INJUSDT        early=0.516  stage=IGNITE
-  #9   QQQBUSDT       early=0.473  stage=ACCUM
-  #10  AMDBUSDT       early=0.465  stage=ACCUM
-  #13  BFUSDUSDT      early=0.407  stage=-
-  #14  STRAXUSDT      early=0.397  stage=-
-  #15  UUSDT          early=0.396  stage=-
-  #16  BLURUSDT       early=0.395  stage=-
-  #18  WALUSDT        early=0.382  stage=RUN
-  #19  TRXUSDT        early=0.382  stage=-
-  #20  KORUBUSDT      early=0.380  stage=-
+  #1   FILUSDT        early=0.647  stage=-
+  #2   ALTUSDT        early=0.607  stage=RUN
+  #4   DUSKUSDT       early=0.568  stage=RUN
+  #5   INJUSDT        early=0.530  stage=RUN
+  #6   EIGENUSDT      early=0.499  stage=-
+  #8   TSLABUSDT      early=0.479  stage=ACCUM
+  #9   NVDABUSDT      early=0.474  stage=ACCUM
+  #10  QQQBUSDT       early=0.468  stage=ACCUM
+  #13  AXLUSDT        early=0.403  stage=RUN
+  #14  BFUSDUSDT      early=0.397  stage=-
+  #15  UUSDT          early=0.394  stage=-
+  #17  BLURUSDT       early=0.389  stage=-
+  #18  AVAUSDT        early=0.386  stage=RUN
+  #19  WALUSDT        early=0.381  stage=RUN
+  #20  KORUBUSDT      early=0.379  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  TSLABUSDT      vol_z=10.0  rank=#80  stage=-
-  VELODROMEUSDT  vol_z=5.2  rank=#46  stage=RUN
-  TIAUSDT        vol_z=5.0  rank=#60  stage=EXT
-  STRAXUSDT      vol_z=4.4  rank=#14  stage=-
-  INJUSDT        vol_z=3.9  rank=#7  stage=IGNITE
-  SHELLUSDT      vol_z=3.4  rank=#84  stage=COOL
+  none
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    ALTUSDT        ACCUM    0.889   0.795   +3.7%   +4.8%  +20.4%   1.2   2.34
-2    AUSDT          IGNITE   0.643   0.793   +7.8%   +0.3%  +28.0%   1.8   1.07
-3    DUSKUSDT       RUN      0.571   0.934  +12.5%  +56.8%  +68.6%   1.4   2.94
-4    BEAMXUSDT      RUN      0.531   0.821   +8.0%  +12.5%  +71.7%   0.1   1.11
-5    AVAUSDT        -        0.524   0.827   +3.9%  +24.6%  +76.2%   0.0   1.49
-6    EDUUSDT        RUN      0.521   0.761   +2.5%  +11.0%  +46.8%   0.1   0.94
-7    INJUSDT        IGNITE   0.516   0.927   +1.1%  +25.1%  +47.9%   3.9   1.15
-8    SPCXBUSDT      ACCUM    0.491   0.459   -0.7%   -9.1%  -10.2%   1.5   1.55
-9    QQQBUSDT       ACCUM    0.473   0.472   -1.3%   -4.4%   -6.6%   0.7   1.62
-10   AMDBUSDT       ACCUM    0.465   0.419   -3.6%  -11.9%   -4.8%   1.1   1.66
+1    FILUSDT        -        0.647   0.560   +4.9%  +10.3%  +35.0%  -2.1   1.15
+2    ALTUSDT        RUN      0.607   0.730   +0.5%   +4.1%  +18.3%  -0.8   2.52
+3    METISUSDT      RUN      0.605   0.889   +2.5%  +22.9%  +29.0%  -0.3   2.34
+4    DUSKUSDT       RUN      0.568   0.967   +2.1%  +48.1%  +65.8%  -0.3   3.05
+5    INJUSDT        RUN      0.530   0.717   +2.3%  +18.8%  +46.2%  -1.6   1.46
+6    EIGENUSDT      -        0.499   0.686  +11.4%  +17.5%  +30.5%  -1.5   0.99
+7    SPCXBUSDT      ACCUM    0.487   0.293   +0.2%   -9.4%  -11.9%  -1.4   1.88
+8    TSLABUSDT      ACCUM    0.479   0.447   -0.1%   -6.2%   -9.7%  -0.6   1.89
+9    NVDABUSDT      ACCUM    0.474   0.350   +0.4%   -5.3%   -8.3%  -1.4   1.74
+10   QQQBUSDT       ACCUM    0.468   0.526   +0.3%   -3.8%   -7.0%  -0.5   1.90
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
