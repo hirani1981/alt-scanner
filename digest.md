@@ -1,59 +1,51 @@
-# Alt Strength Digest - 2026-10-21
+# Alt Strength Digest - 2026-10-22
 
-**Regime [BTC_LED]:** BTC trending but only 35% of alts beating it - BTC-led market; alts lagging.
+**Regime [BTC_LED]:** BTC mixed vs trend, 30% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 130/148 above W, 58 above M, 58 above Q, 54 above Y.  BTC +1.4% vs monthly open.
+Breadth: 102/148 above W, 41 above M, 41 above Q, 52 above Y.  BTC -0.9% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  TSLABUSDT      vol_trend=2.80  10d range=12.6%  days flagged=1
+  SPCXBUSDT      vol_trend=1.52  10d range=16.4%  days flagged=1
+  TSLABUSDT      vol_trend=2.09  10d range=12.9%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
   none
 
 ## New entrants to the Early top-20
-  #1   TSLABUSDT      early=0.547  stage=ACCUM
-  #2   SOLVUSDT       early=0.419  stage=RUN
-  #3   INJUSDT        early=0.387  stage=RUN
-  #4   ZILUSDT        early=0.387  stage=-
-  #5   MSTRBUSDT      early=0.385  stage=-
-  #7   KORUBUSDT      early=0.380  stage=-
-  #9   BMTUSDT        early=0.378  stage=-
-  #10  NBISBUSDT      early=0.378  stage=-
-  #11  SOXLBUSDT      early=0.374  stage=-
-  #12  PENDLEUSDT     early=0.374  stage=-
-  #13  BNCBUSDT       early=0.373  stage=-
-  #15  ZECUSDT        early=0.370  stage=-
-  #16  INTCBUSDT      early=0.367  stage=-
-  #17  COMPUSDT       early=0.364  stage=-
-  #18  CRCLBUSDT      early=0.364  stage=-
-  #19  SKHYBUSDT      early=0.361  stage=-
-  #20  REZUSDT        early=0.361  stage=COOL
+  #1   IOTXUSDT       early=0.557  stage=RUN
+  #3   TSLABUSDT      early=0.504  stage=ACCUM
+  #4   BNCBUSDT       early=0.412  stage=-
+  #5   IOSTUSDT       early=0.408  stage=-
+  #6   ZECUSDT        early=0.408  stage=-
+  #7   PEPEUSDT       early=0.397  stage=-
+  #8   BMTUSDT        early=0.387  stage=-
+  #9   MSTRBUSDT      early=0.384  stage=-
+  #10  KORUBUSDT      early=0.381  stage=-
+  #11  SOXLBUSDT      early=0.379  stage=-
+  #12  NBISBUSDT      early=0.378  stage=-
+  #13  ZILUSDT        early=0.377  stage=-
+  #16  COMPUSDT       early=0.373  stage=-
+  #17  CRCLBUSDT      early=0.373  stage=-
+  #18  MITOUSDT       early=0.372  stage=-
+  #19  ENSOUSDT       early=0.369  stage=-
+  #20  INTCBUSDT      early=0.366  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  IOSTUSDT       vol_z=10.0  rank=#133  stage=EXT
-  BEBUSDT        vol_z=10.0  rank=#27  stage=-
-  MITOUSDT       vol_z=9.8  rank=#42  stage=-
-  BMTUSDT        vol_z=6.9  rank=#9  stage=-
-  ALTUSDT        vol_z=6.5  rank=#45  stage=EXT
-  PARTIUSDT      vol_z=5.1  rank=#113  stage=COOL
-  CVXUSDT        vol_z=4.2  rank=#32  stage=-
-  SPCXBUSDT      vol_z=3.7  rank=#14  stage=-
-  XUSDUSDT       vol_z=3.3  rank=#56  stage=COOL
-  SOXLBUSDT      vol_z=3.2  rank=#11  stage=-
+  none
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    TSLABUSDT      ACCUM    0.547   0.668   -2.4%   +0.2%   +3.2%   1.0   2.80
-2    SOLVUSDT       RUN      0.419   0.692   -4.1%   +7.7%   +5.5%   1.1   2.55
-3    INJUSDT        RUN      0.387   0.690   -5.0%   +9.1%  +12.9%   0.2   1.40
-4    ZILUSDT        -        0.387   0.367   +3.4%  -34.4%  -36.2%   0.3   2.88
-5    MSTRBUSDT      -        0.385   0.726   +4.7%   +4.8%   -6.9%   1.0   0.97
-6    ERAUSDT        -        0.384   0.677   -8.1%  +11.4%   +5.9%   0.2   2.18
-7    KORUBUSDT      -        0.380   0.397   -4.6%   -5.9%  -47.4%   1.1   1.93
-8    METISUSDT      RUN      0.379   0.780   +1.0%  +11.9%  +18.6%   0.5   1.16
-9    BMTUSDT        -        0.378   0.903  +11.3%  +18.2%  +10.6%   6.9   2.43
-10   NBISBUSDT      -        0.378   0.390   -8.0%   -8.6%  -26.0%   1.3   2.56
+1    IOTXUSDT       RUN      0.557   0.910   +8.0%  +13.8%  +21.1%   0.5   0.98
+2    SPCXBUSDT      ACCUM    0.515   0.661   +1.4%   +4.8%   +5.7%  -1.3   1.52
+3    TSLABUSDT      ACCUM    0.504   0.740   +0.4%   +1.3%   +1.5%  -0.6   2.09
+4    BNCBUSDT       -        0.412   0.551   -1.7%  +14.0%  -11.9%  -0.9   1.00
+5    IOSTUSDT       -        0.408   0.780  -16.2%  +14.5%   +2.4%   0.2   4.76
+6    ZECUSDT        -        0.408   0.446   -0.7%   +4.6%  -17.8%  -1.6   0.81
+7    PEPEUSDT       -        0.397   0.638   -1.3%   +9.2%   -6.1%  -1.2   0.89
+8    BMTUSDT        -        0.387   0.906   +1.9%  +23.2%   +8.7%   0.7   3.66
+9    MSTRBUSDT      -        0.384   0.381   -0.8%   -1.0%   -8.2%  -1.7   1.01
+10   KORUBUSDT      -        0.381   0.386   -2.8%   -6.3%  -52.1%  -0.6   1.92
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
