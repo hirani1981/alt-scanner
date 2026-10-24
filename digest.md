@@ -2,61 +2,71 @@
 
 **Regime [BTC_LED]:** BTC below both vs trend, 44% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 58/149 above W, 32 above M, 32 above Q, 43 above Y.  BTC -3.3% vs monthly open.
+Breadth: 54/149 above W, 31 above M, 31 above Q, 38 above Y.  BTC -3.6% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
   SKHYBUSDT      vol_trend=2.12  10d range=15.1%  days flagged=1
   MUBUSDT        vol_trend=1.53  10d range=13.8%  days flagged=1
   TSLABUSDT      vol_trend=2.26  10d range=12.9%  days flagged=1
+  AIUSDT         vol_trend=4.81  10d range=13.9%  days flagged=1
   BFUSDUSDT      vol_trend=1.53  10d range=0.2%  days flagged=2
+  INTCBUSDT      vol_trend=1.81  10d range=15.5%  days flagged=1
   XUSDUSDT       vol_trend=1.95  10d range=0.2%  days flagged=1
-  AIUSDT         vol_trend=4.81  10d range=13.8%  days flagged=1
-  INTCBUSDT      vol_trend=1.81  10d range=15.4%  days flagged=1
-  AMDBUSDT       vol_trend=2.18  10d range=12.8%  days flagged=1
-  IDUSDT         vol_trend=1.85  10d range=15.7%  days flagged=1
-  TQQQBUSDT      vol_trend=2.69  10d range=13.8%  days flagged=1
+  SNDKBUSDT      vol_trend=1.86  10d range=17.1%  days flagged=1
+  TQQQBUSDT      vol_trend=2.69  10d range=13.9%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  JSTUSDT        RS-divergence  RS_7d=+4.8%  vol_z=-2.8
+  ERAUSDT        IGNITE         RS_7d=+28.3%  vol_z=2.0
+  TREEUSDT       IGNITE         RS_7d=+36.2%  vol_z=10.0
+  JSTUSDT        RS-divergence  RS_7d=+5.1%  vol_z=-2.5
+  BABYUSDT       RS-divergence  RS_7d=+16.0%  vol_z=-0.4
+  PARTIUSDT      RS-divergence  RS_7d=+23.4%  vol_z=-0.4
 
 ## New entrants to the Early top-20
-  #1   JSTUSDT        early=0.593  stage=-
-  #2   SKHYBUSDT      early=0.568  stage=ACCUM
-  #3   MUBUSDT        early=0.557  stage=ACCUM
-  #4   TSLABUSDT      early=0.515  stage=ACCUM
-  #5   BFUSDUSDT      early=0.509  stage=ACCUM
-  #7   AIUSDT         early=0.505  stage=ACCUM
-  #8   INTCBUSDT      early=0.503  stage=ACCUM
-  #9   AMDBUSDT       early=0.472  stage=ACCUM
-  #10  IDUSDT         early=0.471  stage=ACCUM
-  #11  TQQQBUSDT      early=0.462  stage=ACCUM
-  #12  BNCBUSDT       early=0.419  stage=RUN
-  #13  BONKUSDT       early=0.401  stage=-
-  #14  DASHUSDT       early=0.398  stage=-
-  #15  CRCLBUSDT      early=0.382  stage=-
-  #16  BCHUSDT        early=0.382  stage=-
-  #17  SOXLBUSDT      early=0.382  stage=-
-  #18  SOPHUSDT       early=0.381  stage=-
-  #19  MSTRBUSDT      early=0.381  stage=-
-  #20  MITOUSDT       early=0.379  stage=-
+  #1   JSTUSDT        early=0.594  stage=-
+  #2   SKHYBUSDT      early=0.570  stage=ACCUM
+  #4   MUBUSDT        early=0.559  stage=ACCUM
+  #5   BABYUSDT       early=0.559  stage=RUN
+  #6   TREEUSDT       early=0.522  stage=IGNITE
+  #7   TSLABUSDT      early=0.512  stage=ACCUM
+  #8   AIUSDT         early=0.508  stage=ACCUM
+  #9   BFUSDUSDT      early=0.505  stage=ACCUM
+  #10  INTCBUSDT      early=0.505  stage=ACCUM
+  #12  SNDKBUSDT      early=0.504  stage=ACCUM
+  #13  TQQQBUSDT      early=0.461  stage=ACCUM
+  #14  BNCBUSDT       early=0.419  stage=RUN
+  #15  BONKUSDT       early=0.406  stage=-
+  #16  DASHUSDT       early=0.401  stage=-
+  #17  KERNELUSDT     early=0.401  stage=RUN
+  #18  MSTRBUSDT      early=0.384  stage=-
+  #19  SOXLBUSDT      early=0.384  stage=-
+  #20  CRCLBUSDT      early=0.384  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  KATUSDT        vol_z=6.0  rank=#26  stage=-
-  BMTUSDT        vol_z=4.4  rank=#58  stage=EXT
+  TREEUSDT       vol_z=10.0  rank=#6  stage=IGNITE
+  KATUSDT        vol_z=10.0  rank=#28  stage=-
+  BMTUSDT        vol_z=8.4  rank=#57  stage=EXT
+  NEWTUSDT       vol_z=7.0  rank=#62  stage=-
+  LAUSDT         vol_z=6.4  rank=#41  stage=-
+  BREVUSDT       vol_z=4.8  rank=#46  stage=-
+  VANAUSDT       vol_z=4.4  rank=#48  stage=-
+  ZKCUSDT        vol_z=3.7  rank=#39  stage=-
+  KERNELUSDT     vol_z=3.5  rank=#17  stage=RUN
+  AIUSDT         vol_z=3.2  rank=#8  stage=ACCUM
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    JSTUSDT        -        0.593   0.540   +0.4%   +4.8%  +29.6%  -2.8   0.64
-2    SKHYBUSDT      ACCUM    0.568   0.494   +0.8%   +3.3%  -22.8%  -1.2   2.12
-3    MUBUSDT        ACCUM    0.557   0.508   +0.9%   +3.4%  -14.1%  -1.3   1.53
-4    TSLABUSDT      ACCUM    0.515   0.699   +0.3%   +7.1%   +2.7%  -0.9   2.26
-5    BFUSDUSDT      ACCUM    0.509   0.633   +0.4%   +0.8%   +4.3%  -1.2   1.53
-6    XUSDUSDT       ACCUM    0.508   0.526   +0.4%   +0.7%   +4.4%  -1.6   1.95
-7    AIUSDT         ACCUM    0.505   0.834   +0.9%   +5.9%   +4.9%  -0.1   4.81
-8    INTCBUSDT      ACCUM    0.503   0.368   +0.6%   -1.2%  -28.6%  -1.2   1.81
-9    AMDBUSDT       ACCUM    0.472   0.443   +0.8%   -1.0%  -14.0%  -1.0   2.18
-10   IDUSDT         ACCUM    0.471   0.430   -0.9%   -0.9%  -13.8%  -1.0   1.85
+1    JSTUSDT        -        0.594   0.565   +0.7%   +5.1%  +29.9%  -2.5   0.64
+2    SKHYBUSDT      ACCUM    0.570   0.461   +0.7%   +3.1%  -22.9%  -1.1   2.12
+3    ERAUSDT        IGNITE   0.566   0.911   +6.9%  +28.3%  +23.8%   2.0   1.77
+4    MUBUSDT        ACCUM    0.559   0.441   +0.8%   +3.4%  -14.2%  -1.2   1.53
+5    BABYUSDT       RUN      0.559   0.844   +5.9%  +16.0%  +12.8%  -0.4   0.09
+6    TREEUSDT       IGNITE   0.522   0.932  +25.5%  +36.2%  +11.4%  10.0   1.37
+7    TSLABUSDT      ACCUM    0.512   0.689   +0.4%   +7.2%   +2.8%  -0.9   2.26
+8    AIUSDT         ACCUM    0.508   0.816   +0.2%   +5.3%   +4.2%   3.2   4.81
+9    BFUSDUSDT      ACCUM    0.505   0.713   +0.7%   +1.1%   +4.7%  -0.8   1.53
+10   INTCBUSDT      ACCUM    0.505   0.366   +0.5%   -1.3%  -28.6%  -1.1   1.81
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
