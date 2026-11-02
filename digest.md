@@ -1,54 +1,63 @@
 # Alt Strength Digest - 2026-11-02
 
-**Regime [BTC_LED]:** BTC below trend, 36% of alts beating it - defensive; treat signals with suspicion.
+**Regime [BTC_LED]:** BTC below trend, 31% of alts beating it - defensive; treat signals with suspicion.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 30/124 above W, 41 above M, 17 above Q, 28 above Y.  BTC +0.8% vs monthly open.
+Breadth: 19/143 above W, 26 above M, 17 above Q, 23 above Y.  BTC -1.0% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  GOOGLBUSDT     vol_trend=4.17  10d range=17.7%  days flagged=1
-  BNBUSDT        vol_trend=1.89  10d range=11.6%  days flagged=1
+  EWYBUSDT       vol_trend=1.57  10d range=11.4%  days flagged=1
+  BMNRBUSDT      vol_trend=1.71  10d range=16.4%  days flagged=1
+  GOOGLBUSDT     vol_trend=4.17  10d range=17.9%  days flagged=1
+  BNBUSDT        vol_trend=1.89  10d range=11.8%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  none
+  HOTUSDT        IGNITE         RS_7d=+36.0%  vol_z=7.5
+  JSTUSDT        RS-divergence  RS_7d=+4.9%  vol_z=-1.1
+  TSLABUSDT      RS-divergence  RS_7d=+7.2%  vol_z=0.3
 
 ## New entrants to the Early top-20
-  #1   LSKUSDT        early=0.472  stage=-
-  #2   SOPHUSDT       early=0.444  stage=-
-  #3   POWRUSDT       early=0.441  stage=RUN
-  #4   GOOGLBUSDT     early=0.422  stage=ACCUM
-  #5   SKHYBUSDT      early=0.401  stage=RUN
-  #6   KORUBUSDT      early=0.400  stage=-
-  #7   BNBUSDT        early=0.399  stage=ACCUM
-  #8   INTWBUSDT      early=0.386  stage=-
-  #9   HOTUSDT        early=0.386  stage=-
-  #10  AAVEUSDT       early=0.384  stage=-
-  #11  LINKUSDT       early=0.380  stage=-
-  #12  USDEUSDT       early=0.370  stage=RUN
-  #13  UNIUSDT        early=0.365  stage=-
-  #14  DRAMBUSDT      early=0.364  stage=RUN
-  #15  COTIUSDT       early=0.363  stage=-
-  #16  COWUSDT        early=0.362  stage=-
-  #17  CELOUSDT       early=0.360  stage=-
-  #18  INTCBUSDT      early=0.360  stage=-
-  #19  PROVEUSDT      early=0.357  stage=RUN
-  #20  MUBUSDT        early=0.350  stage=RUN
+  #1   HOTUSDT        early=0.709  stage=IGNITE
+  #2   EWYBUSDT       early=0.540  stage=ACCUM
+  #3   JSTUSDT        early=0.531  stage=-
+  #4   LSKUSDT        early=0.475  stage=-
+  #5   BMNRBUSDT      early=0.464  stage=ACCUM
+  #6   SKHYBUSDT      early=0.418  stage=RUN
+  #7   GOOGLBUSDT     early=0.416  stage=ACCUM
+  #8   BNBUSDT        early=0.400  stage=ACCUM
+  #9   INTWBUSDT      early=0.390  stage=-
+  #10  SOPHUSDT       early=0.382  stage=-
+  #11  MVLLBUSDT      early=0.375  stage=-
+  #12  LINKUSDT       early=0.374  stage=-
+  #13  USDEUSDT       early=0.373  stage=RUN
+  #14  COTIUSDT       early=0.368  stage=-
+  #15  INTCBUSDT      early=0.367  stage=-
+  #16  PROVEUSDT      early=0.366  stage=RUN
+  #17  SPYBUSDT       early=0.363  stage=RUN
+  #18  UNIUSDT        early=0.356  stage=-
+  #19  CELOUSDT       early=0.355  stage=-
+  #20  HYPEUSDT       early=0.350  stage=RUN
 
 ## Volume surge alerts (vol_z >= 3.0)
-  none
+  1000CATUSDT    vol_z=10.0  rank=#42  stage=-
+  CRWVBUSDT      vol_z=10.0  rank=#40  stage=-
+  HOTUSDT        vol_z=7.5  rank=#1  stage=IGNITE
+  LITEBUSDT      vol_z=5.1  rank=#29  stage=-
+  TQQQBUSDT      vol_z=3.2  rank=#68  stage=-
+  MVLLBUSDT      vol_z=3.2  rank=#11  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    LSKUSDT        -        0.472   0.559   -7.3%  +19.7%  -26.3%  -0.4   3.24
-2    SOPHUSDT       -        0.444   0.770  +16.1%  +28.1%  -49.4%   0.4   2.89
-3    POWRUSDT       RUN      0.441   0.598   -8.8%   +4.4%  -14.7%  -0.0   3.06
-4    GOOGLBUSDT     ACCUM    0.422   0.561   +0.1%   -8.9%  -10.7%  -0.1   4.17
-5    SKHYBUSDT      RUN      0.401   0.740   +3.4%  +10.0%  -13.8%  -0.6   1.71
-6    KORUBUSDT      -        0.400   0.650   +8.3%   +6.4%  -44.0%  -0.7   1.24
-7    BNBUSDT        ACCUM    0.399   0.552   -0.4%   -2.3%   -2.4%  -1.0   1.89
-8    INTWBUSDT      -        0.386   0.483   +2.4%  -54.8%  -72.0%  -0.3   3.70
-9    HOTUSDT        -        0.386   0.846   +3.2%  +12.8%   -8.9%   0.4   3.85
-10   AAVEUSDT       -        0.384   0.254   -0.9%   +0.4%  -20.5%  -2.2   1.18
+1    HOTUSDT        IGNITE   0.709   0.937  +24.3%  +36.0%   +9.9%   7.5   3.85
+2    EWYBUSDT       ACCUM    0.540   0.630   +1.3%   +3.0%  -11.9%   0.2   1.57
+3    JSTUSDT        -        0.531   0.656   +3.2%   +4.9%  +11.5%  -1.1   0.53
+4    LSKUSDT        -        0.475   0.478   -9.3%  +17.2%  -27.8%   0.1   3.24
+5    BMNRBUSDT      ACCUM    0.464   0.521   -2.3%   -2.4%  -18.2%   1.5   1.71
+6    SKHYBUSDT      RUN      0.418   0.589   -0.2%   +6.2%  -16.8%   0.4   1.71
+7    GOOGLBUSDT     ACCUM    0.416   0.497   +1.0%   -8.0%   -9.9%   0.8   4.17
+8    BNBUSDT        ACCUM    0.400   0.500   +0.1%   -1.8%   -2.0%  -0.2   1.89
+9    INTWBUSDT      -        0.390   0.298  -14.8%  -62.4%  -76.7%   1.1   3.70
+10   SOPHUSDT       -        0.382   0.653   +0.7%  +11.1%  -56.2%   1.4   2.89
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
