@@ -1,63 +1,56 @@
-# Alt Strength Digest - 2026-11-10
+# Alt Strength Digest - 2026-11-11
 
-**Regime [BTC_LED]:** BTC below trend, 38% of alts beating it - defensive; treat signals with suspicion.
+**Regime [NEUTRAL]:** BTC below both vs trend, 49% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 90/149 above W, 33 above M, 22 above Q, 26 above Y.  BTC -5.2% vs monthly open.
+Breadth: 89/149 above W, 36 above M, 22 above Q, 30 above Y.  BTC -5.2% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
   none
 
 ## New IGNITE / RS-divergence flags
-  SPYBUSDT       RS-divergence  RS_7d=+4.4%  vol_z=0.3
-  XUSDUSDT       RS-divergence  RS_7d=+5.3%  vol_z=-0.0
-  UUSDT          RS-divergence  RS_7d=+5.4%  vol_z=-0.8
-  BFUSDUSDT      RS-divergence  RS_7d=+5.3%  vol_z=0.4
-  AAPLBUSDT      RS-divergence  RS_7d=+11.0%  vol_z=0.1
-  JSTUSDT        RS-divergence  RS_7d=+6.6%  vol_z=-0.4
-  MEGAUSDT       RS-divergence  RS_7d=+16.7%  vol_z=0.9
+  BFUSDUSDT      RS-divergence  RS_7d=+9.4%  vol_z=-0.9
+  XUSDUSDT       RS-divergence  RS_7d=+9.4%  vol_z=-0.9
+  UUSDT          RS-divergence  RS_7d=+9.5%  vol_z=-1.4
+  AVGOBUSDT      RS-divergence  RS_7d=+14.8%  vol_z=-0.2
+  JSTUSDT        RS-divergence  RS_7d=+12.9%  vol_z=-2.1
+  INJUSDT        RS-divergence  RS_7d=+12.9%  vol_z=-1.4
 
 ## New entrants to the Early top-20
-  #1   SPYBUSDT       early=0.709  stage=-
-  #3   UUSDT          early=0.701  stage=-
-  #4   BFUSDUSDT      early=0.680  stage=RUN
-  #5   USDEUSDT       early=0.491  stage=RUN
-  #6   INTWBUSDT      early=0.437  stage=-
-  #7   METUSDT        early=0.433  stage=-
-  #8   TSTUSDT        early=0.425  stage=-
-  #9   MITOUSDT       early=0.403  stage=-
-  #10  TQQQBUSDT      early=0.400  stage=-
-  #11  MRVLBUSDT      early=0.398  stage=-
-  #12  RAYUSDT        early=0.391  stage=-
-  #13  ONEUSDT        early=0.382  stage=RUN
-  #14  BABABUSDT      early=0.374  stage=RUN
-  #15  ARBUSDT        early=0.373  stage=RUN
-  #16  INTCBUSDT      early=0.366  stage=-
-  #17  SOXLBUSDT      early=0.365  stage=-
-  #18  SNXXBUSDT      early=0.364  stage=-
-  #19  MUUBUSDT       early=0.361  stage=-
-  #20  KORUBUSDT      early=0.360  stage=-
+  #1   BFUSDUSDT      early=0.693  stage=RUN
+  #3   UUSDT          early=0.667  stage=-
+  #4   AVGOBUSDT      early=0.666  stage=-
+  #5   USDEUSDT       early=0.549  stage=RUN
+  #7   METUSDT        early=0.427  stage=RUN
+  #8   TSTUSDT        early=0.420  stage=-
+  #9   INTWBUSDT      early=0.409  stage=-
+  #10  QIUSDT         early=0.408  stage=-
+  #11  MVLLBUSDT      early=0.408  stage=-
+  #12  SOXLBUSDT      early=0.407  stage=-
+  #13  MUUBUSDT       early=0.401  stage=-
+  #14  SECZBUSDT      early=0.397  stage=-
+  #15  TQQQBUSDT      early=0.387  stage=-
+  #16  ONEUSDT        early=0.386  stage=RUN
+  #17  SNDKBUSDT      early=0.378  stage=-
+  #18  MRVLBUSDT      early=0.378  stage=-
+  #19  ARBUSDT        early=0.373  stage=-
+  #20  KORUBUSDT      early=0.359  stage=-
 
 ## Volume surge alerts (vol_z >= 3.0)
-  BNSOLUSDT      vol_z=10.0  rank=#88  stage=-
-  QIUSDT         vol_z=10.0  rank=#69  stage=-
-  INITUSDT       vol_z=5.9  rank=#87  stage=EXT
-  SECZBUSDT      vol_z=5.4  rank=#44  stage=-
-  NVDABUSDT      vol_z=4.2  rank=#51  stage=-
-  GRAMUSDT       vol_z=4.2  rank=#42  stage=-
+  none
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    SPYBUSDT       -        0.709   0.678   +1.9%   +4.4%   +9.3%   0.3   1.77
-2    XUSDUSDT       RUN      0.703   0.620   +2.4%   +5.3%  +13.9%  -0.0   1.16
-3    UUSDT          -        0.701   0.510   +2.5%   +5.4%  +14.0%  -0.8   1.16
-4    BFUSDUSDT      RUN      0.680   0.738   +2.5%   +5.3%  +13.9%   0.4   1.01
-5    USDEUSDT       RUN      0.491   0.828   +2.5%   +5.4%  +14.0%   0.5   0.71
-6    INTWBUSDT      -        0.437   0.323   -4.3%   -8.2%  -73.3%  -0.1   1.06
-7    METUSDT        -        0.433   0.541   -4.7%  +16.3%  -19.8%  -0.4   1.57
-8    TSTUSDT        -        0.425   0.538   -3.3%   -2.1%  -22.2%   1.0   2.36
-9    MITOUSDT       -        0.403   0.482   +4.6%   +3.0%  -45.4%  -0.4   1.12
-10   TQQQBUSDT      -        0.400   0.511   -1.0%   -2.9%  -22.5%   0.6   1.17
+1    BFUSDUSDT      RUN      0.693   0.728   +0.3%   +9.4%  +11.3%  -0.9   0.99
+2    XUSDUSDT       RUN      0.678   0.711   +0.3%   +9.4%  +11.2%  -0.9   0.87
+3    UUSDT          -        0.667   0.570   +0.3%   +9.5%  +11.3%  -1.4   0.83
+4    AVGOBUSDT      -        0.666   0.849   +2.3%  +14.8%   +7.5%  -0.2   1.10
+5    USDEUSDT       RUN      0.549   0.857   +0.3%   +9.5%  +11.3%  -0.4   0.91
+6    RSRUSDT        RUN      0.432   0.644   -1.2%  +14.9%  -19.2%  -0.5   1.10
+7    METUSDT        RUN      0.427   0.727   +1.2%  +11.7%  -13.2%  -0.5   1.72
+8    TSTUSDT        -        0.420   0.642   +1.7%   +3.8%  -16.0%  -0.5   2.61
+9    INTWBUSDT      -        0.409   0.668   +6.4%  +14.6%  -68.4%  -0.5   0.83
+10   QIUSDT         -        0.408   0.628   -3.1%   +6.6%  -21.9%   0.0   1.93
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
