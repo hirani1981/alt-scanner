@@ -1,67 +1,62 @@
-# Alt Strength Digest - 2026-11-19
+# Alt Strength Digest - 2026-11-20
 
-**Regime [ALT_LED]:** BTC below both vs trend, 56% of alts beating it - neutral; be selective.
+**Regime [BTC_LED]:** BTC below both vs trend, 42% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 37/144 above W, 18 above M, 15 above Q, 18 above Y.  BTC -19.8% vs monthly open.
+Breadth: 31/149 above W, 15 above M, 14 above Q, 17 above Y.  BTC -20.7% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  NVDABUSDT      vol_trend=1.96  10d range=24.8%  days flagged=1
+  SNXUSDT        vol_trend=1.63  10d range=19.6%  days flagged=1
+  USTCUSDT       vol_trend=1.86  10d range=24.1%  days flagged=1
+  LUNAUSDT       vol_trend=2.01  10d range=23.0%  days flagged=1
+  SAPIENUSDT     vol_trend=2.53  10d range=25.2%  days flagged=1
+  NVDABUSDT      vol_trend=2.09  10d range=25.1%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  SENTUSDT       IGNITE         RS_7d=+48.8%  vol_z=10.0
-  LUNCUSDT       IGNITE         RS_7d=+43.8%  vol_z=6.1
-  WLFIUSDT       RS-divergence  RS_7d=+12.9%  vol_z=-0.9
-  UUSDT          RS-divergence  RS_7d=+14.8%  vol_z=-0.8
-  TRXUSDT        RS-divergence  RS_7d=+12.9%  vol_z=-0.4
-  BNBUSDT        RS-divergence  RS_7d=+1.8%  vol_z=-0.6
-  XUSDUSDT       RS-divergence  RS_7d=+14.8%  vol_z=-0.6
-  JSTUSDT        RS-divergence  RS_7d=+14.5%  vol_z=-1.1
+  BFUSDUSDT      RS-divergence  RS_7d=+11.0%  vol_z=-0.7
+  UUSDT          RS-divergence  RS_7d=+11.0%  vol_z=-1.1
+  XUSDUSDT       RS-divergence  RS_7d=+11.0%  vol_z=-0.6
+  TRXUSDT        RS-divergence  RS_7d=+10.0%  vol_z=-0.9
+  RWUSDUSDT      RS-divergence  RS_7d=+11.0%  vol_z=-0.8
+  SOXSBUSDT      RS-divergence  RS_7d=+44.1%  vol_z=-0.8
+  ERAUSDT        RS-divergence  RS_7d=+14.1%  vol_z=-0.9
 
 ## New entrants to the Early top-20
-  #1   SENTUSDT       early=0.687  stage=IGNITE
-  #2   WLFIUSDT       early=0.675  stage=-
-  #3   LUNCUSDT       early=0.673  stage=IGNITE
-  #4   UUSDT          early=0.632  stage=RUN
-  #5   TRXUSDT        early=0.612  stage=RUN
-  #6   BNBUSDT        early=0.598  stage=-
-  #8   RWUSDUSDT      early=0.570  stage=RUN
-  #9   NVDABUSDT      early=0.435  stage=ACCUM
-  #10  HUMAUSDT       early=0.389  stage=-
-  #11  HEIUSDT        early=0.384  stage=RUN
-  #12  KAVAUSDT       early=0.365  stage=-
-  #13  ENSOUSDT       early=0.365  stage=-
-  #14  TLMUSDT        early=0.365  stage=RUN
-  #15  MUBUSDT        early=0.360  stage=COOL
-  #16  INTCBUSDT      early=0.358  stage=-
-  #17  ZILUSDT        early=0.353  stage=-
-  #18  USTCUSDT       early=0.343  stage=RUN
-  #19  SOLUSDT        early=0.343  stage=-
-  #20  RAREUSDT       early=0.342  stage=RUN
+  #1   BFUSDUSDT      early=0.652  stage=RUN
+  #2   UUSDT          early=0.630  stage=RUN
+  #4   TRXUSDT        early=0.603  stage=RUN
+  #5   SNXUSDT        early=0.532  stage=ACCUM
+  #6   USTCUSDT       early=0.509  stage=ACCUM
+  #7   LUNAUSDT       early=0.503  stage=ACCUM
+  #8   SAPIENUSDT     early=0.483  stage=ACCUM
+  #9   NVDABUSDT      early=0.441  stage=ACCUM
+  #10  HUMAUSDT       early=0.413  stage=-
+  #11  INTCBUSDT      early=0.393  stage=-
+  #12  TLMUSDT        early=0.381  stage=RUN
+  #13  HEIUSDT        early=0.378  stage=RUN
+  #14  ZILUSDT        early=0.366  stage=-
+  #15  SENTUSDT       early=0.360  stage=RUN
+  #16  KAVAUSDT       early=0.359  stage=-
+  #17  RAREUSDT       early=0.353  stage=RUN
+  #18  ZKCUSDT        early=0.353  stage=-
+  #19  YBUSDT         early=0.352  stage=RUN
+  #20  RWUSDUSDT      early=0.346  stage=EXT
 
 ## Volume surge alerts (vol_z >= 3.0)
-  SENTUSDT       vol_z=10.0  rank=#1  stage=IGNITE
-  SAPIENUSDT     vol_z=10.0  rank=#26  stage=-
-  LUNAUSDT       vol_z=10.0  rank=#25  stage=-
-  YBUSDT         vol_z=10.0  rank=#104  stage=-
-  SKYUSDT        vol_z=10.0  rank=#55  stage=-
-  MMTUSDT        vol_z=6.6  rank=#72  stage=EXT
-  PDDBUSDT       vol_z=6.5  rank=#110  stage=EXT
-  LUNCUSDT       vol_z=6.1  rank=#3  stage=IGNITE
-  USTCUSDT       vol_z=4.3  rank=#18  stage=RUN
+  none
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    SENTUSDT       IGNITE   0.687   0.883   +3.8%  +48.8%  +30.0%  10.0   1.77
-2    WLFIUSDT       -        0.675   0.458   +2.0%  +12.9%  +11.1%  -0.9   1.05
-3    LUNCUSDT       IGNITE   0.673   0.920  +11.9%  +43.8%  +34.8%   6.1   2.37
-4    UUSDT          RUN      0.632   0.598   +1.4%  +14.8%  +33.4%  -0.8   0.84
-5    TRXUSDT        RUN      0.612   0.688   +1.6%  +12.9%  +25.0%  -0.4   0.72
-6    BNBUSDT        -        0.598   0.422   +1.3%   +1.8%   +4.8%  -0.6   0.93
-7    XUSDUSDT       RUN      0.585   0.652   +1.3%  +14.8%  +33.4%  -0.6   0.62
-8    RWUSDUSDT      RUN      0.570   0.550   +1.3%  +14.8%  +33.4%  -0.9   1.52
-9    NVDABUSDT      ACCUM    0.435   0.456   -1.8%   +0.6%  -11.2%   0.3   1.96
-10   HUMAUSDT       -        0.389   0.659   +4.1%  +27.7%  -59.7%   1.0   1.42
+1    BFUSDUSDT      RUN      0.652   0.776   +0.7%  +11.0%  +36.6%  -0.7   0.88
+2    UUSDT          RUN      0.630   0.686   +0.7%  +11.0%  +36.6%  -1.1   0.79
+3    XUSDUSDT       RUN      0.605   0.752   +0.7%  +11.0%  +36.5%  -0.6   0.70
+4    TRXUSDT        RUN      0.603   0.760   +0.4%  +10.0%  +27.8%  -0.9   0.66
+5    SNXUSDT        ACCUM    0.532   0.650   -2.9%   +9.2%   -3.8%  -0.4   1.63
+6    USTCUSDT       ACCUM    0.509   0.669   -3.4%   +8.8%   +7.7%  -0.4   1.86
+7    LUNAUSDT       ACCUM    0.503   0.610   -3.2%   +4.8%   -1.6%  -0.6   2.01
+8    SAPIENUSDT     ACCUM    0.483   0.759   +2.9%   +7.0%   -5.2%   2.8   2.53
+9    NVDABUSDT      ACCUM    0.441   0.526   -1.2%   -1.2%  -10.8%  -0.5   2.09
+10   HUMAUSDT       -        0.413   0.585   -3.8%  +32.7%  -58.1%  -0.5   1.68
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
