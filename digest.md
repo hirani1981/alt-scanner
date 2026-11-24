@@ -1,56 +1,68 @@
 # Alt Strength Digest - 2026-11-23
 
-**Regime [BTC_LED]:** BTC below both vs trend, 44% of alts beating it - neutral; be selective.
+**Regime [NEUTRAL]:** BTC below both vs trend, 53% of alts beating it - neutral; be selective.
 _Default view sorts by ACCUM intensity, not Early or divergence (config v2). Regime is context only._
-Breadth: 74/124 above W, 18 above M, 14 above Q, 16 above Y.  BTC -20.7% vs monthly open.
+Breadth: 104/149 above W, 18 above M, 15 above Q, 18 above Y.  BTC -21.0% vs monthly open.
 
 ## New ACCUM flags (quiet accumulation, newly flagged)
-  ORCAUSDT       vol_trend=2.62  10d range=24.0%  days flagged=1
-  EWYBUSDT       vol_trend=1.67  10d range=17.0%  days flagged=1
+  ORCAUSDT       vol_trend=2.86  10d range=24.0%  days flagged=1
+  TSMBUSDT       vol_trend=1.75  10d range=21.5%  days flagged=1
+  EWYBUSDT       vol_trend=1.65  10d range=16.0%  days flagged=1
 
 ## New IGNITE / RS-divergence flags
-  LISTAUSDT      IGNITE         RS_7d=+23.8%  vol_z=3.1
-  AIGENSYNUSDT   RS-divergence  RS_7d=+33.2%  vol_z=0.2
-  NIGHTUSDT      RS-divergence  RS_7d=+12.1%  vol_z=-1.0
+  QQQBUSDT       RS-divergence  RS_7d=+3.8%  vol_z=0.9
+  GOOGLBUSDT     RS-divergence  RS_7d=+5.4%  vol_z=0.0
+  TSLABUSDT      RS-divergence  RS_7d=+7.4%  vol_z=1.5
 
 ## New entrants to the Early top-20
-  #1   LISTAUSDT      early=0.724  stage=IGNITE
-  #2   AIGENSYNUSDT   early=0.712  stage=RUN
-  #3   ORCAUSDT       early=0.578  stage=ACCUM
-  #4   HUMAUSDT       early=0.434  stage=-
-  #5   EWYBUSDT       early=0.401  stage=ACCUM
-  #6   ENSOUSDT       early=0.401  stage=RUN
-  #7   SENTUSDT       early=0.381  stage=RUN
-  #8   KERNELUSDT     early=0.375  stage=RUN
-  #9   ACEUSDT        early=0.370  stage=-
-  #10  SOXLBUSDT      early=0.365  stage=-
-  #11  LUNCUSDT       early=0.365  stage=RUN
-  #12  RWUSDUSDT      early=0.361  stage=RUN
-  #13  BFUSDUSDT      early=0.356  stage=RUN
-  #14  SKYUSDT        early=0.354  stage=-
-  #15  KAVAUSDT       early=0.354  stage=-
-  #16  XVGUSDT        early=0.350  stage=-
-  #17  ETHUSDT        early=0.349  stage=-
-  #18  UUSDT          early=0.348  stage=RUN
-  #19  SOLUSDT        early=0.344  stage=-
-  #20  XRPUSDT        early=0.340  stage=-
+  #1   QQQBUSDT       early=0.642  stage=-
+  #2   GOOGLBUSDT     early=0.635  stage=-
+  #3   ORCAUSDT       early=0.579  stage=ACCUM
+  #4   TSMBUSDT       early=0.453  stage=ACCUM
+  #5   EWYBUSDT       early=0.449  stage=ACCUM
+  #6   ENSOUSDT       early=0.435  stage=-
+  #7   SAPIENUSDT     early=0.421  stage=RUN
+  #8   MUBARAKUSDT    early=0.417  stage=-
+  #9   IRENBUSDT      early=0.390  stage=-
+  #10  KORUBUSDT      early=0.388  stage=-
+  #11  HUMAUSDT       early=0.384  stage=-
+  #12  NBISBUSDT      early=0.381  stage=-
+  #13  AIGENSYNUSDT   early=0.379  stage=RUN
+  #14  SENTUSDT       early=0.376  stage=RUN
+  #15  MRVLBUSDT      early=0.375  stage=-
+  #16  MUUBUSDT       early=0.370  stage=-
+  #17  SPYBUSDT       early=0.368  stage=-
+  #18  SOLUSDT        early=0.364  stage=RUN
+  #19  LUNCUSDT       early=0.362  stage=RUN
+  #20  RWUSDUSDT      early=0.361  stage=RUN
 
 ## Volume surge alerts (vol_z >= 3.0)
-  LISTAUSDT      vol_z=3.1  rank=#1  stage=IGNITE
+  MUBARAKUSDT    vol_z=10.0  rank=#8  stage=-
+  LISTAUSDT      vol_z=10.0  rank=#50  stage=EXT
+  PROMUSDT       vol_z=9.2  rank=#38  stage=-
+  COINBUSDT      vol_z=4.7  rank=#37  stage=-
+  ALGOUSDT       vol_z=4.6  rank=#34  stage=-
+  NBISBUSDT      vol_z=4.1  rank=#12  stage=-
+  IRENBUSDT      vol_z=4.0  rank=#9  stage=-
+  SOXSBUSDT      vol_z=3.9  rank=#92  stage=COOL
+  MUUBUSDT       vol_z=3.8  rank=#16  stage=-
+  TSMBUSDT       vol_z=3.5  rank=#4  stage=ACCUM
+  NVDABUSDT      vol_z=3.5  rank=#32  stage=-
+  ENSUSDT        vol_z=3.4  rank=#64  stage=-
 
 ## Top 10 by Early score
 #    Symbol         Stage    Early  Strgth  RS 24h   RS 7d  RS 30d  VolZ  VolTr
 ------------------------------------------------------------------------------------
-1    LISTAUSDT      IGNITE   0.724   0.888   +4.7%  +23.8%  +30.9%   3.1   2.73
-2    AIGENSYNUSDT   RUN      0.712   0.831   +9.0%  +33.2%  +11.7%   0.2   2.34
-3    ORCAUSDT       ACCUM    0.578   0.609   -0.5%   +6.4%  -14.6%  -0.4   2.62
-4    HUMAUSDT       -        0.434   0.362   +1.4%   -8.9%  -54.0%  -1.0   1.21
-5    EWYBUSDT       ACCUM    0.401   0.574   -1.3%   -1.7%  +11.2%   0.2   1.67
-6    ENSOUSDT       RUN      0.401   0.771   +1.1%  +33.2%   -3.7%   0.1   3.86
-7    SENTUSDT       RUN      0.381   0.640   -4.1%  +11.9%  +15.8%  -0.3   3.37
-8    KERNELUSDT     RUN      0.375   0.633   -5.1%  +15.4%   +6.4%  -0.3   3.43
-9    ACEUSDT        -        0.370   0.479   +0.3%  -12.2%  -28.3%   0.7   3.25
-10   SOXLBUSDT      -        0.365   0.465   +1.8%  -23.0%  -44.9%   0.1   1.63
+1    QQQBUSDT       -        0.642   0.647   +3.4%   +3.8%  +21.7%   0.9   1.34
+2    GOOGLBUSDT     -        0.635   0.550   +2.8%   +5.4%  +16.5%   0.0   0.87
+3    ORCAUSDT       ACCUM    0.579   0.457   -0.2%   +6.8%  -14.3%   0.2   2.86
+4    TSMBUSDT       ACCUM    0.453   0.726  +10.3%   +3.8%  +16.0%   3.5   1.75
+5    EWYBUSDT       ACCUM    0.449   0.705   +5.6%   +5.2%  +19.0%   1.7   1.65
+6    ENSOUSDT       -        0.435   0.551   -8.1%  +21.1%  -12.5%   1.0   3.55
+7    SAPIENUSDT     RUN      0.421   0.655   +1.9%  +10.8%   -9.3%   1.3   3.80
+8    MUBARAKUSDT    -        0.417   0.637  +27.6%   -0.8%  -33.2%  10.0   1.61
+9    IRENBUSDT      -        0.390   0.553  +14.2%   -4.3%  -21.1%   4.0   1.45
+10   KORUBUSDT      -        0.388   0.561  +16.2%   -2.1%  -21.6%   2.0   1.36
 
 ---
 _config v2 (frozen 2026-06-11) — see HYPOTHESIS.md. Stored rank & validation cohorts remain Early-based._
